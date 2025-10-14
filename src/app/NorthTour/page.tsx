@@ -300,17 +300,17 @@ export default function HomePage() {
           </div>
 
           {/* cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center px-4 py-12 bg-white">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 place-items-center px-80 py-12 bg-white">
             {[
               {
-                title: "PACKAGE 1 : DREAMY MAURITIUS",
+                title: "Package 1: North Tour 1",
                 desc:
                   "Pamplemousses Botanical Garden in Mauritius, established in the 18th century, spans 60 acres with diverse flora. Highlights include giant water lilies, rare palms.",
                 img: hero1.src,
                 link: "/Pricing&Detail",
               },
               {
-                title: "PACKAGE 2 : DREAMY MAURITIUS",
+                title: "Package 2: North Tour 2",
                 desc:
                   "Grand Baie Bazar in Mauritius is a vibrant market offering a fusion of local crafts, textiles, and souvenirs. Visitors explore stalls filled with colorful items, spices, and unique finds in a lively atmosphere.",
                 img: hero1.src,
@@ -319,7 +319,7 @@ export default function HomePage() {
             ].map((card, idx) => (
               <article
                 key={idx}
-                className="relative w-full max-w-[490px] h-[620px] rounded-[22px] overflow-hidden ring-7 ring-gray-400"
+                className="relative w-full max-w-[390px] h-[620px] rounded-[22px] overflow-hidden ring-7 ring-gray-400"
                 style={{
                   backgroundImage: `url(${card.img})`,
                   backgroundSize: "cover",
@@ -329,13 +329,13 @@ export default function HomePage() {
                 <div className="absolute inset-0" />
 
                 <div className="relative z-[1] px-6 pb-6 flex flex-col justify-end h-full text-white">
-                  <h3 className="m-0 text-[15.5px] tracking-[.12em] font-semibold text-white/95">
+                  <h3 className="m-0 text-[19px] tracking-[.12em] font-semibold text-white/95">
                     {card.title}
                   </h3>
 
-                  <p className="mt-1 text-[13px] leading-relaxed text-white/90 max-w-[62ch]">{card.desc}</p>
+                  <p className="mt-1 text-[15px] leading-5 text-white/90 max-w-[62ch]">{card.desc}</p>
 
-                  <div className="mt-4 flex justify-between items-center gap-3 flex-nowrap">
+                  <div className="mt-4 flex justify-center items-center gap-5 flex-nowrap">
                     <div className="flex flex-col items-center justify-center gap-2 w-[100px] h-[100px]
                       rounded-[18px] bg-white/25 ring-1 ring-white/35 backdrop-blur-[1px] text-center">
                       <Image src={money} alt="" width={26} height={26} className="opacity-95" />
