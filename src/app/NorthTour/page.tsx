@@ -13,9 +13,9 @@ import e from "../../Assests/e.png";
 import call from "../../Assests/call.png";
 import whatsapp from "../../Assests/whatsapp.png";
 import join from "../../Assests/join.png";
-import fast from "../../Assests/fast.png";
+import fast from "../../Assests/Fast.png";
 import servive from "../../Assests/service.png";
-import flexible from "../../Assests/flexible.png";
+import flexible from "../../Assests/Flexible.png";
 import Link from "next/link";
 import { Instagram, Facebook, Music2 } from "lucide-react";
 
