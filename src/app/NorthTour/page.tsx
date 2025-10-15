@@ -11,17 +11,16 @@ import timing from "../../Assests/timing.png";
 import logo from "../../Assests/logo.jpeg";
 import e from "../../Assests/e.png";
 import call from "../../Assests/call.png";
-import whatsapp from "../../Assests/whatsapp.png";
-import join from "../../Assests/join.png";
-import fast from "../../Assests/Fast.png";
-import servive from "../../Assests/service.png";
-import flexible from "../../Assests/Flexible.png";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Instagram, Facebook, Music2 } from "lucide-react";
 import Navbar from "../Components/Navbar";
 import Join from "../Components/Join";
+import Footer from "../Components/Footer";
 
 export default function HomePage() {
+
+  const router = useRouter();
   
   const [aboutOpen, setAboutOpen] = useState(false);
 
@@ -29,6 +28,7 @@ export default function HomePage() {
   // Reveal on scroll (same as first page)
   useEffect(() => {
     const els = document.querySelectorAll<HTMLElement>("[data-animate]");
+    
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
@@ -86,9 +86,12 @@ export default function HomePage() {
                 <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#11c6c1] text-[#073436] shadow-sm ring-1 ring-[#0e4f53]/10">
                   North Tour
                 </button>
-                <button className="sm:w-44 w-36 rounded-full py-3 text-[14px]  bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10">
-                  South Tour
-                </button>
+                <button
+      className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10"
+      onClick={() => router.push("/SouthTour")}
+    >
+      South Tour
+    </button>
               </div>
 
               <div className="mt-3 flex flex-wrap justify-center gap-8">
@@ -199,108 +202,7 @@ export default function HomePage() {
       {/* Join / WhatsApp CTA block */}
     <Join/>
 
-      <footer id="contact" data-animate="fade" className="bg-[#071f24] text-[#cfe]">
-      <div
-        className="
-          mx-auto w-full max-w-[1300px] 2xl:max-w-[1400px]
-          px-6 py-12
-          grid gap-8 md:gap-10
-          grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1.2fr]
-          justify-items-center md:justify-items-start
-          text-center md:text-left
-          items-start
-        "
-      >
-        {/* Left Section */}
-        <div>
-          <h3 className="text-white text-2xl font-semibold mb-3">Keep in Touch</h3>
-          <h2 className="text-[#3ec6c3] text-3xl font-bold mb-4">Travel With Us</h2>
-
-          <div className="flex items-center justify-center md:justify-start mb-4">
-            <img src={logo.src} alt="Mauritius Logo" className="w-16 h-16 rounded-full mr-3 object-cover" />
-          </div>
-
-          <p className="text-sm leading-5 text-white max-w-md mx-auto md:mx-0">
-            Welcome to Island Ride, your trusted partner of <br /> more than 10 years in transportation services{" "}
-            <br /> across the breathtaking landscapes of Mauritius. <br /> With a commitment to exceptional service,{" "}
-            <br /> reliability, and passenger satisfaction, we stand as <br /> a leading taxi company.
-          </p>
-
-          <div className="mt-5 flex items-center justify-center md:justify-start space-x-4">
-            <span className="text-white font-medium">Follow Us</span>
-            <div className="flex space-x-3 text-xl">
-              <a href="#" className="hover:text-[#3ec6c3] transition-colors" aria-label="Instagram">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="hover:text-[#3ec6c3] transition-colors" aria-label="Facebook">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="hover:text-[#3ec6c3] transition-colors" aria-label="TikTok">
-                <Music2 size={20} />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        {/* Quick Links */}
-        <div className="md:pt-3">
-          <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold">Quick Links</h4>
-          <ul className="space-y-2">
-            <li>
-              <a href="#tours" className="hover:underline">Tour</a>
-            </li>
-            <li>
-              <a href="#transfer" className="hover:underline">Airport Transfer</a>
-            </li>
-            <li>
-              <a href="#about" className="hover:underline">About</a>
-            </li>
-          </ul>
-        </div>
-
-        {/* Support */}
-        <div className="md:pt-3">
-          <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold">Support</h4>
-          <ul className="space-y-2">
-            <li><a href="#" className="hover:underline">Contact Us</a></li>
-            <li><a href="#" className="hover:underline">Privacy Policy</a></li>
-            <li><a href="#" className="hover:underline">Terms &amp; Conditions</a></li>
-          </ul>
-        </div>
-
-        {/* Communication */}
-        <div className="md:pt-3">
-          <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold">Communication</h4>
-          <ul className="space-y-2 whitespace-nowrap">
-  <li>
-    <span className="inline-flex items-center gap-2">
-      <img
-        src={call.src}
-        alt="Email"
-        className="w-6 h-6 sm:w-5 sm:h-5 object-contain invert brightness-0"
-      />
-      <a href="mailto:info@mauritiustraveltour.com" className="hover:underline">
-        info@mauritiustraveltour.com
-      </a>
-    </span>
-  </li>
-  <li>
-    <span className="inline-flex items-center gap-2">
-      <img
-        src={e.src}
-        alt="Call"
-        className="w-6 h-6 sm:w-5 sm:h-5 object-contain invert brightness-0"
-      />
-      <a href="tel:+23057526968" className="hover:underline">
-        +230 5752 6968
-      </a>
-    </span>
-  </li>
-</ul>
-        </div>
-      </div>
-    </footer>
-
+      <Footer/>
       {/* responsive + animation tweaks (same as first file) */}
       <style>{`
         [data-animate="fade"]{
