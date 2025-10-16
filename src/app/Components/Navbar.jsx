@@ -117,13 +117,13 @@ export default function Navbar() {
               <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="/">
                 Home
               </Link>
-              <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="#about">
+              <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="/About">
                 About
               </Link>
               <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="#tours">
                 Tours
               </Link>
-              <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="#transfer">
+              <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="/#transfer">
                 Airport Transfers
               </Link>
               <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="/ContactUs">

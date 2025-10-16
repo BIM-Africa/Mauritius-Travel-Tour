@@ -1,0 +1,209 @@
+// app/page.tsx
+"use client";
+
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import bg from "../../Assests/bg.png";
+import about from "../../Assests/about.png";
+import Footer from "../Components/Footer"
+import Navbar from "../Components/Navbar";
+import org from "../../Assests/org.jpeg";
+export default function HomePage() {
+
+
+
+  const [aboutOpen, setAboutOpen] = useState(false);
+
+
+  useEffect(() => {
+    const els = document.querySelectorAll<HTMLElement>("[data-animate]");
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) e.target.classList.add("in-view");
+        });
+      },
+      { rootMargin: "0px 0px -10% 0px", threshold: 0.15 }
+    );
+    els.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <main className="bg-[#082733] text-[#0d1b1e]">
+      {/* Top strip */}
+
+      <Navbar />
+
+      {/* Hero */}
+      <section
+        id="home"
+        className="relative h-[100vh] min-h-[560px] max-h-[800px] overflow-hidden"
+      >
+        <Image
+          src={bg}
+          alt="Mauritius aerial"
+          fill
+          priority
+          className="object-cover absolute z-0"
+        />
+
+        {/* Overlay container */}
+        <div className="relative z-10 flex w-[90%] max-w-[1300px] mx-auto items-end justify-center h-full">
+          <div className="flex justify-center items-center flex-wrap gap-8 mb-24" >
+          <h1 className="md:text-6xl text-4xl text-white">Taking you to the <br /> Best Places in Mauritius </h1>
+          <button className="bg-slate-600 text-white px-4 py-2 rounded-4xl" >
+            Book Your Ride Now &#8250;
+
+          </button>
+          </div>
+        </div>
+      </section>
+
+
+      {/* About — exact layout: left small image, right text */}
+      <section id="about" data-animate="fade" className="bg-[#0b2930] text-white py-10 overflow-x-hidden">
+        <div className="max-w-[1300px] w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-[520px_1fr] gap-6 md:gap-12 items-start">
+          {/* Left: smaller image like screenshot */}
+          <div className="justify-self-start self-start ">
+            <img
+              src={about.src}
+              alt="Lagoon"
+              className="
+        block
+        w-[min(96vw,820px)]  lg:w-[740px] xl:w-[780px]
+        h-auto
+        ring-1 ring-white/15
+        shadow-[0_12px_28px_rgba(0,0,0,.35)]
+      "
+            />
+          </div>
+
+          {/* Right: text */}
+          <div className="self-center lg:pl-8">
+            <p className="text-xl tracking-[.14em] uppercase text-white mb-1">About Us</p>
+
+            <h2 className="m-0 mb-3 text-[42px] leading-tight text-[#25c7e0]">
+              Discover Your Next Adventure
+            </h2>
+
+            <p className="text-white leading-5">
+              Welcome to Mauritius Travel &amp; Tour, your trusted travel partner for <br /> over 10 years.
+              We take pride in offering reliable, comfortable, and personalized transportation services across the
+              breathtaking island of Mauritius.
+            </p>
+            <br />
+
+            {/* NEW: Expandable continuation without moving content elsewhere */}
+            <p className="text-white leading-5">
+              At Maurituis Travel &amp; Tour, every journey is more than just a ride — it&apos;s an experience of care, comfort, and
+              convenience. Whether you&apos;re discovering Mauritius for the first time or commuting as a local, our modern
+              fleet and professional chauffeurs ensure you travel safely and in style. From airport transfers to private tours
+              and daily commutes, we&apos;re dedicated to making every mile memorable.
+              {aboutOpen && (
+                <>
+                  {" "}
+                  Our
+                  team focuses on punctuality, comfort, and transparent pricing — so you can relax and enjoy the island
+                  while we handle the journey.
+                </>
+              )}
+            </p>
+
+            {/* Grey medium-radius pill */}
+            <a
+              href="#about-more"
+              onClick={(e) => {
+                e.preventDefault();
+                setAboutOpen((v) => !v);
+              }}
+              className="
+            inline-flex mt-4 items-center justify-center gap-2
+            px-5 py-2 w-[250px] rounded-[18px] text-[14px] 
+            text-white
+            bg-gray-500
+            transition-transform active:translate-y-[1px]
+          "
+            >
+              {aboutOpen ? "Show Less" : "Read More"} <span className="translate-y-[1px]">›</span>
+            </a>
+          </div>
+        </div>
+      </section>
+       <section data-animate="fade" className="bg-[#f5fbfc]">
+              <div className="mx-auto max-w-[1300px] px-5 py-16 grid gap-10 lg:grid-cols-[1.05fr_.95fr] items-center">
+                {/* LEFT: heading + copy */}
+                <div className="flex flex-col max-lg:justify-center" >
+                  <h2 className="m-0 text-4xl md:text-5xl leading-[1.05] text-[#35c9c3]">
+                    Meet the Organizer
+                    <br />
+                    <span className="text-[#35c9c3]">The Vision Behind It All</span>
+                  </h2>
+      
+                  <p className="mt-4 max-w-[560px] ml-0 md:ml-3 text-[15px] leading-[1.09] text-[#1c2b2d]">
+                    Behind every successful event is a passionate team working <br /> tirelessly to bring every detail to life.
+                    Dedicated to excellence <br /> and creativity, our organizers ensure each moment runs <br /> smoothly and
+                    leaves a lasting impression.
+                  </p>
+                </div>
+      
+                {/* RIGHT: layered shapes + card */}
+                <div className="relative flex justify-center">
+                  {/* layered rounded squares behind the card */}
+                  {/* layered rounded squares behind the card (proper rotate) */}
+      <div aria-hidden className="absolute -z-[1] top-6 right-10 w-[220px] md:w-[480px] h-[180px] md:h-[220px] rounded-[32px] bg-[#0b2930]/10 rotate-[-12deg] shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+      <div aria-hidden className="absolute -z-[1] top-2 right-4  w-[240px] md:w-[470px] h-[200px] md:h-[240px] rounded-[32px] bg-[#0b2930]/20 rotate-[6deg]   shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+      <div aria-hidden className="absolute -z-[1] top-0 right-12 w-[210px] md:w-[460px] h-[170px] md:h-[210px] rounded-[32px] bg-[#0b2930]/30 rotate-[14deg]  shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+      
+                  {/* foreground card */}
+                  <div className="w-[300px] md:w-[320px] rounded-[22px] bg-white text-[#0b2930] shadow-[0_20px_60px_rgba(0,0,0,.18)]">
+                    <div className="p-4 pb-3">
+                      <img src={org.src} alt="Organizer" className="w-full h-[220px] md:h-[240px] object-cover rounded-[16px]" />
+                    </div>
+                    <div className="px-5 pb-6 text-center">
+                      <div className="font-semibold tracking-wide text-[18px]">ADIL &amp; GROUP</div>
+                      <p className="mt-1 text-[13.5px] leading-relaxed text-[#3b4c4f]">
+                        Welcome to Mauritius Travel &amp; Tour, your trusted partner of more than 10 years in transportation
+                        services
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+      <Footer />
+      {/* responsive + animation tweaks */}
+      <style>{`
+          /* Section reveal */
+          [data-animate="fade"]{
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity .6s ease, transform .6s ease;
+          }
+          [data-animate="fade"].in-view{
+            opacity: 1;
+            transform: translateY(0);
+          }
+
+          /* Card text legibility on very small devices */
+          @media (max-width: 380px){
+            #tours article .text-[17px]{ font-size: 16px; }
+            #tours article .text-[13.5px]{ font-size: 13px; }
+          }
+
+          /* Hero CTA: keep off edges on tiny screens */
+          @media (max-width: 480px){
+            #home a[href="#book"]{
+              width: 85vw !important;
+              min-width: 0 !important;
+            }
+          }
+
+          @media (max-width: 780px){
+            /* compact nav pill on mobile */
+            .brand strong{ display: none; }
+          }
+        `}</style>
+    </main>
+  );
+}

@@ -50,7 +50,7 @@ export default function HomePage() {
         <Image src={hero} alt="Mauritius aerial" fill priority className="object-cover absolute z-0" />
        <div className="relative z-10 flex w-[90%] max-w-[1300px] mx-auto items-end justify-center h-full">
           <div className="flex justify-center items-center flex-wrap gap-8 mb-24" >
-          <h1 className="md:text-6xl text-4xl text-white">Refresh Your Soul with <br /> Exclusive North Tours </h1>
+          <h1 className="md:text-6xl text-4xl text-white">Refresh Your Soul with <br /> Exclusive West Tours </h1>
           <button className="bg-slate-600 text-white px-4 py-2 rounded-4xl" >
             Book Your Ride Now &#8250;
 
@@ -83,8 +83,8 @@ export default function HomePage() {
               </h3>
 
               <div className="flex flex-wrap justify-center gap-8">
-                <button
-      className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#11c6c1] text-[#073436] shadow-sm ring-1 ring-[#0e4f53]/10"
+                 <button
+      className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10"
       onClick={() => router.push("/NorthTour")}
     >
       North Tour
@@ -104,9 +104,9 @@ export default function HomePage() {
     >
       East Tour
     </button>
-                 <button
-      className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10"
-      onClick={() => router.push("/WestTour")}
+               <button
+      className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#11c6c1] text-[#073436] shadow-sm ring-1 ring-[#0e4f53]/10"
+      onClick={() => router.push("/WesttTour")}
     >
       West Tour
     </button>
@@ -118,16 +118,16 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 sm:px-8 lg:px-16 xl:px-24 py-12 bg-white max-w-[1400px] mx-auto">
   {[
     {
-      title: "Package 1: North Tour 1",
-      desc: "Pamplemousses Botanical Garden in Mauritius, established in the 18th century, spans 60 acres with diverse flora. Highlights include giant water lilies, rare palms.",
+      title: "Package 1: West Tour 1",
+      desc: "Dolphin watching in the west of Mauritius offers a mesmerizing experience. Cruise through azure waters, encountering playful dolphins in their natural habitat, creating unforgettable moments amid the scenic coastal beauty",
       img: hero1.src,
-      link: "/Pricing&Detail",
+      link: "/WestTourPkg1",
     },
     {
-      title: "Package 2: North Tour 2",
+      title: "Package 2: West Tour 2",
       desc: "Grand Baie Bazar in Mauritius is a vibrant market offering a fusion of local crafts, textiles, and souvenirs. Visitors explore stalls filled with colorful items, spices, and unique finds in a lively atmosphere.",
       img: hero1.src,
-      link: "/Package2",
+      link: "/WestTourPkg2",
     },
   ].map((card, idx) => (
     <article

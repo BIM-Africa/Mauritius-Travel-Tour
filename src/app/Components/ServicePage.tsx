@@ -64,7 +64,7 @@ export default function HomePage() {
         {/* Overlay container */}
         <div className="relative z-10 flex w-[90%] max-w-[1300px] mx-auto items-end justify-center h-full">
           <div className="flex justify-center items-center flex-wrap gap-8 mb-24" >
-          <h1 className="md:text-6xl text-4xl text-white">Refresh Your Soul with <br /> Exclusive North Tours </h1>
+          <h1 className="md:text-6xl text-4xl text-white">Taking you to the <br /> Best Places in Mauritius </h1>
           <button className="bg-slate-600 text-white px-4 py-2 rounded-4xl" >
             Book Your Ride Now &#8250;
 
@@ -101,7 +101,7 @@ export default function HomePage() {
             </h2>
 
             <p className="text-white leading-5">
-              Welcome to Island Ride – Mauritius Travel &amp; Tour, your trusted travel partner for <br /> over 10 years.
+              Welcome to Mauritius Travel &amp; Tour, your trusted travel partner for <br /> over 10 years.
               We take pride in offering reliable, comfortable, and personalized transportation services across the
               breathtaking island of Mauritius.
             </p>
@@ -109,7 +109,7 @@ export default function HomePage() {
 
             {/* NEW: Expandable continuation without moving content elsewhere */}
             <p className="text-white leading-5">
-              At Island Ride, every journey is more than just a ride — it&apos;s an experience of care, comfort, and
+              At Maurituis Travel &amp; Tour, every journey is more than just a ride — it&apos;s an experience of care, comfort, and
               convenience. Whether you&apos;re discovering Mauritius for the first time or commuting as a local, our modern
               fleet and professional chauffeurs ensure you travel safely and in style. From airport transfers to private tours
               and daily commutes, we&apos;re dedicated to making every mile memorable.
@@ -167,7 +167,7 @@ export default function HomePage() {
 
               {/* first row */}
               <div className="flex flex-wrap justify-center gap-8">
-                <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#11c6c1] text-[#073436] shadow-sm ring-1 ring-[#0e4f53]/10">
+                <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10">
                   Airport Transfer
                 </button>
                 <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] ring-1 ring-[#0e4f53]/10">
@@ -190,86 +190,86 @@ export default function HomePage() {
 
 
           {/* cards — now clickable to /NorthTour */}
-          <div
-            className="
-      grid gap-6 sm:gap-7 grid-cols-1 md:grid-cols-2
-      xl:[grid-template-columns:var(--c1)_var(--c2)_var(--c3)_var(--c4)]
-      xl:[--c1:1.60fr] xl:[--c2:0.90fr] xl:[--c3:0.90fr] xl:[--c4:0.90fr]
-      xl:transition-[--c1,--c2,--c3,--c4] xl:duration-500 xl:ease-out
+<div
+  className="
+    grid gap-6 sm:gap-7 grid-cols-1 md:grid-cols-2
+    xl:[grid-template-columns:var(--c1)_var(--c2)_var(--c3)_var(--c4)]
+    xl:[--c1:1.60fr] xl:[--c2:0.90fr] xl:[--c3:0.90fr] xl:[--c4:0.90fr]
+    xl:transition-[--c1,--c2,--c3,--c4] xl:duration-[1200ms] xl:ease-[cubic-bezier(0.16,1,0.3,1)]
 
-      /* 2nd card hover → widen col2, shrink others */
-      xl:[&:has(>a:nth-child(2):hover)]:[--c1:0.90fr]
-      xl:[&:has(>a:nth-child(2):hover)]:[--c2:1.60fr]
+    /* 2nd card hover → widen col2, shrink others */
+    xl:[&:has(>a:nth-child(2):hover)]:[--c1:0.90fr]
+    xl:[&:has(>a:nth-child(2):hover)]:[--c2:1.60fr]
 
-      /* 3rd card hover → widen col3, shrink others */
-      xl:[&:has(>a:nth-child(3):hover)]:[--c1:0.90fr]
-      xl:[&:has(>a:nth-child(3):hover)]:[--c3:1.60fr]
+    /* 3rd card hover → widen col3, shrink others */
+    xl:[&:has(>a:nth-child(3):hover)]:[--c1:0.90fr]
+    xl:[&:has(>a:nth-child(3):hover)]:[--c3:1.60fr]
 
-      /* 4th card hover → widen col4, shrink others */
-      xl:[&:has(>a:nth-child(4):hover)]:[--c1:0.90fr]
-      xl:[&:has(>a:nth-child(4):hover)]:[--c4:1.60fr]
-    "
-          >
-            {[
-              { img: first, alt: "North Tour 1" },
-              { img: second, alt: "North Tour 2" },
-              { img: third, alt: "North Tour 3" },
-              { img: fourth, alt: "North Tour 4" },
-            ].map((c, i) => (
-              <Link
-                key={i}
-                href="/NorthTour"
-                aria-label={`Open ${c.alt}`}
-                className="group relative block
-                  h-[500px] md:h-[550px] xl:h-[640px]
-                  max-[480px]:h-[400px] max-[360px]:h-[350px]
-                  rounded-[22px] overflow-hidden text-white
-                  transition-transform duration-500 ease-out cursor-pointer
-                  hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,.35)] focus:outline-none"
-              >
-                <Image
-                  src={c.img}
-                  alt={c.alt}
-                  fill
-                  className="object-cover transition-all duration-500 ease-out group-hover:scale-[1.05] group-hover:brightness-[1.05]"
-                  placeholder="blur"
-                />
+    /* 4th card hover → widen col4, shrink others */
+    xl:[&:has(>a:nth-child(4):hover)]:[--c1:0.90fr]
+    xl:[&:has(>a:nth-child(4):hover)]:[--c4:1.60fr]
+  "
+>
+  {[
+    { img: first, alt: "North Tour", title: "NORTH TOUR", href: "/NorthTour" },
+    { img: second, alt: "South Tour", title: "SOUTH TOUR", href: "/SouthTour" },
+    { img: third, alt: "East Tour", title: "EAST TOUR", href: "/EastTour" },
+    { img: fourth, alt: "West Tour", title: "WEST TOUR", href: "/WestTour" },
+  ].map((c, i) => (
+    <Link
+      key={i}
+      href={c.href}
+      aria-label={`Open ${c.alt}`}
+      className="group relative block
+        h-[500px] md:h-[550px] xl:h-[640px]
+        max-[480px]:h-[400px] max-[360px]:h-[350px]
+        rounded-[22px] overflow-hidden text-white
+        transition-transform duration-[1000ms] ease-[cubic-bezier(0.16,1,0.3,1)] cursor-pointer
+        hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,.35)] focus:outline-none"
+    >
+      <Image
+        src={c.img}
+        alt={c.alt}
+        fill
+        className="object-cover transition-all duration-[1000ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.08] group-hover:brightness-[1.08]"
+        placeholder="blur"
+      />
 
-                {/* corner icon */}
-                <div className="absolute  right-0 w-11 h-11 max-[360px]:w-9 max-[360px]:h-9
-                        rounded-full grid place-items-center bg-[#0f2f33] text-[#e8ffff] ring-2 ring-white/20">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 max-[360px]:w-4 max-[360px]:h-4" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M8 16 L16 8 M10 8h6v6"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
+      {/* corner icon */}
+      <div className="absolute right-0 w-11 h-11 max-[360px]:w-9 max-[360px]:h-9
+          rounded-full grid place-items-center bg-[#0f2f33] text-[#e8ffff] ring-2 ring-white/20">
+        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 max-[360px]:w-4 max-[360px]:h-4" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M8 16 L16 8 M10 8h6v6"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </div>
 
-                {/* text */}
-                <div className="absolute inset-x-0 bottom-0 p-5 max-[360px]:p-4">
-                  <h3 className="m-0 mb-1 tracking-[.02em] text-[17px] font-semibold drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
-                    NORTH TOUR
-                  </h3>
-                  <p className="m-0 text-[13.5px] leading-relaxed text-white/95 max-w-[36ch] drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
-                    Welcome to Mauritius Travel &amp; Tours, your trusted partner for more than 10 years.
-                  </p>
+      {/* text */}
+      <div className="absolute inset-x-0 bottom-0 p-5 max-[360px]:p-4">
+        <h3 className="m-0 mb-1 tracking-[.02em] text-[17px] font-semibold drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
+          {c.title}
+        </h3>
+        <p className="m-0 text-[13.5px] leading-relaxed text-white/95 max-w-[36ch] drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
+          Welcome to Mauritius Travel &amp; Tours, your trusted partner for more than 10 years.
+        </p>
 
-                  {/* Read More on every card */}
-                  <span className="mt-4 inline-block rounded-full px-4 py-2 text-[13px] text-white bg-gray-500/90 ring-1 ring-white/15 transition
-                          group-hover:bg-gray-500 group-hover:shadow-[0_6px_20px_rgba(0,0,0,.35)]">
-                    Read More &#8250;
-                  </span>
-                </div>
+        {/* Read More on every card */}
+        <span className="mt-4 inline-block rounded-full px-4 py-2 text-[13px] text-white bg-gray-500/90 ring-1 ring-white/15 transition
+                duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)]
+                group-hover:bg-gray-500 group-hover:shadow-[0_6px_20px_rgba(0,0,0,.35)]">
+          Read More &#8250;
+        </span>
+      </div>
 
-                <div className="absolute inset-0 ring-1 ring-white/10 rounded-[22px] pointer-events-none" />
-              </Link>
-            ))}
-          </div>
-
+      <div className="absolute inset-0 ring-1 ring-white/10 rounded-[22px] pointer-events-none" />
+    </Link>
+  ))}
+</div>
 
         </div>
 
@@ -410,9 +410,10 @@ export default function HomePage() {
           {/* RIGHT: layered shapes + card */}
           <div className="relative flex justify-center">
             {/* layered rounded squares behind the card */}
-            <div className="absolute -z-[1] top-6 right-10 w-[220px] md:w-[280px] h-[180px] md:h-[220px] rounded-[32px] bg-[#0b2930]/10 rotate-[8deg]" />
-            <div className="absolute -z-[1] top-2 right-4  w-[240px] md:w-[300px] h-[200px] md:h-[240px] rounded-[32px] bg-[#0b2930]/20 rotate-[-6deg]" />
-            <div className="absolute -z-[1] top-0 right-12 w-[210px] md:w-[260px] h-[170px] md:h-[210px] rounded-[32px] bg-[#0b2930]/30 rotate-[2deg]" />
+            {/* layered rounded squares behind the card (proper rotate) */}
+<div aria-hidden className="absolute -z-[1] top-6 right-10 w-[220px] md:w-[480px] h-[180px] md:h-[220px] rounded-[32px] bg-[#0b2930]/10 rotate-[-12deg] shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+<div aria-hidden className="absolute -z-[1] top-2 right-4  w-[240px] md:w-[470px] h-[200px] md:h-[240px] rounded-[32px] bg-[#0b2930]/20 rotate-[6deg]   shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+<div aria-hidden className="absolute -z-[1] top-0 right-12 w-[210px] md:w-[460px] h-[170px] md:h-[210px] rounded-[32px] bg-[#0b2930]/30 rotate-[14deg]  shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
 
             {/* foreground card */}
             <div className="w-[300px] md:w-[320px] rounded-[22px] bg-white text-[#0b2930] shadow-[0_20px_60px_rgba(0,0,0,.18)]">

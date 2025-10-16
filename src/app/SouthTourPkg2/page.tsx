@@ -28,54 +28,20 @@ export default function HomePage() {
   return (
     <main className=" bg-[#082733] text-[#0d1b1e]">
       <Navbar />
-      <section id="home" className="relative min-h-screen overflow-hidden">
-        <Image src={hero3} alt="Mauritius aerial" fill priority className="absolute object-cover h-full w-full" />
-        <div className=" inset-x-0 bottom-0 top-[40%]  z-[1]" />
-
-        <div
-          className="absolute z-[2] text-white"
-          style={{
-            left: "clamp(18px, 6vw, 80px)",
-            bottom: "clamp(90px, 16vh, 220px)",
-            textShadow: "0 18px 38px rgba(0,0,0,.45)",
-          }}
-        >
-          <h1
-            className="lg:ml-24 font-medium leading-[1.04] text-center justify-center  text-[clamp(34px,6.2vw,76px)]"
-            style={{ fontFamily: `'Playfair Display', Georgia, 'Times New Roman', serif` }}
-          >
-            Taking you to the
-            <br />
-            Best Places in Mauritius
-          </h1>
-        </div>
-
-        <div
-          className="
- absolute z-[2]
-    right-[40px] md:right-[40px] lg:right-[270px]
-    bottom-[8%] md:bottom-[14%] lg:bottom-[25%]
-  "
-        >
-          <a
-            href="#book"
-            className="
-      inline-flex items-center justify-center
-      px-5 py-2 w-[180px] min-w-[180px]
-      rounded-[18px] text-[14px]
-      text-white bg-gray-500
+      <section id="home" className="relative h-[100vh] min-h-[560px] max-h-[940px] overflow-hidden">
+              <Image src={hero3} alt="Mauritius aerial" fill priority className="object-cover absolute z-0" />
+              <div className="relative z-10 flex w-[90%] max-w-[1300px] mx-auto items-end justify-center h-full">
+                <div className="flex justify-center items-center flex-wrap gap-8 mb-24" >
+                <h1 className="md:text-6xl text-4xl text-white">Refresh Your Soul with <br /> Exclusive South Tours </h1>
+                <button className="bg-slate-600 text-white px-4 py-2 rounded-4xl" >
+                  Book Your Ride Now &#8250;
       
-      active:translate-y-[1px]
-      transition
-    "
-            style={{ backdropFilter: "blur(3px)" }}
-          >
-            Book Your Ride Now ›
-          </a>
-        </div>
+                </button>
+                </div>
+              </div>
+            
+            </section>
       
-      </section>
-
       {/* About — exact layout: left small image, right text */}
  
 <div className="bg-white">
@@ -110,11 +76,11 @@ export default function HomePage() {
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
       <li>• Pick-up from any hotel/residence in the morning</li>
-      <li>• Visit Caudan Waterfront</li>
-      <li>• Visit Port Louis Bazar (Local Market)</li>
-      <li>• Visit Fort Adelaide at Citadel</li>
-      <li>• Visit Kuanfu Tea (Medicinal Tea)</li>
-      <li>• Visit Odysseo Oceanarium</li>
+      <li>• Visit Bois Cheri Tea Factory</li>
+      <li>• Visit Grand Bassin Ganga Talao (Hindu Temple)</li>
+      <li>• Visit Black River Gorges (Viewpoint)</li>
+      <li>• Visit Chamarel (7 coloured earth and waterfall)</li>
+      <li>• Visit Rhumerie de Chameral (Rhum Factory)</li>
       <li>• Drop off from at hotel/residence </li>
     </ul>
   </div>
@@ -164,19 +130,19 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/71305298-Le-Caudan-Waterfront-Shopping-Mile-in-Port-Louis-Mauritius-1-768x597.jpg",
-      title: "CAUDAN WATERFRONT",
-      desc: "Caudan Waterfront, located in Port Louis, Mauritius, is a vibrant shopping and entertainment destination. Boasting a scenic harbor, it offers a mix of retail outlets, dining options, cultural experiences, and lively events.",
+      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/bois-cheri-tea-route-mauritius-5-1.jpg",
+      title: "BOIS CHERI TEA FACTORY",
+      desc: "Bois Chéri Tea Factory in Mauritius is a renowned tea estate and factory. Nestled amid lush plantations, it provides a captivating journey into tea production, offering tastings and scenic surroundings.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-11-at-10.14.10-1-600x467.jpeg",
-      title: "BAZAR PORT LOUIS",
-      desc: "Bazar Port Louis, the local market in the heart of Mauritius, is a bustling haven of colors and flavors. Discover an array of local goods, spices, textiles, and crafts in a lively atmosphere. The market’s energetic vibe, friendly vendors, ",
+      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/1000_F_99273901_WBFMF5bZksYkigGHYgNzrJlLsTaRnjy9-1.jpg",
+      title: "GRAND BASSIN GANGA TALAO",
+      desc: "Grand Bassin, also known as Ganga Talao, is a sacred crater lake in Mauritius. Surrounded by temples and lush landscapes, it is a revered pilgrimage site where Hindus celebrate Maha Shivaratri.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/100g1f000001gr0kzFC70-1-600x467.jpg",
-      title: "FORT ADELAIDE AT CITADELLE",
-      desc: "Fort Adelaide at Citadelle is a historic fortress in Mauritius, offering panoramic views of Port Louis. Built in the 19th century, it stands as a cultural landmark with a blend of military architecture and scenic beauty.",
+      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/istockphoto-596360018-612x612-1.jpg",
+      title: "BLACK RIVER GORGES VIEWPOINT",
+      desc: "Black River Gorges Viewpoint in Mauritius offers a breathtaking panorama of the lush, untouched wilderness of the Black River Gorges National Park. It’s a scenic spot showcasing the island’s natural beauty.",
     },
   ].map((item, idx) => (
     <article
@@ -207,18 +173,16 @@ export default function HomePage() {
 {/* === New 4-Image Section (same style/size as above) === */}
 <div className="flex flex-wrap justify-center items-center gap-6 max-w-[1300px] w-[95%] sm:w-[85%] md:w-[75%] lg:w-[60%] mx-auto pb-10 bg-white">
   {[
-    
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/b-6-1.jpg",
-      title: "KUANFU TEA",
-      desc: "Kuanfu Tea is a renowned tea brand known for its premium quality and diverse selection of traditional and innovative teas. Embracing Chinese tea culture, they offer a unique and delightful tea experience.",
+      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/15-1.jpg",
+      title: "CHAMAREL 7 COLOURED EARTH AND WATERFALL",
+      desc: "Chamarel 7 Coloured Earth and Waterfall in Mauritius present a stunning natural spectacle. The unique dunes exhibit a kaleidoscope of colors, and the nearby waterfall adds to the enchanting landscape.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/1c-1.jpg",
-      title: "ODYSSEO OCEANARIUM",
-      desc: "Odysseo Oceanarium is a captivating underwater sanctuary, showcasing diverse marine life through immersive exhibits. With state-of-the-art facilities, it educates and entertains, emphasizing conservation and fostering a deep appreciation for oceans.",
+      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/rhumerie-de-chamarel-base-1.jpg",
+      title: "RHUMERIE DE CHAMAREL",
+      desc: "Rhum Agricole enthusiasts find bliss at Rhumerie de Chamarel in Mauritius. This distillery produces exquisite sugarcane-based rums, providing a delightful tour showcasing the production process and culminating in tastings of their exceptional creations.",
     },
-    
   ].map((item, idx) => (
     <article
       key={idx}
@@ -243,7 +207,6 @@ export default function HomePage() {
         hover:scale-[1.03] hover:shadow-2xl
         flex-shrink-0 z-10 mx-auto
       "
-   
       style={{
         backgroundImage: `url(${item.img})`,
         backgroundSize: "cover",
@@ -254,15 +217,18 @@ export default function HomePage() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
 
       {/* text content */}
-      <div className="relative z-[1] px-6 pb-6 flex flex-col text-center justify-end h-full text-white">
-        <h3 className="m-0 text-[18px] font-semibold text-white/95">{item.title}</h3>
-        <p className="mt-2 text-[15px] leading-5 text-white/90 max-w-[60ch] mx-auto">
+      <div className="relative z-[1] px-5 pb-6 flex flex-col text-center justify-end h-full text-white">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-white/95">
+          {item.title}
+        </h3>
+        <p className="mt-2 text-sm sm:text-[15px] md:text-base leading-5 text-white/90 max-w-[60ch] mx-auto">
           {item.desc}
         </p>
       </div>
     </article>
   ))}
 </div>
+
 
 </div>
 <Join />

@@ -6,11 +6,18 @@ import Image from "next/image";
 import hero3 from "../../Assests/hero3.png";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import Link from "next/link";
 import Join from "../Components/Join";
 
 export default function HomePage() {
+  
 
+  // NEW: about expand state (for Read More)
   const [aboutOpen, setAboutOpen] = useState(false);
+
+  // Prevent background scroll when mobile menu open
+  
+  // NEW: IntersectionObserver to reveal sections on scroll
   useEffect(() => {
     const els = document.querySelectorAll<HTMLElement>("[data-animate]");
     const io = new IntersectionObserver(
@@ -26,64 +33,30 @@ export default function HomePage() {
   }, []);
 
   return (
-    <main className=" bg-[#082733] text-[#0d1b1e]">
-      <Navbar />
-      <section id="home" className="relative min-h-screen overflow-hidden">
-        <Image src={hero3} alt="Mauritius aerial" fill priority className="absolute object-cover h-full w-full" />
-        <div className=" inset-x-0 bottom-0 top-[40%]  z-[1]" />
+    <main className="bg-[#082733] text-[#0d1b1e]">
+     <Navbar />
+      <section id="home" className="relative h-[100vh] min-h-[560px] max-h-[940px] overflow-hidden">
+        <Image src={hero3} alt="Mauritius aerial" fill priority className="object-cover absolute z-0" />
+        <div className="relative z-10 flex w-[90%] max-w-[1300px] mx-auto items-end justify-center h-full">
+          <div className="flex justify-center items-center flex-wrap gap-8 mb-24" >
+          <h1 className="md:text-6xl text-4xl text-white">Refresh Your Soul with <br /> Exclusive South Tours </h1>
+          <button className="bg-slate-600 text-white px-4 py-2 rounded-4xl" >
+            Book Your Ride Now &#8250;
 
-        <div
-          className="absolute z-[2] text-white"
-          style={{
-            left: "clamp(18px, 6vw, 80px)",
-            bottom: "clamp(90px, 16vh, 220px)",
-            textShadow: "0 18px 38px rgba(0,0,0,.45)",
-          }}
-        >
-          <h1
-            className="lg:ml-24 font-medium leading-[1.04] text-center justify-center  text-[clamp(34px,6.2vw,76px)]"
-            style={{ fontFamily: `'Playfair Display', Georgia, 'Times New Roman', serif` }}
-          >
-            Taking you to the
-            <br />
-            Best Places in Mauritius
-          </h1>
-        </div>
-
-        <div
-          className="
- absolute z-[2]
-    right-[40px] md:right-[40px] lg:right-[270px]
-    bottom-[8%] md:bottom-[14%] lg:bottom-[25%]
-  "
-        >
-          <a
-            href="#book"
-            className="
-      inline-flex items-center justify-center
-      px-5 py-2 w-[180px] min-w-[180px]
-      rounded-[18px] text-[14px]
-      text-white bg-gray-500
-      
-      active:translate-y-[1px]
-      transition
-    "
-            style={{ backdropFilter: "blur(3px)" }}
-          >
-            Book Your Ride Now ›
-          </a>
+          </button>
+          </div>
         </div>
       
       </section>
 
       {/* About — exact layout: left small image, right text */}
- 
+  
 <div className="bg-white">
   <section className="relative bg-[#062E3D] text-white overflow-hidden rounded-b-[500px]">
     {/* --- Content --- */}
     <div className="relative z-10 max-w-6xl mx-auto px-6 pt-10 text-center">
       {/* Header */}
-      <h2 className="text-3xl md:text-5xl font-medium mb-2 text-teal-300">Package 2</h2>
+      <h2 className="text-3xl md:text-5xl font-medium mb-2 text-teal-300">Package 1</h2>
       <h1 className="text-4xl md:text-5xl font-medium text-teal-300 mb-2">
         Dreamy Mauritius
       </h1>
@@ -110,12 +83,12 @@ export default function HomePage() {
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
       <li>• Pick-up from any hotel/residence in the morning</li>
-      <li>• Visit Caudan Waterfront</li>
-      <li>• Visit Port Louis Bazar (Local Market)</li>
-      <li>• Visit Fort Adelaide at Citadel</li>
-      <li>• Visit Kuanfu Tea (Medicinal Tea)</li>
-      <li>• Visit Odysseo Oceanarium</li>
+      <li>• Visit Trou Aux Cerfs Volcano</li>
+      <li>• Visit Ship Model Factory where you can even make a purchase.</li>
+      <li>• Visit La Valee Des Couleur s Nature Park where you will be able to engage in activities such as zipline, quadbike, Luge kart, Nepalese bridge, Trekking.</li>
+      <li>• Horse Riding on the Beach at Riambel</li>
       <li>• Drop off from at hotel/residence </li>
+      
     </ul>
   </div>
 
@@ -130,8 +103,8 @@ export default function HomePage() {
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
       <li>• Tour Availability: Daily</li>
       <li>• Tour Duration: 8 Hours (Day Tour)</li>
-      <li>• With our flexible Pick-Up time you can start your <br /> adventure anytime between 8:30 Am to 10:00 Am</li>
-      <li>• Free Wi-Fi available in Vehicle</li>
+      <li>• With our flexible Pick-Up Time, you can start your adventure anytime between 8:30 am to 10:00 am.</li>
+      <li>• Free WI-FI available in Vehicle</li>
     </ul>
   </div>
 </div>
@@ -151,33 +124,30 @@ export default function HomePage() {
     <li>• Pricing is per vehicle, not per person.</li>
     <li>• Full day transportation to all the places mentioned above.</li>
     <li>• A friendly English/ French speaking driver will provide you valuable information during your travels. </li>
-    <li>• Entry ticket fees not included.</li>
+    <li>•  Entry ticket fees not included.</li>
     <li>• When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</li>
     <li>• <b>Arrangements can be made with your driver if you want to combine 2 packages.</b></li>
-    <li>• <b> NOTE: 15 and 30 seaters available.</b></li>
+    <li>• <b>NOTE: 15 and 30 seaters available.</b></li>
   </ul>
 </div>
 
     </div>
-  </section>
- {/* === Existing Attractions Section (your current code) === */}
-<div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
+ </section>
+
+{/* === Existing Attractions Section (your current code) === */}
+<div className="flex max-w-[1300px] w-[60%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/71305298-Le-Caudan-Waterfront-Shopping-Mile-in-Port-Louis-Mauritius-1-768x597.jpg",
-      title: "CAUDAN WATERFRONT",
-      desc: "Caudan Waterfront, located in Port Louis, Mauritius, is a vibrant shopping and entertainment destination. Boasting a scenic harbor, it offers a mix of retail outlets, dining options, cultural experiences, and lively events.",
+      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/trou-aux-cerfs_HERO-1.jpg",
+      title: "TROU AUX CERFS VOLCANO",
+      desc: "Trou aux Cerfs Volcano is a dormant crater in Mauritius, surrounded by lush greenery. Offering panoramic views, it is a geological marvel and popular tourist destination, providing a unique natural experience.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-11-at-10.14.10-1-600x467.jpeg",
-      title: "BAZAR PORT LOUIS",
-      desc: "Bazar Port Louis, the local market in the heart of Mauritius, is a bustling haven of colors and flavors. Discover an array of local goods, spices, textiles, and crafts in a lively atmosphere. The market’s energetic vibe, friendly vendors, ",
+      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/IMG_4743-1.jpg",
+      title: "SHIP MODEL FACTORY",
+      desc: "The Ship Model Factory at Floreal is an exceptional workshop where skilled artisans meticulously craft detailed ship models. This unique destination combines craftsmanship and history, showcasing maritime artistry with precision.",
     },
-    {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/100g1f000001gr0kzFC70-1-600x467.jpg",
-      title: "FORT ADELAIDE AT CITADELLE",
-      desc: "Fort Adelaide at Citadelle is a historic fortress in Mauritius, offering panoramic views of Port Louis. Built in the 19th century, it stands as a cultural landmark with a blend of military architecture and scenic beauty.",
-    },
+    
   ].map((item, idx) => (
     <article
       key={idx}
@@ -204,58 +174,40 @@ export default function HomePage() {
   ))}
 </div>
 
+
 {/* === New 4-Image Section (same style/size as above) === */}
-<div className="flex flex-wrap justify-center items-center gap-6 max-w-[1300px] w-[95%] sm:w-[85%] md:w-[75%] lg:w-[60%] mx-auto pb-10 bg-white">
+<div className="flex flex-wrap justify-center items-center gap-6 max-w-[1300px] w-[60%] mx-auto pb-10 bg-white">
   {[
+    {
+      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/horse-riding-bahamas-excursions-1.jpg",
+      title: "HORSE RIDING ON THE BEACH",
+      desc: "Horse riding on the beaches of Mauritius is a magical experience, combining the rhythmic sound of hooves on sandy shores with the turquoise sea backdrop. It’s a serene and exhilarating adventure.",
+    },
+    {
+      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/IMG_4743-1.jpg",
+      title: "SHIP MODEL FACTORY",
+      desc: "The Ship Model Factory at Floreal is an exceptional workshop where skilled artisans meticulously craft detailed ship models. This unique destination combines craftsmanship and history, showcasing maritime artistry with precision.",
+    },
     
-    {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/b-6-1.jpg",
-      title: "KUANFU TEA",
-      desc: "Kuanfu Tea is a renowned tea brand known for its premium quality and diverse selection of traditional and innovative teas. Embracing Chinese tea culture, they offer a unique and delightful tea experience.",
-    },
-    {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/1c-1.jpg",
-      title: "ODYSSEO OCEANARIUM",
-      desc: "Odysseo Oceanarium is a captivating underwater sanctuary, showcasing diverse marine life through immersive exhibits. With state-of-the-art facilities, it educates and entertains, emphasizing conservation and fostering a deep appreciation for oceans.",
-    },
     
   ].map((item, idx) => (
     <article
       key={idx}
-      className="
-        relative
-        w-[95%] 
-        xs:w-[300px]
-        sm:w-[360px]
-        md:w-[380px]
-        lg:w-[400px]
-        xl:w-[420px]
-        h-[420px]
-        sm:h-[520px]
-        md:h-[620px]
-        lg:h-[620px]
-        xl:h-[620px]
-        rounded-[22px]
-        overflow-hidden
-        ring-4 ring-gray-300
-        shadow-lg
-        transition-transform duration-500 ease-out
-        hover:scale-[1.03] hover:shadow-2xl
-        flex-shrink-0 z-10 mx-auto
-      "
-   
+      className="relative w-full sm:w-[390px] h-[420px] sm:h-[520px] md:h-[620px] rounded-[22px] overflow-hidden ring-4 ring-gray-400 shadow-lg transition-transform duration-500 ease-out hover:scale-[1.03] hover:shadow-2xl flex-shrink-0 z-10 mx-auto"
       style={{
         backgroundImage: `url(${item.img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      {/* gradient overlay */}
+      {/* dark gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
 
-      {/* text content */}
+      {/* content area */}
       <div className="relative z-[1] px-6 pb-6 flex flex-col text-center justify-end h-full text-white">
-        <h3 className="m-0 text-[18px] font-semibold text-white/95">{item.title}</h3>
+        <h3 className="m-0 text-[18px] font-semibold text-white/95">
+          {item.title}
+        </h3>
         <p className="mt-2 text-[15px] leading-5 text-white/90 max-w-[60ch] mx-auto">
           {item.desc}
         </p>
@@ -265,10 +217,8 @@ export default function HomePage() {
 </div>
 
 </div>
-<Join />
-
-
-    <Footer/>
+<Join/>
+<Footer/>
 
       {/* responsive + animation tweaks */}
       <style>{`
