@@ -88,7 +88,9 @@ export default function ContactPage() {
 
               {/* fake input pill like screenshot */}
               <a
-                href="#"
+                href="https://wa.me/23057526968?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20tours."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-3 inline-flex w-[220px] h-[38px] items-center justify-center rounded-full bg-white text-[#14532d] font-medium"
               >
                 Message on WhatsApp
@@ -169,7 +171,9 @@ export default function ContactPage() {
               </div>
 
               <a
-                href="#"
+                href="https://wa.me/23057526968?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20tours."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-[#f0d7ac] text-[#6b4b1b] py-3 text-[14.5px] font-medium"
               >
                 Have a different question? <span className="ml-1 underline">Contact us directly</span>

@@ -39,8 +39,10 @@ export default function Join() {
 
           {/* Right: WhatsApp button */}
           <a
-            href="#"
+            href="https://wa.me/23057526968?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20tours."
+            target="_blank"
             aria-label="Whatsapp Us"
+            rel="noopener noreferrer"
             className="
               inline-flex items-center justify-center whitespace-nowrap
               rounded-md px-6 py-3.5 text-[16px] font-semibold tracking-wide
