@@ -22,7 +22,7 @@ import Link from "next/link";
 import Footer from "./Footer"
 import Navbar from "./Navbar";
 import { T } from "@/lib/i18n-global";
-import { translateClient } from "../../lib/client-translate";
+
 export default function HomePage() {
 
 
@@ -419,9 +419,9 @@ export default function HomePage() {
           <div className="relative flex justify-center">
             {/* layered rounded squares behind the card */}
             {/* layered rounded squares behind the card (proper rotate) */}
-<div aria-hidden className="absolute -z-[1] top-6 right-10 w-[220px] md:w-[480px] h-[180px] md:h-[220px] rounded-[32px] bg-[#0b2930]/10 rotate-[-12deg] shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
-<div aria-hidden className="absolute -z-[1] top-2 right-4  w-[240px] md:w-[40px] h-[200px] md:h-[240px] rounded-[32px] bg-[#0b2930]/20 rotate-[6deg]   shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
-<div aria-hidden className="absolute -z-[1] top-0 right-12 w-[210px] md:w-[460px] h-[170px] md:h-[210px] rounded-[32px] bg-[#0b2930]/30 rotate-[14deg]  shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+<div aria-hidden className="absolute -z-[1] top-6 right-10 w-[220px] md:w-[500px] h-[140px] md:h-[180px] rounded-[32px] bg-[#0b2930]/10 rotate-[-25deg] shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+<div aria-hidden className="absolute -z-[1] top-2 right-4  w-[240px] md:w-[500px] h-[130px] md:h-[200px] rounded-[32px] bg-[#0b2930]/20 rotate-[20deg]   shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+<div aria-hidden className="absolute -z-[1] top-0 right-12 w-[210px] md:w-[500px] h-[120px] md:h-[180px] rounded-[32px] bg-[#0b2930]/30 rotate-[14deg]  shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
 
             {/* foreground card */}
             <div className="w-[300px] md:w-[320px] rounded-[22px] bg-white text-[#0b2930] shadow-[0_20px_60px_rgba(0,0,0,.18)]">
