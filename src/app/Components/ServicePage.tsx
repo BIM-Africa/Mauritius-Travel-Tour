@@ -66,17 +66,17 @@ export default function HomePage() {
         {/* Overlay container */}
         <div className="relative z-10 flex w-[90%] max-w-[1300px] mx-auto items-end justify-center h-full">
           <div className="flex justify-center items-center flex-wrap gap-8 mb-24" >
-          <h1  className="md:text-6xl text-4xl text-white"> <T>Taking you to the</T> <br /><T>Best Places in Mauritius </T></h1>
-         <a
-  href="https://wa.me/23057526968?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20tours."
-  target="_blank"
-  aria-label="WhatsApp Us"
-  rel="noopener noreferrer"
->
-  <button className="bg-slate-600 text-white px-6 py-3 rounded-full hover:bg-slate-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
-    <span>Book Your Ride Now</span> &#8250;
-  </button>
-</a>
+            <h1 className="md:text-6xl text-4xl text-white"> <T>Taking you to the</T> <br /><T>Best Places in Mauritius </T></h1>
+            <a
+              href="https://wa.me/23057526968?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20tours."
+              target="_blank"
+              aria-label="WhatsApp Us"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-slate-600 text-white px-6 py-3 rounded-full hover:bg-slate-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+                <span>Book Your Ride Now</span> &#8250;
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -109,40 +109,40 @@ export default function HomePage() {
             </h2>
 
             <p className="text-white leading-5">
-            <T>Welcome to Mauritius Travel & Tour, your trusted travel partner for over 10 years.</T>
-<br />
-             <T>We take pride in offering reliable, comfortable, and personalized transportation services across the breathtaking island of Mauritius.</T>
-<br />
+              <T>Welcome to Mauritius Travel & Tour, your trusted travel partner for over 10 years.</T>
+              <br />
+              <T>We take pride in offering reliable, comfortable, and personalized transportation services across the breathtaking island of Mauritius.</T>
+              <br />
             </p>
             <br />
 
             {/* NEW: Expandable continuation without moving content elsewhere */}
             <p className="text-white leading-5">
               <T>
-  At Mauritius Travel & Tour, every journey is more than just a ride — it&#39;s an
-  experience of care, comfort, and convenience.
-</T>
-<br />
-<T>
-  Whether you&#39;re discovering Mauritius for the first time or commuting as a
-  local, our modern fleet and professional chauffeurs ensure you travel safely and
-  in style.
-</T>
-<br />
-<T>
-  From airport transfers to private tours and daily commutes, we&#39;re dedicated to
-  making every mile memorable.
-</T>
-<br />
-{aboutOpen && (
-  <>
-    <T>
-      Our team focuses on punctuality, comfort, and transparent pricing — so you can
-      relax and enjoy the island while we handle the journey.
-    </T>
-  </>
-)}
-              
+                At Mauritius Travel & Tour, every journey is more than just a ride — it&#39;s an
+                experience of care, comfort, and convenience.
+              </T>
+              <br />
+              <T>
+                Whether you&#39;re discovering Mauritius for the first time or commuting as a
+                local, our modern fleet and professional chauffeurs ensure you travel safely and
+                in style.
+              </T>
+              <br />
+              <T>
+                From airport transfers to private tours and daily commutes, we&#39;re dedicated to
+                making every mile memorable.
+              </T>
+              <br />
+              {aboutOpen && (
+                <>
+                  <T>
+                    Our team focuses on punctuality, comfort, and transparent pricing — so you can
+                    relax and enjoy the island while we handle the journey.
+                  </T>
+                </>
+              )}
+
             </p>
 
             {/* Grey medium-radius pill */}
@@ -212,12 +212,12 @@ export default function HomePage() {
 
 
           {/* cards — now clickable to /NorthTour */}
-<div
-  className="
+          <div
+            className="
     grid gap-6 sm:gap-7 grid-cols-1 md:grid-cols-2
     xl:[grid-template-columns:var(--c1)_var(--c2)_var(--c3)_var(--c4)]
     xl:[--c1:1.60fr] xl:[--c2:0.90fr] xl:[--c3:0.90fr] xl:[--c4:0.90fr]
-    xl:transition-[--c1,--c2,--c3,--c4] xl:duration-[2500ms] xl:ease-in-out
+    xl:transition-all xl:duration-700 xl:ease-in-out
 
     /* 2nd card hover → widen col2, shrink others */
     xl:[&:has(>a:nth-child(2):hover)]:[--c1:0.90fr]
@@ -231,67 +231,67 @@ export default function HomePage() {
     xl:[&:has(>a:nth-child(4):hover)]:[--c1:0.90fr]
     xl:[&:has(>a:nth-child(4):hover)]:[--c4:1.60fr]
   "
->
-  {[
-    { img: first, alt: "North Tour", title: "NORTH TOUR", href: "/NorthTour" },
-    { img: second, alt: "South Tour", title: "SOUTH TOUR", href: "/SouthTour" },
-    { img: third, alt: "East Tour", title: "EAST TOUR", href: "/EastTour" },
-    { img: fourth, alt: "West Tour", title: "WEST TOUR", href: "/WestTour" },
-  ].map((c, i) => (
-    <Link
-      key={i}
-      href={c.href}
-      aria-label={`Open ${c.alt}`}
-      className="group relative block
+          >
+            {[
+              { img: first, alt: "North Tour", title: "NORTH TOUR", href: "/NorthTour" },
+              { img: second, alt: "South Tour", title: "SOUTH TOUR", href: "/SouthTour" },
+              { img: third, alt: "East Tour", title: "EAST TOUR", href: "/EastTour" },
+              { img: fourth, alt: "West Tour", title: "WEST TOUR", href: "/WestTour" },
+            ].map((c, i) => (
+              <Link
+                key={i}
+                href={c.href}
+                aria-label={`Open ${c.alt}`}
+                className="group relative block
         h-[500px] md:h-[550px] xl:h-[640px]
         max-[480px]:h-[400px] max-[360px]:h-[350px]
         rounded-[22px] overflow-hidden text-white
-        transition-transform duration-[2500ms] ease-in-out
+        transition-all duration-[2500ms] ease-in-out
         hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,.35)] focus:outline-none"
-    >
-      <Image
-        src={c.img}
-        alt={c.alt}
-        fill
-        className="object-cover transition-all duration-[2500ms] ease-in-out group-hover:scale-[1.08] group-hover:brightness-[1.08]"
-        placeholder="blur"
-      />
+              >
+                <Image
+                  src={c.img}
+                  alt={c.alt}
+                  fill
+                  className="object-cover transition-all duration-[2500ms] ease-in-out group-hover:scale-[1.08] group-hover:brightness-[1.08]"
+                  placeholder="blur"
+                />
 
-      {/* corner icon */}
-      <div className="absolute right-0 w-11 h-11 max-[360px]:w-9 max-[360px]:h-9
+                {/* corner icon */}
+                <div className="absolute right-0 w-11 h-11 max-[360px]:w-9 max-[360px]:h-9
           rounded-full grid place-items-center bg-[#0f2f33] text-[#e8ffff] ring-2 ring-white/20">
-        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 max-[360px]:w-4 max-[360px]:h-4" viewBox="0 0 24 24" fill="none">
-          <path
-            d="M8 16 L16 8 M10 8h6v6"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 max-[360px]:w-4 max-[360px]:h-4" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M8 16 L16 8 M10 8h6v6"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
 
-      {/* text */}
-      <div className="absolute inset-x-0 bottom-0 p-5 max-[360px]:p-4">
-        <h3 className="m-0 mb-1 tracking-[.02em] text-[17px] font-semibold drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
-          <T>{c.title}</T>
-        </h3>
-        <p className="m-0 text-[13.5px] leading-relaxed text-white/95 max-w-[36ch] drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
-          <T>Welcome to Mauritius Travel &amp; Tours, your trusted partner for more than 10 years.</T>
-        </p>
+                {/* text */}
+                <div className="absolute inset-x-0 bottom-0 p-5 max-[360px]:p-4">
+                  <h3 className="m-0 mb-1 tracking-[.02em] text-[17px] font-semibold drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
+                    <T>{c.title}</T>
+                  </h3>
+                  <p className="m-0 text-[13.5px] leading-relaxed text-white/95 max-w-[36ch] drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
+                    <T>Welcome to Mauritius Travel &amp; Tours, your trusted partner for more than 10 years.</T>
+                  </p>
 
-        {/* Read More */}
-        <span className="mt-4 inline-block rounded-full px-4 py-2 text-[13px] text-white bg-gray-500/90 ring-1 ring-white/15 transition
+                  {/* Read More */}
+                  <span className="mt-4 inline-block rounded-full px-4 py-2 text-[13px] text-white bg-gray-500/90 ring-1 ring-white/15 transition
                 duration-[2500ms] ease-in-out
                 group-hover:bg-gray-500 group-hover:shadow-[0_6px_20px_rgba(0,0,0,.35)]">
-          <T>Read More</T> &#8250;
-        </span>
-      </div>
+                    <T>Read More</T> &#8250;
+                  </span>
+                </div>
 
-      <div className="absolute inset-0 ring-1 ring-white/10 rounded-[22px] pointer-events-none" />
-    </Link>
-  ))}
-</div>
+                <div className="absolute inset-0 ring-1 ring-white/10 rounded-[22px] pointer-events-none" />
+              </Link>
+            ))}
+          </div>
 
         </div>
 
@@ -339,8 +339,8 @@ export default function HomePage() {
             </h2>
             <p className="mt-3 ml-0 md:ml-20 max-w-[520px] text-[15px] text-[#e6ffff]">
               <T>At Mauritius Travel & Tour, we take great pride in maintaining  a fleet of vehicles that not only meet but
-              exceed </T>
-             <T> the highest standards of safety, cleanliness,  and reliability.</T>
+                exceed </T>
+              <T> the highest standards of safety, cleanliness,  and reliability.</T>
             </p>
           </div>
 
@@ -433,9 +433,9 @@ export default function HomePage() {
           <div className="relative flex justify-center">
             {/* layered rounded squares behind the card */}
             {/* layered rounded squares behind the card (proper rotate) */}
-<div aria-hidden className="absolute -z-[1] top-6 right-10 w-[220px] md:w-[500px] h-[140px] md:h-[180px] rounded-[32px] bg-[#0b2930]/10 rotate-[-25deg] shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
-<div aria-hidden className="absolute -z-[1] top-2 right-4  w-[240px] md:w-[500px] h-[130px] md:h-[200px] rounded-[32px] bg-[#0b2930]/20 rotate-[20deg]   shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
-<div aria-hidden className="absolute -z-[1] top-0 right-12 w-[210px] md:w-[500px] h-[120px] md:h-[180px] rounded-[32px] bg-[#0b2930]/30 rotate-[14deg]  shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+            <div aria-hidden className="absolute -z-[1] top-6 right-10 w-[220px] md:w-[500px] h-[140px] md:h-[180px] rounded-[32px] bg-[#0b2930]/10 rotate-[-25deg] shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+            <div aria-hidden className="absolute -z-[1] top-2 right-4  w-[240px] md:w-[500px] h-[130px] md:h-[200px] rounded-[32px] bg-[#0b2930]/20 rotate-[20deg]   shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+            <div aria-hidden className="absolute -z-[1] top-0 right-12 w-[210px] md:w-[500px] h-[120px] md:h-[180px] rounded-[32px] bg-[#0b2930]/30 rotate-[14deg]  shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
 
             {/* foreground card */}
             <div className="w-[300px] md:w-[320px] rounded-[22px] bg-white text-[#0b2930] shadow-[0_20px_60px_rgba(0,0,0,.18)]">
