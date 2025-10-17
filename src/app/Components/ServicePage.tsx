@@ -118,17 +118,31 @@ export default function HomePage() {
 
             {/* NEW: Expandable continuation without moving content elsewhere */}
             <p className="text-white leading-5">
-              <T>At Mauritius Travel & Tour, every journey is more than just a ride — it's an experience of care, comfort, and convenience.</T>
-<br /><T>Whether you're discovering Mauritius for the first time or commuting as a local, our modern fleet and professional chauffeurs ensure you travel safely and in style.</T>
-<br /><T>From airport transfers to private tours and daily commutes, we're dedicated to making every mile memorable.</T>
-<br />        {aboutOpen && (
-                <>
-                  {" "}
-                 <T> Our
-                  team focuses on punctuality, comfort, and transparent pricing — so you can relax and enjoy the island
-                  while we handle the journey.</T>
-                </>
-              )}
+              <T>
+  At Mauritius Travel & Tour, every journey is more than just a ride — it&#39;s an
+  experience of care, comfort, and convenience.
+</T>
+<br />
+<T>
+  Whether you&#39;re discovering Mauritius for the first time or commuting as a
+  local, our modern fleet and professional chauffeurs ensure you travel safely and
+  in style.
+</T>
+<br />
+<T>
+  From airport transfers to private tours and daily commutes, we&#39;re dedicated to
+  making every mile memorable.
+</T>
+<br />
+{aboutOpen && (
+  <>
+    <T>
+      Our team focuses on punctuality, comfort, and transparent pricing — so you can
+      relax and enjoy the island while we handle the journey.
+    </T>
+  </>
+)}
+              
             </p>
 
             {/* Grey medium-radius pill */}
