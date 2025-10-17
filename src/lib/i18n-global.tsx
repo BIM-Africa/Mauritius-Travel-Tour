@@ -1,8 +1,7 @@
 "use client";
 import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
-// keep your helper — used as a fallback when a string isn't in the glossary
-import { translateClient } from "@/lib/client-translate";
 
+/* -------------------------------- Types ---------------------------------- */
 type Dir = "ltr" | "rtl";
 type Lang = "en" | "fr" | "ar" | "ur";
 
@@ -14,12 +13,12 @@ type Ctx = {
   txBatch: (texts: string[], source?: Lang) => Promise<string[]>;
 };
 
+/* ----------------------------- Context setup ----------------------------- */
 const I18nCtx = createContext<Ctx | null>(null);
-
 const dirFor = (lang: Lang): Dir => (lang === "ar" || lang === "ur" ? "rtl" : "ltr");
 
-// -------------------- GLOSSARY --------------------
-// Keys MUST be lowercased exact English versions you wrap in <T>...</T>
+/* ----------------------------- GLOSSARY ONLY ----------------------------- */
+/** Keys MUST be lowercased exact English versions you wrap in <T>...</T> */
 const GLOSSARY: Record<string, Partial<Record<Lang, string>>> = {
   // Hero / CTA / Nav shorts
   "taking you to the": { en: "Taking you to the", fr: "Nous vous emmenons aux", ar: "نأخذك إلى", ur: "ہم آپ کو لے جا رہے ہیں" },
@@ -196,8 +195,8 @@ const GLOSSARY: Record<string, Partial<Record<Lang, string>>> = {
     ur: "کیپ مالحیورو کی ریڈ چرچ سمندر کے شاندار نظاروں اور دلکش تعمیرات کے باعث علامتی مقام ہے—تصاویر کے لیے بہترین۔ اس کی سرخ چھت فیروزی لگون کے ساتھ حسین تضاد پیدا کرتی ہے۔",
   },
 };
-// ------------------ END GLOSSARY ------------------
 
+/* ----------------------------- Provider ---------------------------------- */
 export function GlobalI18n({ children }: { children: React.ReactNode }) {
   const [lang, setLang] = useState<Lang>(() =>
     (typeof window === "undefined" ? "en" : (localStorage.getItem("lang") || "en")) as Lang
@@ -210,40 +209,28 @@ export function GlobalI18n({ children }: { children: React.ReactNode }) {
     return () => window.removeEventListener("langchange", onLangChange);
   }, []);
 
-  const dir: Dir = dirFor(lang);
+  const dir: Dir = useMemo(() => dirFor(lang), [lang]);
+
   useEffect(() => {
     document.documentElement.setAttribute("dir", dir);
     document.documentElement.lang = lang;
   }, [dir, lang]);
 
-  // Look up in glossary first, then fallback to API if needed
+  // ---- Translation functions (glossary-only, no API calls) ----
   async function tx(text: string, source: Lang = "en") {
     if (!text?.trim() || lang === source) return text;
     const key = text.trim().toLowerCase();
     const hit = GLOSSARY[key]?.[lang];
-    if (hit) return hit;
-    try {
-      const r = await translateClient(text, [lang], source);
-      return r?.[lang] ?? text;
-    } catch {
-      return text; // graceful fallback
-    }
+    return hit ?? text;
   }
 
   async function txBatch(items: string[], source: Lang = "en") {
     if (!items.length || lang === source) return items;
-    // Try glossary for each first; for any misses, do one API call by joining
-    const SEP = " ⸻ ";
-    const prelim = items.map((s) => GLOSSARY[s.trim().toLowerCase()]?.[lang] ?? null);
-    if (prelim.every((x) => typeof x === "string")) return prelim as string[];
-    try {
-      const joined = items.join(SEP);
-      const r = await translateClient(joined, [lang], source);
-      const out = (r?.[lang] ?? joined).split(SEP);
-      return out.map((s, i) => (prelim[i] ?? s ?? items[i]));
-    } catch {
-      return items.map((s, i) => (prelim[i] ?? s));
-    }
+    return items.map((s) => {
+      const key = s?.trim().toLowerCase();
+      const hit = key ? GLOSSARY[key]?.[lang] : null;
+      return hit ?? s;
+    });
   }
 
   const value = useMemo(() => ({ lang, dir, setLang, tx, txBatch }), [lang, dir]);
@@ -251,10 +238,11 @@ export function GlobalI18n({ children }: { children: React.ReactNode }) {
   return <I18nCtx.Provider value={value}>{children}</I18nCtx.Provider>;
 }
 
-// Tiny inline translator component
+/* ------------------------------ <T> helper ------------------------------- */
 export function T({ children, source = "en" }: { children: string; source?: Lang }) {
   const ctx = useContext(I18nCtx);
   const [text, setText] = useState(children);
+
   useEffect(() => {
     if (!ctx) return;
     let live = true;
@@ -266,10 +254,11 @@ export function T({ children, source = "en" }: { children: string; source?: Lang
       live = false;
     };
   }, [children, source, ctx?.lang]); // re-run on language change
+
   return <>{text}</>;
 }
 
-// (optional) export hook for other components if you need it later
+/* ------------------------------ Hook export ------------------------------ */
 export function useI18n() {
   const ctx = useContext(I18nCtx);
   if (!ctx) throw new Error("useI18n must be used within GlobalI18n");
