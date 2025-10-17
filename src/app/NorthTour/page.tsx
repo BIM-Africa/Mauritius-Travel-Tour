@@ -17,6 +17,8 @@ import { Instagram, Facebook, Music2 } from "lucide-react";
 import Navbar from "../Components/Navbar";
 import Join from "../Components/Join";
 import Footer from "../Components/Footer";
+import { T } from "@/lib/i18n-global";
+
 
 export default function HomePage() {
 
@@ -50,11 +52,17 @@ export default function HomePage() {
         <Image src={hero} alt="Mauritius aerial" fill priority className="object-cover absolute z-0" />
        <div className="relative z-10 flex w-[90%] max-w-[1300px] mx-auto items-end justify-center h-full">
           <div className="flex justify-center items-center flex-wrap gap-8 mb-24" >
-          <h1 className="md:text-6xl text-4xl text-white">Refresh Your Soul with <br /> Exclusive North Tours </h1>
-          <button className="bg-slate-600 text-white px-4 py-2 rounded-4xl" >
-            Book Your Ride Now &#8250;
-
-          </button>
+          <h1 className="md:text-6xl text-4xl text-white"><T>Refresh Your Soul with</T> <br /> Exclusive North Tours </h1>
+         <a
+  href="https://wa.me/23057526968?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20tours."
+  target="_blank"
+  aria-label="WhatsApp Us"
+  rel="noopener noreferrer"
+>
+  <button className="bg-slate-600 text-white px-6 py-3 rounded-full hover:bg-slate-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+    <span>Book Your Ride Now</span> &#8250;
+  </button>
+</a>
           </div>
         </div>
       </section>
@@ -71,8 +79,7 @@ export default function HomePage() {
 
               {/* aligned like first page: center on small, preserve your layout on larger */}
               <p className="mt-3  text-[15.5px] text-black max-w-[66ch] md:w-[75%] max-sm:mx-auto break-words">
-                At Mauritius Travel &amp; Tour, we take pride in offering a fleet of vehicles that go beyond expectations — 
-                combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+                 
               </p>
             </div>
 

@@ -39,7 +39,7 @@ export default function Footer() {
           </div>
 
           <p className="text-sm leading-5 text-white max-w-md mx-auto md:mx-0">
-            Welcome to Island Ride, your trusted partner of <br /> more than 10 years in transportation services{" "}
+            Welcome to Mauritius Travel & Tour, your trusted partner of <br /> more than 10 years in transportation services{" "}
             <br /> across the breathtaking landscapes of Mauritius. <br /> With a commitment to exceptional service,{" "}
             <br /> reliability, and passenger satisfaction, we stand as <br /> a leading taxi company.
           </p>

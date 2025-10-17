@@ -57,21 +57,16 @@ export default function HomePage() {
     bottom-[8%] md:bottom-[14%] lg:bottom-[25%]
   "
         >
-          <a
-            href="#book"
-            className="
-      inline-flex items-center justify-center
-      px-5 py-2 w-[180px] min-w-[180px]
-      rounded-[18px] text-[14px]
-      text-white bg-gray-500
-      
-      active:translate-y-[1px]
-      transition
-    "
-            style={{ backdropFilter: "blur(3px)" }}
-          >
-            Book Your Ride Now ›
-          </a>
+         <a
+  href="https://wa.me/23057526968?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20tours."
+  target="_blank"
+  aria-label="WhatsApp Us"
+  rel="noopener noreferrer"
+>
+  <button className="bg-slate-600 text-white px-6 py-3 rounded-full hover:bg-slate-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+    <span>Book Your Ride Now</span> &#8250;
+  </button>
+</a>
         </div>
       
       </section>

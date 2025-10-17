@@ -40,10 +40,16 @@ export default function HomePage() {
         <div className="relative z-10 flex w-[90%] max-w-[1300px] mx-auto items-end justify-center h-full">
           <div className="flex justify-center items-center flex-wrap gap-8 mb-24" >
           <h1 className="md:text-6xl text-4xl text-white">Refresh Your Soul with <br /> Exclusive South Tours </h1>
-          <button className="bg-slate-600 text-white px-4 py-2 rounded-4xl" >
-            Book Your Ride Now &#8250;
-
-          </button>
+          <a
+  href="https://wa.me/23057526968?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20tours."
+  target="_blank"
+  aria-label="WhatsApp Us"
+  rel="noopener noreferrer"
+>
+  <button className="bg-slate-600 text-white px-6 py-3 rounded-full hover:bg-slate-700 transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+    <span>Book Your Ride Now</span> &#8250;
+  </button>
+</a>
           </div>
         </div>
       
