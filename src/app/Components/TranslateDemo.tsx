@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { translateClient } from "@/lib/client-translate";
+
 
 export default function TranslateDemo() {
   const [text, setText] = useState("Welcome to our tour site!");
@@ -8,13 +8,13 @@ export default function TranslateDemo() {
   const [out, setOut] = useState<Record<string, string> | null>(null);
 
   async function run() {
-    setLoading(true);
-    try {
-      const data = await translateClient(text, ["ar", "fr", "ur"], "en");
-      setOut(data);
-    } finally {
-      setLoading(false);
-    }
+    // setLoading(true);
+    // try {
+    //   const data = await translateClient(text, ["ar", "fr", "ur"], "en");
+    //   setOut(data);
+    // } finally {
+    //   setLoading(false);
+    // }
   }
 
   return (
