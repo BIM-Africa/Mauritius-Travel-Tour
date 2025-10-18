@@ -6,6 +6,7 @@ import join from "../../Assests/join.png";
 import fast from "../../Assests/Fast.png";
 import servive from "../../Assests/service.png"; // <-- if your file is actually "service.png"
 import flexible from "../../Assests/Flexible.png";
+import { T } from "@/lib/i18n-global";
 
 export default function Join() {
   return (
@@ -30,11 +31,11 @@ export default function Join() {
           {/* Left: heading text */}
           <div>
             <h3 className="m-0 text-[clamp(22px,3vw,34px)] leading-tight">
-              Want to Join Us,
+              <T>Want to Join Us,</T>
               <br className="hidden md:block" />
-              have customised requests?
+              <T>have customised requests?</T>
             </h3>
-            <p className="m-0 mt-2 text-[15px] text-white">Leave a request</p>
+            <p className="m-0 mt-2 text-[15px] text-white"><T>Leave a request</T></p>
           </div>
 
           {/* Right: WhatsApp button */}
@@ -53,7 +54,7 @@ export default function Join() {
             "
             style={{ backdropFilter: "blur(3px)" }}
           >
-            Whatsapp Us
+            <T>Whatsapp Us</T>
           </a>
         </div>
 
@@ -74,9 +75,8 @@ export default function Join() {
           >
             <img src={fast.src} alt="Fast responses" width={38} height={38} />
             <p className="m-0 text-[13.5px] leading-snug">
-              <span className="font-medium">Fast responses</span> – We reply
-              promptly during our working hours.
-            </p>
+              <span className="font-medium"></span> 
+              <T>Fast responses </T> <T>we reply promptly during our working hours</T>.            </p>
           </div>
 
           {/* 2 */}
@@ -93,10 +93,12 @@ export default function Join() {
               width={38}
               height={38}
             />
-            <p className="m-0 text-[13.5px] leading-snug">
-              <span className="font-medium">Personalised service</span> –
-              Tailored transfers and tours to suit your needs.
-            </p>
+           <p className="m-0 text-[13.5px] leading-snug font-medium">
+  <T>
+    Personalised service – Tailored transfers and tours to suit your needs.
+  </T>
+</p>
+
           </div>
 
           {/* 3 */}
@@ -114,9 +116,12 @@ export default function Join() {
               height={38}
             />
             <p className="m-0 text-[13.5px] leading-snug">
-              <span className="font-medium">Friendly support</span> –
-              Experienced driver ready to assist and guide you.
-            </p>
+  <T>
+    Friendly support</T> – Experienced driver ready to assist and guide you
+  
+  
+</p>
+
           </div>
 
           {/* 4 */}
@@ -134,8 +139,7 @@ export default function Join() {
               height={38}
             />
             <p className="m-0 text-[13.5px] leading-snug">
-              <span className="font-medium">Flexible options</span> – We arrange
-              tours and transfers for all groups.
+              <span className="font-medium"><T>Flexible options</T></span> – 
             </p>
           </div>
         </div>

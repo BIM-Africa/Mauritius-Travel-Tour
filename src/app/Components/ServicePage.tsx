@@ -167,135 +167,126 @@ export default function HomePage() {
       </section>
 
       {/* Tours + Services */}
-      <section id="tours" data-animate="fade" className="py-16 bg-white overflow-x-hidden">
-        <div className="mx-auto w-[90%] max-w-[1300px]">
-          {/* header row */}
-          <div className="grid gap-6 md:gap-4 md:grid-cols-2 xl:max-w-[1100px] max-w-[900px] mx-auto items-start mb-12">
-            <div>
-              <h2 className="text-[clamp(28px,3.2vw,52px)]   leading-[1.12] text-[#11c6c1] m-0">
-                Choose a Tour that <br className="hidden md:block" />  satisfies your Soul
-              </h2>
+     <section id="tours" data-animate="fade" className="py-16 bg-white overflow-x-hidden">
+  <div className="mx-auto w-[90%] max-w-[1300px]">
+    {/* header row */}
+    <div className="grid gap-6 md:gap-4 md:grid-cols-2 xl:max-w-[1100px] max-w-[900px] mx-auto items-start mb-12">
+      <div>
+        <h2 className="text-[clamp(28px,3.2vw,52px)] leading-[1.12] text-[#11c6c1] m-0">
+          <T>choose a tour that satisfies your soul</T>
+          <br className="hidden md:block" />
+        </h2>
 
-              <p className="mt-3  text-[15.5px] text-black max-w-[66ch] md:w-[75%] max-sm:mx-auto break-words">
-                At Mauritius Travel &amp; Tour, we take pride in offering a fleet  of vehicles that go beyond expectations —
-                combining  safety, comfort, and impeccable cleanliness to ensure  every ride is as reliable as it is
-                enjoyable.
-              </p>
-            </div>
+        <p className="mt-3 text-[15.5px] text-black max-w-[66ch] md:w-[75%] max-sm:mx-auto break-words">
+          <T>
+            at mauritius travel & tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+          </T>
+        </p>
+      </div>
 
-            {/* pills right */}
-            <div className="flex flex-col items-center md:pt-1">
-              <h3 className="text-[#0e4f53] text-[24px] font-medium mb-3 text-center"><T>Our Awesome Services</T></h3>
+      {/* pills right */}
+      <div className="flex flex-col items-center md:pt-1">
+        <h3 className="text-[#0e4f53] text-[24px] font-medium mb-3 text-center">
+          <T>Our Awesome Services</T>
+        </h3>
 
-              {/* first row */}
-              <div className="flex flex-wrap justify-center gap-8">
-                <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10">
-                  <T>Airport Transfer</T>
-                </button>
-                <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] ring-1 ring-[#0e4f53]/10">
-                  <T>Hotel Transfer</T>
-                </button>
-              </div>
-
-              {/* second row */}
-              <div className="mt-3 flex flex-wrap justify-center gap-8">
-                <button className="sm:w-44 w-36  rounded-full  py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] ring-1 ring-[#0e4f53]/10">
-                  <T>Excursion</T>
-                </button>
-                <button className="sm:w-44 w-36  rounded-full  py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] ring-1 ring-[#0e4f53]/10">
-                  <T>Door Step Service</T>
-                </button>
-              </div>
-            </div>
-          </div>
-
-
-
-          {/* cards — now clickable to /NorthTour */}
-          <div
-            className="
-    grid gap-6 sm:gap-7 grid-cols-1 md:grid-cols-2
-    xl:[grid-template-columns:var(--c1)_var(--c2)_var(--c3)_var(--c4)]
-    xl:[--c1:1.60fr] xl:[--c2:0.90fr] xl:[--c3:0.90fr] xl:[--c4:0.90fr]
-    xl:transition-all xl:duration-700 xl:ease-in-out
-
-    /* 2nd card hover → widen col2, shrink others */
-    xl:[&:has(>a:nth-child(2):hover)]:[--c1:0.90fr]
-    xl:[&:has(>a:nth-child(2):hover)]:[--c2:1.60fr]
-
-    /* 3rd card hover → widen col3, shrink others */
-    xl:[&:has(>a:nth-child(3):hover)]:[--c1:0.90fr]
-    xl:[&:has(>a:nth-child(3):hover)]:[--c3:1.60fr]
-
-    /* 4th card hover → widen col4, shrink others */
-    xl:[&:has(>a:nth-child(4):hover)]:[--c1:0.90fr]
-    xl:[&:has(>a:nth-child(4):hover)]:[--c4:1.60fr]
-  "
-          >
-            {[
-              { img: first, alt: "North Tour", title: "NORTH TOUR", href: "/NorthTour" },
-              { img: second, alt: "South Tour", title: "SOUTH TOUR", href: "/SouthTour" },
-              { img: third, alt: "East Tour", title: "EAST TOUR", href: "/EastTour" },
-              { img: fourth, alt: "West Tour", title: "WEST TOUR", href: "/WestTour" },
-            ].map((c, i) => (
-              <Link
-                key={i}
-                href={c.href}
-                aria-label={`Open ${c.alt}`}
-                className="group relative block
-        h-[500px] md:h-[550px] xl:h-[640px]
-        max-[480px]:h-[400px] max-[360px]:h-[350px]
-        rounded-[22px] overflow-hidden text-white
-        transition-all duration-[2500ms] ease-in-out
-        hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,.35)] focus:outline-none"
-              >
-                <Image
-                  src={c.img}
-                  alt={c.alt}
-                  fill
-                  className="object-cover transition-all duration-[2500ms] ease-in-out group-hover:scale-[1.08] group-hover:brightness-[1.08]"
-                  placeholder="blur"
-                />
-
-                {/* corner icon */}
-                <div className="absolute right-0 w-11 h-11 max-[360px]:w-9 max-[360px]:h-9
-          rounded-full grid place-items-center bg-[#0f2f33] text-[#e8ffff] ring-2 ring-white/20">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 max-[360px]:w-4 max-[360px]:h-4" viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M8 16 L16 8 M10 8h6v6"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-
-                {/* text */}
-                <div className="absolute inset-x-0 bottom-0 p-5 max-[360px]:p-4">
-                  <h3 className="m-0 mb-1 tracking-[.02em] text-[17px] font-semibold drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
-                    <T>{c.title}</T>
-                  </h3>
-                  <p className="m-0 text-[13.5px] leading-relaxed text-white/95 max-w-[36ch] drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
-                    <T>Welcome to Mauritius Travel &amp; Tours, your trusted partner for more than 10 years.</T>
-                  </p>
-
-                  {/* Read More */}
-                  <span className="mt-4 inline-block rounded-full px-4 py-2 text-[13px] text-white bg-gray-500/90 ring-1 ring-white/15 transition
-                duration-[2500ms] ease-in-out
-                group-hover:bg-gray-500 group-hover:shadow-[0_6px_20px_rgba(0,0,0,.35)]">
-                    <T>Read More</T> &#8250;
-                  </span>
-                </div>
-
-                <div className="absolute inset-0 ring-1 ring-white/10 rounded-[22px] pointer-events-none" />
-              </Link>
-            ))}
-          </div>
-
+        {/* first row */}
+        <div className="flex flex-wrap justify-center gap-8">
+          <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10">
+            <T>Airport Transfer</T>
+          </button>
+          <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] ring-1 ring-[#0e4f53]/10">
+            <T>Hotel Transfer</T>
+          </button>
         </div>
 
-      </section>
+        {/* second row */}
+        <div className="mt-3 flex flex-wrap justify-center gap-8">
+          <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] ring-1 ring-[#0e4f53]/10">
+            <T>Excursion</T>
+          </button>
+          <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] ring-1 ring-[#0e4f53]/10">
+            <T>Door Step Service</T>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    {/* cards — clickable links */}
+    <div
+      className="
+        grid gap-6 sm:gap-7 grid-cols-1 md:grid-cols-2
+        xl:[grid-template-columns:var(--c1)_var(--c2)_var(--c3)_var(--c4)]
+        xl:[--c1:1.60fr] xl:[--c2:0.90fr] xl:[--c3:0.90fr] xl:[--c4:0.90fr]
+        xl:transition-all xl:duration-700 xl:ease-in-out
+        xl:[&:has(>a:nth-child(2):hover)]:[--c1:0.90fr]
+        xl:[&:has(>a:nth-child(2):hover)]:[--c2:1.60fr]
+        xl:[&:has(>a:nth-child(3):hover)]:[--c1:0.90fr]
+        xl:[&:has(>a:nth-child(3):hover)]:[--c3:1.60fr]
+        xl:[&:has(>a:nth-child(4):hover)]:[--c1:0.90fr]
+        xl:[&:has(>a:nth-child(4):hover)]:[--c4:1.60fr]
+      "
+    >
+      {[
+        { img: first, alt: "North Tour", title: "NORTH TOUR", href: "/NorthTour" },
+        { img: second, alt: "South Tour", title: "SOUTH TOUR", href: "/SouthTour" },
+        { img: third, alt: "East Tour", title: "EAST TOUR", href: "/EastTour" },
+        { img: fourth, alt: "West Tour", title: "WEST TOUR", href: "/WestTour" },
+      ].map((c, i) => (
+        <Link
+          key={i}
+          href={c.href}
+          aria-label={`Open ${c.alt}`}
+          className="group relative block
+            h-[500px] md:h-[550px] xl:h-[640px]
+            max-[480px]:h-[400px] max-[360px]:h-[350px]
+            rounded-[22px] overflow-hidden text-white
+            transition-all duration-[2500ms] ease-in-out
+            hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,.35)] focus:outline-none"
+        >
+          <Image
+            src={c.img}
+            alt={c.alt}
+            fill
+            className="object-cover transition-all duration-[2500ms] ease-in-out group-hover:scale-[1.08] group-hover:brightness-[1.08]"
+            placeholder="blur"
+          />
+
+          {/* corner icon */}
+          <div className="absolute right-0 w-11 h-11 max-[360px]:w-9 max-[360px]:h-9 rounded-full grid place-items-center bg-[#0f2f33] text-[#e8ffff] ring-2 ring-white/20">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 max-[360px]:w-4 max-[360px]:h-4" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M8 16 L16 8 M10 8h6v6"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+
+          {/* text */}
+          <div className="absolute inset-x-0 bottom-0 p-5 max-[360px]:p-4">
+            <h3 className="m-0 mb-1 tracking-[.02em] text-[17px] font-semibold drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
+              <T>{c.title}</T>
+            </h3>
+            <p className="m-0 text-[13.5px] leading-relaxed text-white/95 max-w-[36ch] drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
+              <T>Welcome to Mauritius Travel &amp; Tours, your trusted partner for more than 10 years.</T>
+            </p>
+
+            {/* Read More */}
+            <span className="mt-4 inline-block rounded-full px-4 py-2 text-[13px] text-white bg-gray-500/90 ring-1 ring-white/15 transition duration-[2500ms] ease-in-out group-hover:bg-gray-500 group-hover:shadow-[0_6px_20px_rgba(0,0,0,.35)]">
+              <T>Read More</T> &#8250;
+            </span>
+          </div>
+
+          <div className="absolute inset-0 ring-1 ring-white/10 rounded-[22px] pointer-events-none" />
+        </Link>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Transfer Estimator */}
       <section
@@ -332,17 +323,21 @@ export default function HomePage() {
           </div>
 
           {/* left heading */}
-          <div style={{ textShadow: "0 2px 10px rgba(0,0,0,.45)" }}>
-            <h2 className="ml-0 md:ml-20 text-4xl md:text-5xl leading-[1.08] text-[#3fd0ca]">
-              <T>Choose a Tour that</T>
-              <br className="hidden md:block" /> satisfies your Soul
-            </h2>
-            <p className="mt-3 ml-0 md:ml-20 max-w-[520px] text-[15px] text-[#e6ffff]">
-              <T>At Mauritius Travel & Tour, we take great pride in maintaining  a fleet of vehicles that not only meet but
-                exceed </T>
-              <T> the highest standards of safety, cleanliness,  and reliability.</T>
-            </p>
-          </div>
+        <div style={{ textShadow: "0 2px 10px rgba(0,0,0,.45)" }}>
+  <h2 className="ml-0 md:ml-20 text-4xl md:text-5xl leading-[1.08] text-[#3fd0ca]">
+  <T>choose a tour that</T>
+  <br className="hidden md:block" />
+  <T>satisfies your soul</T>
+</h2>
+
+
+  <p className="mt-3 ml-0 md:ml-20 max-w-[520px] text-[15px] text-[#e6ffff]">
+    <T>
+      At Mauritius Travel & Tour, we take great pride in maintaining a fleet of vehicles that not only meet but exceed the highest standards of safety, cleanliness, and reliability.
+    </T>
+  </p>
+</div>
+
 
           {/* ticket bar */}
           <div className="relative mt-10">
@@ -355,12 +350,12 @@ export default function HomePage() {
                 {/* FROM (text, not dropdown) */}
                 <div className="">
                   <div className="flex flex-wrap items-center min-w-0 ml-0 md:ml-20 gap-2 text-[15px] sm:text-[16px] md:text-[18px] pl-3 md:pl-0 text-white">
-                    <span>From</span>
+                    <span><T>From</T></span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Image src={location} alt="" width={60} height={26} />
                     <div className="text-[20px] md:text-[22px] leading-none">
-                      <span className="opacity-95">Select Location</span>
+                      <span className="opacity-95"><T>Select Location</T></span>
                     </div>
                   </div>
                 </div>
@@ -373,12 +368,12 @@ export default function HomePage() {
                 {/* TO (text, not dropdown) */}
                 <div className="min-w-0">
                   <div className="flex flex-wrap items-center min-w-0 ml-0 md:ml-20 gap-2 text-[15px] sm:text-[16px] md:text-[18px] pl-6 md:pl-0 text-white">
-                    <span>To</span>
+                    <span><T>To</T></span>
                   </div>
                   <div className="flex items-center gap-3">
                     <Image src={location} alt="" width={60} height={26} />
                     <div className="text-[20px] md:text-[22px] leading-none">
-                      <span className="opacity-95">Select Location</span>
+                      <span className="opacity-95"><T>Select Location</T></span>
                     </div>
                   </div>
                 </div>
@@ -405,7 +400,7 @@ export default function HomePage() {
           {/* price chip */}
           <div className="mt-6 flex justify-center">
             <div className="rounded-full border border-white/35 bg-black/55 px-6 md:px-8 py-3 text-[16px] shadow-[0_6px_30px_rgba(0,0,0,.35)]">
-              Estimated Price – for upto 4 Persons
+              <T>Estimated Price – for upto 4 Persons</T>
             </div>
           </div>
         </div>
@@ -417,15 +412,15 @@ export default function HomePage() {
           {/* LEFT: heading + copy */}
           <div className="flex flex-col max-lg:justify-center" >
             <h2 className="m-0 text-4xl md:text-5xl leading-[1.05] text-[#35c9c3]">
-              Meet the Organizer
+              <T>Meet the Organizer</T>
               <br />
               <span className="text-[#35c9c3]">The Vision Behind It All</span>
             </h2>
 
             <p className="mt-4 max-w-[560px] ml-0 md:ml-3 text-[15px] leading-[1.09] text-[#1c2b2d]">
-              Behind every successful event is a passionate team working <br /> tirelessly to bring every detail to life.
-              Dedicated to excellence <br /> and creativity, our organizers ensure each moment runs <br /> smoothly and
-              leaves a lasting impression.
+              <T>Behind every successful event</T> <T> is a passionate team working </T> <br className="md:block hidden" /><T>tirelessly to bring every detail to life.</T> 
+              <T>Dedicated to excellence</T> <br className="md:block hidden" /> <T>and creativity, our organizers ensure each moment runs</T> <br /> <T>smoothly and
+              leaves a lasting impression.</T>
             </p>
           </div>
 

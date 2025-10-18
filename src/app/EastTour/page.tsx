@@ -16,6 +16,7 @@ import Link from "next/link";
 import { Instagram, Facebook, Music2 } from "lucide-react";
 import Navbar from "../Components/Navbar";
 import Join from "../Components/Join";
+import { T } from "@/lib/i18n-global";
 import Footer from "../Components/Footer";
 
 export default function HomePage() {
@@ -50,7 +51,7 @@ export default function HomePage() {
         <Image src={hero} alt="Mauritius aerial" fill priority className="object-cover absolute z-0" />
        <div className="relative z-10 flex w-[90%] max-w-[1300px] mx-auto items-end justify-center h-full">
           <div className="flex justify-center items-center flex-wrap gap-8 mb-24" >
-          <h1 className="md:text-6xl text-4xl text-white">Refresh Your Soul with <br /> Exclusive East Tours </h1>
+          <h1 className="md:text-6xl text-4xl text-white"><T>Refresh Your Soul with</T> <br /> <T>Exclusive East Tours</T> </h1>
           <a
   href="https://wa.me/23057526968?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20tours."
   target="_blank"
@@ -72,20 +73,21 @@ export default function HomePage() {
           <div className="grid gap-6 md:gap-4 md:grid-cols-2 xl:max-w-[1100px] max-w-[900px] mx-auto items-start mb-12">
             <div>
               <h2 className="text-[clamp(28px,3.2vw,52px)]   leading-[1.12] text-[#11c6c1] m-0">
-                Choose a Tour that<br className="hidden md:block" /> satisfies your Soul
+                <T>Choose a Tour that</T><br className="hidden md:block" /> <T>satisfies your Soul</T>
               </h2>
 
               {/* aligned like first page: center on small, preserve your layout on larger */}
               <p className="mt-3  text-[15.5px] text-black max-w-[66ch] md:w-[75%] max-sm:mx-auto break-words">
-                At Mauritius Travel &amp; Tour, we take pride in offering a fleet of vehicles that go beyond expectations — 
-                combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+               <T>
+                                           at mauritius travel & tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+                                         </T>
               </p>
             </div>
 
             {/* pills right */}
             <div className="lex flex-col items-center md:pt-1">
               <h3 className="text-[#0e4f53] text-[24px] font-medium mb-3 text-center">
-                Our Awesome Services
+                <T>Our Awesome Services</T>
               </h3>
 
               <div className="flex flex-wrap justify-center gap-8">
@@ -93,13 +95,13 @@ export default function HomePage() {
       className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10"
       onClick={() => router.push("/NorthTour")}
     >
-      North Tour
+      <T>North Tour</T>
     </button>
                 <button
       className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10"
       onClick={() => router.push("/SouthTour")}
     >
-      South Tour
+      <T>South Tour</T>
     </button>
               </div>
 
@@ -108,13 +110,13 @@ export default function HomePage() {
       className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#11c6c1] text-[#073436] shadow-sm ring-1 ring-[#0e4f53]/10"
       onClick={() => router.push("/EastTour")}
     >
-      East Tour
+      <T>East Tour</T>
     </button>
                   <button
       className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10"
       onClick={() => router.push("/WestTour")}
     >
-      West Tour
+      <T>West Tour</T>
     </button>
               </div>
             </div>
@@ -150,10 +152,10 @@ export default function HomePage() {
 
       <div className="relative z-[1] px-6 pb-6 flex flex-col justify-end h-full text-white">
         <h3 className="m-0 text-[20px] tracking-[.08em] font-semibold text-white/95">
-          {card.title}
+          <T>{card.title}</T>
         </h3>
 
-        <p className="mt-1 text-[15px] leading-5 text-white/90 max-w-[62ch]">{card.desc}</p>
+        <p className="mt-1 text-[15px] leading-5 text-white/90 max-w-[62ch]"><T>{card.desc}</T></p>
 
         <div className="mt-4 flex justify-center items-center gap-4 flex-wrap">
           {[

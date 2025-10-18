@@ -8,6 +8,7 @@ import { Instagram, Facebook, Music2 } from "lucide-react";
 import logo from "../../Assests/logo.jpeg";
 import call from "../../Assests/call.png";
 import e from "../../Assests/e.png";
+import { T } from "@/lib/i18n-global";
 
 export default function Footer() {
   return (
@@ -25,8 +26,8 @@ export default function Footer() {
       >
         {/* Left Section */}
         <div>
-          <h3 className="text-white text-2xl font-semibold mb-3">Keep in Touch</h3>
-          <h2 className="text-[#3ec6c3] text-3xl font-bold mb-4">Travel With Us</h2>
+          <h3 className="text-white text-2xl font-semibold mb-3"><T>Keep in Touch</T></h3>
+          <h2 className="text-[#3ec6c3] text-3xl font-bold mb-4"><T>Travel With Us</T></h2>
 
           <div className="flex items-center justify-center md:justify-start mb-4">
             <Image
@@ -39,9 +40,9 @@ export default function Footer() {
           </div>
 
           <p className="text-sm leading-5 text-white max-w-md mx-auto md:mx-0">
-            Welcome to Mauritius Travel & Tour, your trusted partner of <br /> more than 10 years in transportation services{" "}
-            <br /> across the breathtaking landscapes of Mauritius. <br /> With a commitment to exceptional service,{" "}
-            <br /> reliability, and passenger satisfaction, we stand as <br /> a leading taxi company.
+            <T>Welcome to Mauritius Travel & Tour, your trusted partner of</T> <br /> <T>more than 10 years in transportation services</T>{" "}
+            <br /> <T>across the breathtaking landscapes of Mauritius</T>. <br /> <T>With a commitment to exceptional service</T>,{" "}
+            <br /> <T>reliability, and passenger satisfaction, we stand as</T> <br /> <T>a leading taxi company</T>.
           </p>
 
           <div className="mt-5 flex items-center justify-center md:justify-start space-x-4">
@@ -62,33 +63,33 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div className="md:pt-3">
-          <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold">Quick Links</h4>
+          <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold"><T>Quick Links</T></h4>
           <ul className="space-y-2">
             <li>
-              <a href="#tours" className="hover:underline">Tour</a>
+              <a href="#tours" className="hover:underline"><T>Tour</T></a>
             </li>
             <li>
-              <a href="#transfer" className="hover:underline">Airport Transfer</a>
+              <a href="#transfer" className="hover:underline"><T>Airport Transfer</T></a>
             </li>
             <li>
-              <a href="#about" className="hover:underline">About</a>
+              <a href="#about" className="hover:underline"><T>About</T></a>
             </li>
           </ul>
         </div>
 
         {/* Support */}
         <div className="md:pt-3">
-          <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold">Support</h4>
+          <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold"><T>Support</T></h4>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:underline">Contact Us</a></li>
-            <li><a href="#" className="hover:underline">Privacy Policy</a></li>
-            <li><a href="#" className="hover:underline">Terms &amp; Conditions</a></li>
+            <li><a href="#" className="hover:underline"><T>Contact Us</T></a></li>
+            <li><a href="#" className="hover:underline"><T>Privacy Policy</T></a></li>
+            <li><a href="#" className="hover:underline"><T>Terms &amp; Conditions</T></a></li>
           </ul>
         </div>
 
         {/* Communication */}
         <div className="md:pt-3">
-          <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold">Communication</h4>
+          <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold"><T>Communication</T></h4>
           <ul className="space-y-2 whitespace-nowrap">
             <li>
               <span className="inline-flex items-center gap-2">

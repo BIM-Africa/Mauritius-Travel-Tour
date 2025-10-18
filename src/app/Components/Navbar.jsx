@@ -8,6 +8,7 @@ import call from "../../Assests/call.png";
 import e from "../../Assests/e.png";
 import whatsapp from "../../Assests/whatsapp.png";
 import logo from "../../Assests/logo.jpeg";
+import { T } from "@/lib/i18n-global";
 
 import { translateClient } from "@/lib/client-translate";
 
@@ -139,7 +140,7 @@ export default function Navbar() {
                 href="mailto:info@mauritiustraveltour.com"
                 className="text-white/90 hover:text-white transition"
               >
-                info@mauritiustraveltour.com
+                <T>info@mauritiustraveltour.com</T>
               </a>
             </div>
 
@@ -226,19 +227,19 @@ export default function Navbar() {
             {/* Desktop nav */}
             <nav className="hidden md:flex justify-center gap-4 lg:gap-[clamp(24px,5vw,48px)] font-medium">
               <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="/">
-                {labels.home}
+                <T>{labels.home}</T>
               </Link>
               <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="/About">
-                {labels.about}
+                <T>{labels.about}</T>
               </Link>
               <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="/#tours">
-                {labels.tours}
+                <T>{labels.tours}</T>
               </Link>
               <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="/#transfer">
-                {labels.transfers}
+                <T>{labels.transfers}</T>
               </Link>
               <Link className="md:px-2 py-1 rounded-md text-white/95 hover:bg-white/20" href="/ContactUs">
-                {labels.contact}
+                <T>{labels.contact}</T>
               </Link>
             </nav>
 

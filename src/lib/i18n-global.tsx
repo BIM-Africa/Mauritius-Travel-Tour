@@ -64,6 +64,343 @@ const GLOSSARY: Record<string, Partial<Record<Lang, string>>> = {
     ar: "يركّز فريقنا على الالتزام بالمواعيد والراحة وتسعير شفاف — استرخ واستمتع بالجزيرة ونحن نتولى الرحلة.",
     ur: "ہماری ٹیم وقت کی پابندی، آرام، اور شفاف قیمتوں پر مرکوز رہتی ہے — آپ سکون سے جزیرے سے لطف اٹھائیں، سفر ہم سنبھالتے ہیں۔",
   },
+   "home": {
+    "en": "Home",
+    "fr": "Accueil",
+    "ar": "الرئيسية",
+    "ur": "ہوم"
+  },
+  "about": {
+    "en": "About",
+    "fr": "À propos",
+    "ar": "حول",
+    "ur": "ہمارے بارے میں"
+  },
+  "tours": {
+    "en": "Tours",
+    "fr": "Excursions",
+    "ar": "الجولات",
+    "ur": "ٹورز"
+  },
+  "transfer": {
+    "en": "Transfer",
+    "fr": "Transfert",
+    "ar": "النقل",
+    "ur": "ٹرانسفر"
+  },
+  "contact": {
+    "en": "Contact",
+    "fr": "Contact",
+    "ar": "اتصل بنا",
+    "ur": "رابطہ"
+  },
+   "welcome to mauritius travel & tour, your trusted partner of": {
+    "en": "Welcome to Mauritius Travel & Tour, your trusted partner of",
+    "fr": "Bienvenue chez Mauritius Travel & Tour, votre partenaire de confiance de",
+    "ar": "مرحبًا بكم في Mauritius Travel & Tour، شريككم الموثوق به",
+    "ur": "موریشس ٹریول اینڈ ٹور میں خوش آمدید — آپ کا قابل اعتماد ساتھی"
+  },
+  "more than 10 years in transportation services": {
+    "en": "More than 10 years in transportation services",
+    "fr": "Plus de 10 ans dans les services de transport",
+    "ar": "أكثر من 10 سنوات في خدمات النقل",
+    "ur": "ٹرانسپورٹیشن سروسز میں 10 سال سے زیادہ"
+  },
+  "across the breathtaking landscapes of mauritius": {
+    "en": "Across the breathtaking landscapes of Mauritius",
+    "fr": "À travers les paysages à couper le souffle de l’île Maurice",
+    "ar": "عبر المناظر الخلابة في موريشيوس",
+    "ur": "موریشس کے حیرت انگیز مناظر کے پار"
+  },
+  "with a commitment to exceptional service": {
+    "en": "With a commitment to exceptional service",
+    "fr": "Avec un engagement envers un service exceptionnel",
+    "ar": "مع الالتزام بتقديم خدمة استثنائية",
+    "ur": "غیر معمولی خدمات کے لیے وابستگی کے ساتھ"
+  },
+  "reliability, and passenger satisfaction, we stand as": {
+    "en": "Reliability, and passenger satisfaction, we stand as",
+    "fr": "Fiabilité et satisfaction des passagers, nous nous positionnons comme",
+    "ar": "الاعتمادية ورضا الركاب، نحن نعمل كـ",
+    "ur": "اعتبار اور مسافر کی اطمینان کے ساتھ، ہم کھڑے ہیں بطور"
+  },
+  "a leading taxi company": {
+    "en": "A leading taxi company",
+    "fr": "Une compagnie de taxi de premier plan",
+    "ar": "شركة تاكسي رائدة",
+    "ur": "ایک معروف ٹیکسی کمپنی"
+  },
+   "keep in touch": {
+    "en": "Keep in Touch",
+    "fr": "Restez en contact",
+    "ar": "ابق على تواصل",
+    "ur": "رابطے میں رہیں"
+  },
+  "travel with us": {
+    "en": "Travel With Us",
+    "fr": "Voyagez avec nous",
+    "ar": "سافر معنا",
+    "ur": "ہمارے ساتھ سفر کریں"
+  },
+  "quick links": {
+    "en": "Quick Links",
+    "fr": "Liens rapides",
+    "ar": "روابط سريعة",
+    "ur": "فوری روابط"
+  },
+  "tour": {
+    "en": "Tour",
+    "fr": "Excursion",
+    "ar": "جولة",
+    "ur": "ٹور"
+  },
+  "airport transfer": {
+    "en": "Airport Transfer",
+    "fr": "Transfert aéroport",
+    "ar": "نقل المطار",
+    "ur": "ایئرپورٹ ٹرانسفر"
+  },
+  "about": {
+    "en": "About",
+    "fr": "À propos",
+    "ar": "حول",
+    "ur": "ہمارے بارے میں"
+  },
+  "support": {
+    "en": "Support",
+    "fr": "Support",
+    "ar": "الدعم",
+    "ur": "مدد"
+  },
+  "contact us": {
+    "en": "Contact Us",
+    "fr": "Contactez-nous",
+    "ar": "اتصل بنا",
+    "ur": "ہم سے رابطہ کریں"
+  },
+  "privacy policy": {
+    "en": "Privacy Policy",
+    "fr": "Politique de confidentialité",
+    "ar": "سياسة الخصوصية",
+    "ur": "رازداری کی پالیسی"
+  },
+  "terms & conditions": {
+    "en": "Terms & Conditions",
+    "fr": "Termes et conditions",
+    "ar": "الأحكام والشروط",
+    "ur": "شرائط و ضوابط"
+  },
+  "communication": {
+    "en": "Communication",
+    "fr": "Communication",
+    "ar": "الاتصال",
+    "ur": "رابطہ"
+  },
+  "choose a tour that": {
+  "en": "Choose a Tour that",
+  "fr": "Choisissez une excursion qui",
+  "ar": "اختر جولة",
+  "ur": "ایسا ٹور چُنیں جو"
+},
+"satisfies your soul": {
+  "en": "satisfies your Soul",
+  "fr": "ravit votre âme",
+  "ar": "تُرضي روحك",
+  "ur": "دل کو بھائے"
+
+  },
+  "refresh your soul with": {
+  "en": "Refresh Your Soul with",
+  "fr": "Rafraîchissez votre âme avec",
+  "ar": "انعش روحك مع",
+  "ur": "اپنی روح کو تازگی دیں"
+},
+"exclusive north tours": {
+  "en": "Exclusive North Tours",
+  "fr": "Excursions exclusives au nord",
+  "ar": "جولات شمالية حصرية",
+  "ur": "خصوصی شمالی ٹورز"
+}
+,
+"package 1: north tour 1": {
+  "en": "Package 1: North Tour 1",
+  "fr": "Forfait 1 : Circuit Nord 1",
+  "ar": "الباقة 1: الجولة الشمالية 1",
+  "ur": "پیکیج 1: شمالی ٹور 1"
+}
+,
+"package 2: north tour 2": {
+  "en": "Package 2: North Tour 2",
+  "fr": "Forfait 2 : Circuit Nord 2",
+  "ar": "الباقة 2: الجولة الشمالية 2",
+  "ur": "پیکیج 2: شمالی ٹور 2"
+}
+,
+ "pamplemousses botanical garden": {
+    "en": "Pamplemousses Botanical Garden in Mauritius, established in the 18th century, spans 60 acres with diverse flora. Highlights include giant water lilies, rare palms.",
+    "fr": "Jardin botanique de Pamplemousses à Maurice, établi au XVIIIe siècle, s'étend sur 60 acres avec une flore diversifiée. Les points forts incluent des nénuphars géants et des palmiers rares.",
+    "ar": "حديقة بامبلموس النباتية في موريشيوس، تأسست في القرن الثامن عشر، تمتد على 60 فدانًا وتحتوي على نباتات متنوعة. تتضمن المعالم زهور زنبق مائية عملاقة ونخيل نادر.",
+    "ur": "پیمپلماس بوٹینیکل گارڈن، ماریشس میں، 18ویں صدی میں قائم ہوا، یہ 60 ایکڑ پر محیط ہے اور مختلف قسم کے پودوں پر مشتمل ہے۔ اہم خصوصیات میں دیو قامت پانی کے کنول اور نایاب کھجور کے درخت شامل ہیں۔"
+  },
+  "grand baie bazar": {
+    "en": "Grand Baie Bazaar is a lively market blending local crafts, textiles, and souvenirs. Colorful stalls, spices, and unique finds in a vibrant atmosphere.",
+    "fr": "Grand Baie Bazar est un marché vivant mêlant artisanat local, textiles et souvenirs. Stands colorés, épices et trouvailles uniques dans une ambiance animée.",
+    "ar": "بازار غراند باي هو سوق حيوي يجمع بين الحرف المحلية والمنسوجات والهدايا التذكارية. أكشاك ملونة، وتوابل، وعثور على قطع فريدة في أجواء نابضة بالحياة.",
+    "ur": "گرینڈ بائی بازار ایک پرجوش مارکیٹ ہے جو مقامی دستکاری، کپڑے اور یادگار اشیاء کو یکجا کرتی ہے۔ رنگین اسٹال، مصالحہ جات اور منفرد چیزیں متحرک ماحول میں۔"
+  },
+   "pricing": {
+    "en": "Pricing ",
+    "fr": "Tarifs –",
+    "ar": "التسعير –",
+    "ur": "قیمتیں –"
+  },
+  "as from rs 3000": {
+    "en": "As from Rs 3000",
+    "fr": "À partir de 3000 Rs",
+    "ar": "ابتداءً من 3000 روبية",
+    "ur": "شروع 3000 روپے سے"
+  },
+  "travel members 1–4 persons": {
+    "en": "Travel Members 1–4 persons",
+    "fr": "Membres voyage 1–4 personnes",
+    "ar": "عدد المسافرين 1–4 أشخاص",
+    "ur": "سفر کرنے والے افراد 1–4"
+  },
+  "timing 2.5 hrs": {
+    "en": "Timing 2.5 hrs",
+    "fr": "Durée 2,5 heures",
+    "ar": "المدة 2.5 ساعة",
+    "ur": "وقت: 2.5 گھنٹے"
+  },
+  "get details & pricing": {
+    "en": "Get Details & Pricing",
+    "fr": "Voir détails et tarifs",
+    "ar": "الحصول على التفاصيل والأسعار",
+    "ur": "تفصیلات اور قیمتیں دیکھیں"
+  },
+  "place | place | place": {
+    "en": "Place | Place | Place",
+    "fr": "Lieu | Lieu | Lieu",
+    "ar": "المكان | المكان | المكان",
+    "ur": "جگہ | جگہ | جگہ"
+  },
+  "dreamy mauritius": {
+    "en": "Dreamy Mauritius",
+    "fr": "Île Maurice de rêve",
+    "ar": "موريشيوس الحالمة",
+    "ur": "خوابوں جیسا موریشس"
+  },
+  "as from rs 3000 per trip": {
+    "en": "As from Rs 3000 per trip",
+    "fr": "À partir de 3000 Rs par trajet",
+    "ar": "ابتداءً من 3000 روبية لكل رحلة",
+    "ur": "فی سفر 3000 روپے سے"
+  },
+  "Pick-up from any hotel/residence in the morning": {
+  "en": "Pick-up from any hotel/residence in the morning",
+  "fr": "Prise en charge depuis n'importe quel hôtel/résidence le matin",
+  "ar": "الاستقبال من أي فندق أو إقامة في الصباح",
+  "ur": "صبح کے وقت کسی بھی ہوٹل یا رہائش گاہ سے پک اپ"
+},
+
+"Visit Pamplemousses Botanical Garden": {
+  "en": "Visit Pamplemousses Botanical Garden",
+  "fr": "Visite du Jardin Botanique de Pamplemousses",
+  "ar": "زيارة حديقة بامبلموس النباتية",
+  "ur": "پامپلموسس بوٹینیکل گارڈن کی سیر"
+},
+
+"Visit Aventure du Sucre Museum": {
+  "en": "Visit Aventure du Sucre Museum",
+  "fr": "Visite du musée L'Aventure du Sucre",
+  "ar": "زيارة متحف أفينتور دو سوكر",
+  "ur": "ایونچر دو سوکر میوزیم کا دورہ"
+},
+
+"Visit Grand Baie Bazar": {
+  "en": "Visit Grand Baie Bazar",
+  "fr": "Visite du Bazar de Grand Baie",
+  "ar": "زيارة بازار غراند باي",
+  "ur": "گرینڈ بے بازار کا دورہ"
+},
+
+"Sea Turtle sighting at Trou aux Biches Beach": {
+  "en": "Sea Turtle sighting at Trou aux Biches Beach",
+  "fr": "Observation des tortues de mer à la plage de Trou aux Biches",
+  "ar": "مشاهدة السلاحف البحرية في شاطئ ترو أو بيتش",
+  "ur": "ٹرو او بیشس بیچ پر سمندری کچھوؤں کا مشاہدہ"
+},
+
+"Visit the Red Church at Cap Malheureux": {
+  "en": "Visit the Red Church at Cap Malheureux",
+  "fr": "Visite de l'église rouge à Cap Malheureux",
+  "ar": "زيارة الكنيسة الحمراء في كاب مالوريو",
+  "ur": "کیپ میلہیورے میں ریڈ چرچ کی زیارت"
+},
+
+"Drop-off at hotel/residence": {
+  "en": "Drop-off at hotel/residence",
+  "fr": "Dépôt à l'hôtel/résidence",
+  "ar": "التوصيل إلى الفندق أو مكان الإقامة",
+  "ur": "ہوٹل یا رہائش گاہ پر واپسی"
+}
+,
+"PLACES TO VISIT": {
+  "en": "PLACES TO VISIT",
+  "fr": "LIEUX À VISITER",
+  "ar": "أماكن للزيارة",
+  "ur": "دیکھنے کی جگہیں"
+}
+,
+"Tour Availability: Daily": {
+  "en": "Tour Availability: Daily",
+  "fr": "Disponibilité du circuit: Quotidienne",
+  "ar": "توافر الجولة: يوميًا",
+  "ur": "ٹور کی دستیابی: روزانہ"
+}
+,
+"Tour Duration: 8 Hours (Day Tour)": {
+  "en": "Tour Duration: 8 Hours (Day Tour)",
+  "fr": "Durée du circuit: 8 heures (visite de jour)",
+  "ar": "مدة الجولة: 8 ساعات (جولة نهارية)",
+  "ur": "ٹور کا دورانیہ: 8 گھنٹے (دن کا ٹور)"
+}
+,
+"With our flexible Pick-Up time you can start your adventure anytime between 8:30 Am to 10:00 Am": {
+  "en": "With our flexible Pick-Up time you can start your adventure anytime between 8:30 Am to 10:00 Am",
+  "fr": "Avec notre horaire de prise en charge flexible, vous pouvez commencer votre aventure à tout moment entre 8h30 et 10h00",
+  "ar": "بفضل وقت الالتقاط المرن لدينا، يمكنك بدء مغامرتك في أي وقت بين الساعة 8:30 صباحًا و10:00 صباحًا",
+  "ur": "ہمارے لچکدار پک اپ وقت کے ساتھ، آپ صبح 8:30 سے 10:00 کے درمیان اپنی ایڈونچر شروع کر سکتے ہیں"
+},
+"AVENTURE DU SUCRE": {
+  "en": "Aventure du Sucre",
+  "fr": "Aventure du Sucre",
+  "ar": "متحف أفينتور دو سوكر",
+  "ur": "ایونچر دو سوکر"
+},
+"Pamplemousses Garden of Mauritius": {
+  "en": "Pamplemousses Garden of Mauritius",
+  "fr": "Jardin de Pamplemousses de Maurice",
+  "ar": "حديقة بامبلموس في موريشيوس",
+  "ur": "پامپلموسس گارڈن آف ماریشس"
+}
+,
+
+"Free Wi-Fi available in Vehicle": {
+  "en": "Free Wi-Fi available in Vehicle",
+  "fr": "Wi-Fi gratuit disponible dans le véhicule",
+  "ar": "تتوفر خدمة الواي فاي المجانية في المركبة",
+  "ur": "گاڑی میں مفت وائی فائی دستیاب ہے"
+},
+"CHATEAU DE LABOURDONNAIS": {
+  "en": "Château de Labourdonnais",
+  "fr": "Château de Labourdonnais",
+  "ar": "قصر لابوردونيه",
+  "ur": "شیٹو ڈی لابوردونیس"
+}
+,
+
+
 
   // Promos / service lines
   "choose a tour that satisfies your soul": { en: "Choose a Tour that satisfies your Soul", fr: "Choisissez une excursion qui ravit votre âme", ar: "اختر جولة تُرضي روحك", ur: "ایسا ٹور چُنیں جو دل کو بھائے" },
@@ -90,14 +427,83 @@ const GLOSSARY: Record<string, Partial<Record<Lang, string>>> = {
     ar: "مرحبًا بكم في Mauritius Travel & Tours شريككم الموثوق لأكثر من 10 سنوات.",
     ur: "موریشس ٹریول اینڈ ٹورز میں خوش آمدید — 10 سال سے زیادہ عرصے سے آپ کا قابلِ اعتماد ساتھی۔",
   },
-  "read more": { en: "Read More", fr: "En savoir plus", ar: "اقرأ المزيد", ur: "مزید پڑھیں" },
-  "customised transfer options available as per your needs": { en: "Customised transfer options available as per your needs", fr: "Des options de transfert personnalisées selon vos besoins", ar: "خيارات نقل مخصصة بحسب احتياجاتك", ur: "آپ کی ضروریات کے مطابق کسٹمائزڈ ٹرانسفر آپشنز دستیاب" },
-  "we can arrange transfers for larger groups or multiple vehicles": { en: "We can arrange transfers for larger groups or multiple vehicles", fr: "Nous pouvons organiser des transferts pour des groupes plus nombreux ou plusieurs véhicules", ar: "نستطيع ترتيب نقل للمجموعات الكبيرة أو عدة مركبات", ur: "بڑی گروپس یا متعدد گاڑیوں کے لیے بھی ٹرانسفر کا انتظام ممکن ہے" },
+  "read more": { 
+  en: "Read More", 
+  fr: "En savoir plus", 
+  ar: "اقرأ المزيد", 
+  ur: "مزید پڑھیں" 
+},
+"package 1: east tour 1": {
+  "en": "Package 1: East Tour 1",
+  "fr": "Forfait 1 : Circuit Est 1",
+  "ar": "الباقة 1: جولة الشرق 1",
+  "ur": "پیکیج 1: ایسٹ ٹور 1"
+},
+"package 2: east tour 2": {
+  "en": "Package 2: East Tour 2",
+  "fr": "Forfait 2 : Circuit Est 2",
+  "ar": "الباقة 1: جولة الشرق 2",
+  "ur": "پیکیج 1: ایسٹ ٹور 2"
+},
+
+"Sail to Ile aux Cerfs by catamaran in Mauritius for a leisurely and scenic adventure. Enjoy the gentle sway of the boat, turquoise waters, and the beauty of this island haven.": {
+  "en": "Sail to Ile aux Cerfs by catamaran in Mauritius for a leisurely and scenic adventure. Enjoy the gentle sway of the boat, turquoise waters, and the beauty of this island haven.",
+  "fr": "Naviguez jusqu'à l'île aux Cerfs en catamaran à l'île Maurice pour une aventure paisible et pittoresque. Profitez du doux balancement du bateau, des eaux turquoise et de la beauté de ce havre insulaire.",
+  "ar": "أبحر إلى جزيرة إيل أو سيرف في موريشيوس على متن كاتاماران في مغامرة هادئة ومناظر خلابة. استمتع بتمايل القارب اللطيف، والمياه الفيروزية، وجمال هذا الملاذ الجزيري.",
+  "ur": "ماریشس میں کیٹاماران کے ذریعے آئیل او سیرفس کے لیے ایک پُرسکون اور خوبصورت مہم پر روانہ ہوں۔ کشتی کے نرم جھول، فیروزی پانیوں اور اس جزیرے کی دلکش خوبصورتی کا لطف اٹھائیں۔"
+}
+,
+"customised transfer options available as per your needs": { 
+  en: "Customised transfer options available as per your needs", 
+  fr: "Des options de transfert personnalisées selon vos besoins", 
+  ar: "خيارات نقل مخصصة بحسب احتياجاتك", 
+  ur: "آپ کی ضروریات کے مطابق کسٹمائزڈ ٹرانسفر آپشنز دستیاب" 
+},
+
+"we can arrange transfers for larger groups or multiple vehicles": { 
+  en: "We can arrange transfers for larger groups or multiple vehicles", 
+  fr: "Nous pouvons organiser des transferts pour des groupes plus nombreux ou plusieurs véhicules", 
+  ar: "نستطيع ترتيب نقل للمجموعات الكبيرة أو عدة مركبات", 
+  ur: "بڑی گروپس یا متعدد گاڑیوں کے لیے بھی ٹرانسفر کا انتظام ممکن ہے" 
+},
+
+"Choose a tour that satisfies your soul": { en: "Choose a Tour that satisfies your Soul", fr: "Choisissez une excursion qui ravit votre âme", ar: "اختر جولة تُرضي روحك", ur: "ایسا ٹور چُنیں جو دل کو بھائے"
+},
+"at mauritius travel & tour, we take great pride in maintaining a fleet of vehicles that not only meet but exceed the highest standards of safety, cleanliness, and reliability.": {
+  en: "At Mauritius Travel & Tour, we take great pride in maintaining a fleet of vehicles that not only meet but exceed the highest standards of safety, cleanliness, and reliability.",
+  fr: "Chez Mauritius Travel & Tour, nous sommes fiers d'entretenir une flotte de véhicules qui non seulement répondent mais dépassent les normes les plus élevées en matière de sécurité, de propreté et de fiabilité.",
+  ar: "في Mauritius Travel & Tour، نفخر بالحفاظ على أسطول من المركبات لا يفي فقط بل يتجاوز أعلى معايير السلامة والنظافة والموثوقية.",
+  ur: "موریشس ٹریول اینڈ ٹور میں ہم اس بات پر فخر کرتے ہیں کہ ہمارے پاس گاڑیوں کا ایسا فلیٹ ہے جو نہ صرف اعلیٰ معیارِ حفاظت، صفائی اور اعتبار پر پورا اترتا ہے بلکہ ان سے بڑھ کر ہے۔"
+}
+
+,
 
   // Quick widget lines
-  "from select location": { en: "From Select Location", fr: "Depuis lieu de prise en charge", ar: "من موقع الالتقاط", ur: "فرام سیلیکٹ لوکیشن" },
-  "to select location": { en: "To Select Location", fr: "Vers lieu de dépose", ar: "إلى موقع الوصول", ur: "ٹو سیلیکٹ لوکیشن" },
-  "estimated price – for upto 4 persons": { en: "Estimated Price – for upto 4 Persons", fr: "Prix estimé — jusqu’à 4 personnes", ar: "السعر التقديري — حتى 4 أشخاص", ur: "متوقع قیمت — 4 افراد تک" },
+  "from": {
+  en: "From",
+  fr: "Depuis",
+  ar: "من",
+  ur: "فرام"
+},
+"to": {
+  en: "To",
+  fr: "Vers",
+  ar: "إلى",
+  ur: "ٹو"
+},
+"select location": {
+  en: "Select Location",
+  fr: "lieu de prise en charge", // for "From Select Location" you may adjust if needed
+  ar: "موقع الالتقاط",           // for "From Select Location"
+  ur: "سیلیکٹ لوکیشن"
+},
+"estimated price – for upto 4 persons": {
+  en: "Estimated Price – for upto 4 Persons",
+  fr: "Prix estimé — jusqu’à 4 personnes",
+  ar: "السعر التقديري — حتى 4 أشخاص",
+  ur: "تخمینی قیمت — 4 افراد تک"
+}
+,
 
   // Organizer block
   "meet the organizer": { en: "Meet the Organizer", fr: "Rencontrez l’organisateur", ar: "تعرّف على المنظم", ur: "آرگنائزر سے ملیں" },
@@ -106,13 +512,182 @@ const GLOSSARY: Record<string, Partial<Record<Lang, string>>> = {
     fr: "Derrière chaque événement réussi, une équipe passionnée travaille sans relâche pour donner vie à chaque détail.",
     ar: "خلف كل حدث ناجح فريق شغوف يعمل بلا كلل لإحياء كل تفصيلة.",
     ur: "ہر کامیاب ایونٹ کے پیچھے ایک پُرجوش ٹیم ہوتی ہے جو ہر جزئیات کو حقیقت بنانے کے لیے انتھک محنت کرتی ہے۔",
+    
   },
-  "dedicated to excellence and creativity, our organizers ensure each moment runs smoothly and leaves a lasting impression.": {
-    en: "Dedicated to excellence and creativity, our organizers ensure each moment runs smoothly and leaves a lasting impression.",
-    fr: "Dévoués à l’excellence et à la créativité, nos organisateurs veillent au bon déroulement de chaque instant et à une impression durable.",
-    ar: "مكرّسون للتميز والإبداع يضمن منظّمونا سلاسة كل لحظة وترك انطباع دائم.",
-    ur: "ہمارے آرگنائزر بہترین معیار اور تخلیقیت کے لیے وقف ہیں—ہر لمحہ رواں اور دیرپا تاثر چھوڑنے کو یقینی بناتے ہیں۔",
+  "behind every successful event": {
+  en: "Behind every successful event",
+  fr: "Derrière chaque événement réussi",
+  ar: "وراء كل حدث ناجح",
+  ur: "ہر کامیاب ایونٹ کے پیچھے"
+},
+"is a passionate team working": {
+  en: "is a passionate team working",
+  fr: "est une équipe passionnée travaillant",
+  ar: "فريق شغوف يعمل",
+  ur: "ایک پرجوش ٹیم کام کر رہی ہے"
+},
+"tirelessly to bring every detail to life.": {
+  en: "tirelessly to bring every detail to life.",
+  fr: "sans relâche pour donner vie à chaque détail.",
+  ar: "بلا كلل لإحياء كل تفصيل.",
+  ur: "ہر تفصیل کو زندگی دینے کے لیے انتھک محنت کرتی ہے۔"
+},
+"dedicated to excellence": {
+  en: "Dedicated to excellence",
+  fr: "Dévoués à l’excellence",
+  ar: "مكرّسون للتميز",
+  ur: "بہترین معیار کے لیے وقف"
+},
+"and creativity, our organizers ensure each moment runs": {
+  en: "and creativity, our organizers ensure each moment runs",
+  fr: "et à la créativité, nos organisateurs veillent au bon déroulement de chaque instant",
+  ar: "والإبداع يضمن منظّمونا سلاسة كل لحظة",
+  ur: "اور تخلیقیت، ہمارے آرگنائزر ہر لمحہ رواں بناتے ہیں"
+},
+"smoothly and leaves a lasting impression.": {
+  en: "smoothly and leaves a lasting impression.",
+  fr: "et laissent une impression durable.",
+  ar: "ويترك انطباعًا دائمًا.",
+  ur: "اور دیرپا تاثر چھوڑتا ہے۔"
+}
+
+,
+"want to join us": {
+  en: "Want to Join Us",
+  fr: "Voulez-vous nous rejoindre",
+  ar: "هل ترغب في الانضمام إلينا",
+  ur: "کیا آپ ہمارے ساتھ شامل ہونا چاہتے ہیں"
+},
+"have customised requests?": {
+  en: "Have customised requests?",
+  fr: "Avez-vous des demandes personnalisées ?",
+  ar: "هل لديك طلبات مخصصة؟",
+  ur: "کیا آپ کے پاس حسب ضرورت درخواستیں ہیں؟"
+},
+"leave a request": {
+  en: "Leave a request",
+  fr: "Laissez une demande",
+  ar: "اترك طلبًا",
+  ur: "ایک درخواست چھوڑیں"
+},
+"whatsapp us": {
+  en: "Whatsapp Us",
+  fr: "Contactez-nous sur Whatsapp",
+  ar: "راسلنا على واتساب",
+  ur: "ہمارے ساتھ واٹس ایپ کریں"
+},
+"fast responses": {
+  en: "Fast responses – ",
+  fr: "Réponses rapides ",
+  ar: "ردود سريعة –.",
+  ur: "فوری جوابات –"
+},
+"we reply promptly during our working hours": {
+  en: "We reply promptly during our working hours.",
+  fr: "Nous répondons rapidement pendant nos heures de travail.",
+  ar: "نرد على الفور خلال ساعات العمل.",
+  ur: "ہم اپنے کام کے اوقات کے دوران فوری جواب دیتے ہیں۔"
+}
+,
+"personalised service – tailored transfers and tours to suit your needs.": {
+  en: "Personalised service – Tailored transfers and tours to suit your needs.",
+  fr: "Service personnalisé – Transferts et excursions adaptés à vos besoins.",
+  ar: "خدمة شخصية – رحلات وتحويلات مصممة حسب احتياجاتك.",
+  ur: "ذاتی خدمات – آپ کی ضروریات کے مطابق ٹرانسفر اور ٹورز۔"
+}
+,
+"Friendly support – Experienced driver ready to assist and guide you": {
+  "en": "Friendly support – Experienced driver ready to assist and guide you",
+  "fr": "Support amical – Chauffeur expérimenté prêt à vous aider et vous guider",
+  "ar": "دعم ودود – سائق متمرس جاهز للمساعدة والإرشاد",
+  "ur": "دوستانہ مدد – تجربہ کار ڈرائیور آپ کی رہنمائی اور مدد کے لیے تیار"
+}
+,
+"flexible options": {
+  en: "Flexible options – We arrange tours and transfers for all groups.",
+  fr: "Options flexibles – Nous organisons des visites et transferts pour tous les groupes.",
+  ar: "خيارات مرنة – نحن نرتب الجولات والنقل لجميع المجموعات.",
+  ur: "لچکدار اختیارات – ہم ہر گروپ کے لیے ٹور اور ٹرانسفر کا انتظام کرتے ہیں۔"
+}
+,
+"– We arrange tours and transfers for all groups.": {
+  "en": "– We arrange tours and transfers for all groups.",
+  "fr": "– Nous organisons des visites et transferts pour tous les groupes.",
+  "ar": "– نحن نرتب الجولات والنقل لجميع المجموعات.",
+  "ur": "– ہم ہر گروپ کے لیے ٹور اور ٹرانسفر کا انتظام کرتے ہیں۔"
+}
+,
+"TOUR DESCRIPTION": {
+  "en": "TOUR DESCRIPTION",
+  "fr": "DESCRIPTION DU CIRCUIT",
+  "ar": "وَصْفُ الجَوْلَة",
+  "ur": "ٹور کی تفصیل"
+}
+,
+"ADDITIONAL DETAILS": {
+  "en": "ADDITIONAL DETAILS",
+  "fr": "DÉTAILS SUPPLÉMENTAIRES",
+  "ar": "تفاصيل إضافية",
+  "ur": "اضافی تفصیلات"
+},
+"Payment can be made in cash to the driver in MUR, USD or EUR": {
+    "en": "Payment can be made in cash to the driver in MUR, USD or EUR",
+    "fr": "Le paiement peut être effectué en espèces au chauffeur en MUR, USD ou EUR",
+    "ar": "يمكن الدفع نقدًا للسائق بالروبية الموريشيوسية أو الدولار الأمريكي أو اليورو",
+    "ur": "ادائیگی نقدی طور پر ڈرائیور کو MUR، USD یا EUR میں کی جا سکتی ہے"
   },
+
+  "Pricing is per vehicle, not per person.": {
+    "en": "Pricing is per vehicle, not per person.",
+    "fr": "Le tarif est par véhicule, pas par personne.",
+    "ar": "التسعير لكل مركبة، وليس لكل شخص.",
+    "ur": "قیمت فی گاڑی ہے، فی فرد نہیں۔"
+  },
+
+  "Full-day transportation to all the places mentioned above.": {
+    "en": "Full-day transportation to all the places mentioned above.",
+    "fr": "Transport d'une journée complète vers tous les endroits mentionnés ci-dessus.",
+    "ar": "نقل طوال اليوم إلى جميع الأماكن المذكورة أعلاه.",
+    "ur": "پورے دن کی ٹرانسپورٹ تمام مذکورہ جگہوں کے لیے۔"
+  },
+
+  "A friendly English/French speaking driver will provide you valuable information during travels.": {
+    "en": "A friendly English/French speaking driver will provide you valuable information during travels.",
+    "fr": "Un chauffeur sympathique parlant anglais/français vous fournira des informations utiles pendant le voyage.",
+    "ar": "سيوفر لك سائق ودود يتحدث الإنجليزية/الفرنسية معلومات قيمة أثناء الرحلة.",
+    "ur": "ایک دوستانہ انگریزی/فرانسیسی بولنے والا ڈرائیور سفر کے دوران آپ کو قیمتی معلومات فراہم کرے گا۔"
+  },
+
+  "Entry ticket fees not included.": {
+    "en": "Entry ticket fees not included.",
+    "fr": "Les frais de billet d'entrée ne sont pas inclus.",
+    "ar": "رسوم تذاكر الدخول غير مشمولة.",
+    "ur": "داخلے کے ٹکٹ کی فیس شامل نہیں۔"
+  },
+
+  "When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.": {
+    "en": "When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.",
+    "fr": "Pour le déjeuner, soyez assuré que votre chauffeur vous recommandera les meilleurs restaurants locaux en chemin, afin que vous puissiez déguster une délicieuse cuisine.",
+    "ar": "فيما يتعلق بالغداء، كن مطمئنًا أن سائقك سيقترح عليك أفضل المطاعم المحلية على الطريق لضمان تذوقك لأشهى الأطباق.",
+    "ur": "دوپہر کے کھانے کے لیے بے فکر رہیں، آپ کا ڈرائیور راستے میں بہترین مقامی ریستوران تجویز کرے گا تاکہ آپ مزیدار کھانوں کا لطف اٹھا سکیں۔"
+  },
+
+  "Arrangements can be made with your driver if you want to combine 2 packages.": {
+    "en": "Arrangements can be made with your driver if you want to combine 2 packages.",
+    "fr": "Des arrangements peuvent être faits avec votre chauffeur si vous souhaitez combiner 2 forfaits.",
+    "ar": "يمكن ترتيب الأمور مع سائقك إذا كنت ترغب في دمج حزمتين.",
+    "ur": "اگر آپ دو پیکجز کو ملا کر لینا چاہتے ہیں تو ڈرائیور کے ساتھ انتظام کیا جا سکتا ہے۔"
+  },
+
+  "NOTE: 15 and 30 seaters available.": {
+    "en": "NOTE: 15 and 30 seaters available.",
+    "fr": "REMARQUE : 15 et 30 places disponibles.",
+    "ar": "ملاحظة: تتوفر حافلات تتسع لـ 15 و30 راكبًا.",
+    "ur": "نوٹ: 15 اور 30 سیٹر گاڑیاں دستیاب ہیں۔"
+  },
+  
+
+
   "adil & group": { en: "ADIL & GROUP", fr: "ADIL & GROUPE", ar: "أديل & المجموعة", ur: "عدیل اینڈ گروپ" },
 
   // North tours promo
@@ -126,6 +701,7 @@ const GLOSSARY: Record<string, Partial<Record<Lang, string>>> = {
 
   // Package & pricing
   "package 1": { en: "Package 1", fr: "Forfait 1", ar: "الباقة 1", ur: "پیکیج 1" },
+  "package 2": { en: "Package 2", fr: "Forfait 2", ar: "الباقة 2", ur: "پیکیج 2" },
   "dreamy mauritius": { en: "Dreamy Mauritius", fr: "Île Maurice de rêve", ar: "موريشيوس الحالمة", ur: "ڈریمی ماریشس" },
   "as from rs 3000 per trip": { en: "As from Rs 3000 per trip", fr: "À partir de Rs 3000 par trajet", ar: "ابتداءً من 3000 روبية للرحلة", ur: "فی سفر 3000 روپے سے" },
   "places to visit": { en: "PLACES TO VISIT", fr: "LIEUX À VISITER", ar: "أماكن للزيارة", ur: "دیکھنے کی جگہیں" },
@@ -137,6 +713,52 @@ const GLOSSARY: Record<string, Partial<Record<Lang, string>>> = {
   "visit the red church at cap malheureux": { en: "Visit the Red Church at Cap Malheureux", fr: "Visite de l’église rouge à Cap Malheureux", ar: "زيارة الكنيسة الحمراء في كاب مالهورو", ur: "کیپ مالحیورو کی ریڈ چرچ کی سیر" },
   "drop-off at hotel/residence": { en: "Drop-off at hotel/residence", fr: "Dépose à l’hôtel/résidence", ar: "إنزال في الفندق/الإقامة", ur: "ہوٹل/رہائش پر ڈراپ آف" },
 
+ // put this in your GLOSSARY (replace the Title-Case key)
+"visit caudan waterfront": {
+  "en": "Visit Caudan Waterfront",
+  "fr": "Visite du Caudan Waterfront",
+  "ar": "زيارة واجهة كودان البحرية",
+  "ur": "Caudan Waterfront کی سیر"
+}
+,
+"visit port louis bazar (local market)": {
+  "en": "Visit Port Louis Bazar (Local Market)",
+  "fr": "Visite du Bazar de Port-Louis (marché local)",
+  "ar": "زيارة بازار بورت لويس (السوق المحلي)",
+  "ur": "پورٹ لوئس بازار (مقامی مارکیٹ) کی سیر"
+}
+,
+"visit fort adelaide at citadel": {
+  "en": "Visit Fort Adelaide at Citadel",
+  "fr": "Visite du Fort Adelaide à la Citadelle",
+  "ar": "زيارة حصن أديلايد في القلعة",
+  "ur": "سٹیڈل میں فورٹ ایڈیلیڈ کی سیر"
+},
+"visit kuanfu tea (medicinal tea)": {
+  "en": "Visit Kuanfu Tea (Medicinal Tea)",
+  "fr": "Visite de Kuanfu Tea (thé médicinal)",
+  "ar": "زيارة كوانفو تي (الشاي الطبي)",
+  "ur": "کوانفو ٹی (طبی چائے) کی سیر"
+},
+"visit odysseo oceanarium": {
+  "en": "Visit Odysseo Oceanarium",
+  "fr": "Visite de l'Odysseo Oceanarium",
+  "ar": "زيارة أوديسيو أوشناريوم",
+  "ur": "اوڈیسیو اوشناریئم کی سیر"
+},
+"drop-off at hotel/residence": {
+  "en": "Drop-off at hotel/residence",
+  "fr": "Dépose à l'hôtel/résidence",
+  "ar": "التوصيل إلى الفندق/مكان الإقامة",
+  "ur": "ہوٹل/رہائش گاہ پر ڈراپ آف"
+}
+,
+"exclusive east tours": {
+  "en": "Exclusive East Tours",
+  "fr": "Excursions exclusives à l'Est",
+  "ar": "جولات شرقية حصرية",
+  "ur": "خصوصی مشرقی ٹورز"
+},
   // Tour description / notes
   "tour description": { en: "TOUR DESCRIPTION", fr: "DESCRIPTION DE LA VISITE", ar: "وصف الجولة", ur: "ٹور کی تفصیل" },
   "tour availability: daily": { en: "Tour Availability: Daily", fr: "Disponibilité des circuits : Quotidien", ar: "توفر الجولة: يوميًا", ur: "ٹور دستیابی: روزانہ" },

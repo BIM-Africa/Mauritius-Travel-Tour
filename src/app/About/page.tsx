@@ -8,6 +8,7 @@ import about from "../../Assests/about.png";
 import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar";
 import org from "../../Assests/org.jpeg";
+import { T } from "@/lib/i18n-global";
 export default function HomePage() {
 
 
@@ -51,7 +52,7 @@ export default function HomePage() {
         {/* Overlay container */}
         <div className="relative z-10 flex w-[90%] max-w-[1300px] mx-auto items-end justify-center h-full">
           <div className="flex justify-center items-center flex-wrap gap-8 mb-24" >
-          <h1 className="md:text-6xl text-4xl text-white">Taking you to the <br /> Best Places in Mauritius </h1>
+          <h1 className="md:text-6xl text-4xl text-white"><T>Taking you to the</T> <br /> <T>Best Places in Mauritius</T> </h1>
          <a
   href="https://wa.me/23057526968?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20tours."
   target="_blank"
@@ -87,35 +88,49 @@ export default function HomePage() {
 
           {/* Right: text */}
           <div className="self-center lg:pl-8">
-            <p className="text-xl tracking-[.14em] uppercase text-white mb-1">About Us</p>
-
-            <h2 className="m-0 mb-3 text-[42px] leading-tight text-[#25c7e0]">
-              Discover Your Next Adventure
-            </h2>
-
-            <p className="text-white leading-5">
-              Welcome to Mauritius Travel &amp; Tour, your trusted travel partner for <br /> over 10 years.
-              We take pride in offering reliable, comfortable, and personalized transportation services across the
-              breathtaking island of Mauritius.
-            </p>
-            <br />
-
-            {/* NEW: Expandable continuation without moving content elsewhere */}
-            <p className="text-white leading-5">
-              At Maurituis Travel &amp; Tour, every journey is more than just a ride — it&apos;s an experience of care, comfort, and
-              convenience. Whether you&apos;re discovering Mauritius for the first time or commuting as a local, our modern
-              fleet and professional chauffeurs ensure you travel safely and in style. From airport transfers to private tours
-              and daily commutes, we&apos;re dedicated to making every mile memorable.
-              {aboutOpen && (
-                <>
-                  {" "}
-                  Our
-                  team focuses on punctuality, comfort, and transparent pricing — so you can relax and enjoy the island
-                  while we handle the journey.
-                </>
-              )}
-            </p>
-
+                      <p className="text-xl tracking-[.14em] uppercase text-white mb-1"><T>About Us</T></p>
+          
+                      <h2 className="m-0 mb-3 text-[42px] leading-tight text-[#25c7e0]">
+                        <T>Discover Your Next Adventure</T>
+                      </h2>
+          
+                      <p className="text-white leading-5">
+                        <T>Welcome to Mauritius Travel & Tour, your trusted travel partner for over 10 years.</T>
+                        <br />
+                        <T>We take pride in offering reliable, comfortable, and personalized transportation services across the breathtaking island of Mauritius.</T>
+                        <br />
+                      </p>
+                      <br />
+          
+                      {/* NEW: Expandable continuation without moving content elsewhere */}
+                      <p className="text-white leading-5">
+                        <T>
+                          At Mauritius Travel & Tour, every journey is more than just a ride — it&#39;s an
+                          experience of care, comfort, and convenience.
+                        </T>
+                        <br />
+                        <T>
+                          Whether you&#39;re discovering Mauritius for the first time or commuting as a
+                          local, our modern fleet and professional chauffeurs ensure you travel safely and
+                          in style.
+                        </T>
+                        <br />
+                        <T>
+                          From airport transfers to private tours and daily commutes, we&#39;re dedicated to
+                          making every mile memorable.
+                        </T>
+                        <br />
+                        {aboutOpen && (
+                          <>
+                            <T>
+                              Our team focuses on punctuality, comfort, and transparent pricing — so you can
+                              relax and enjoy the island while we handle the journey.
+                            </T>
+                          </>
+                        )}
+          
+                      </p>
+          
             {/* Grey medium-radius pill */}
             <a
               href="#about-more"
@@ -136,47 +151,47 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-       <section data-animate="fade" className="bg-[#f5fbfc]">
-              <div className="mx-auto max-w-[1300px] px-5 py-16 grid gap-10 lg:grid-cols-[1.05fr_.95fr] items-center">
-                {/* LEFT: heading + copy */}
-                <div className="flex flex-col max-lg:justify-center" >
-                  <h2 className="m-0 text-4xl md:text-5xl leading-[1.05] text-[#35c9c3]">
-                    Meet the Organizer
-                    <br />
-                    <span className="text-[#35c9c3]">The Vision Behind It All</span>
-                  </h2>
-      
-                  <p className="mt-4 max-w-[560px] ml-0 md:ml-3 text-[15px] leading-[1.09] text-[#1c2b2d]">
-                    Behind every successful event is a passionate team working <br /> tirelessly to bring every detail to life.
-                    Dedicated to excellence <br /> and creativity, our organizers ensure each moment runs <br /> smoothly and
-                    leaves a lasting impression.
-                  </p>
-                </div>
-      
-                {/* RIGHT: layered shapes + card */}
-                <div className="relative flex justify-center">
-                  {/* layered rounded squares behind the card */}
-                  {/* layered rounded squares behind the card (proper rotate) */}
-      <div aria-hidden className="absolute -z-[1] top-6 right-10 w-[220px] md:w-[480px] h-[180px] md:h-[220px] rounded-[32px] bg-[#0b2930]/10 rotate-[-12deg] shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
-      <div aria-hidden className="absolute -z-[1] top-2 right-4  w-[240px] md:w-[470px] h-[200px] md:h-[240px] rounded-[32px] bg-[#0b2930]/20 rotate-[6deg]   shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
-      <div aria-hidden className="absolute -z-[1] top-0 right-12 w-[210px] md:w-[460px] h-[170px] md:h-[210px] rounded-[32px] bg-[#0b2930]/30 rotate-[14deg]  shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
-      
-                  {/* foreground card */}
-                  <div className="w-[300px] md:w-[320px] rounded-[22px] bg-white text-[#0b2930] shadow-[0_20px_60px_rgba(0,0,0,.18)]">
-                    <div className="p-4 pb-3">
-                      <img src={org.src} alt="Organizer" className="w-full h-[220px] md:h-[240px] object-cover rounded-[16px]" />
-                    </div>
-                    <div className="px-5 pb-6 text-center">
-                      <div className="font-semibold tracking-wide text-[18px]">ADIL &amp; GROUP</div>
-                      <p className="mt-1 text-[13.5px] leading-relaxed text-[#3b4c4f]">
-                        Welcome to Mauritius Travel &amp; Tour, your trusted partner of more than 10 years in transportation
-                        services
-                      </p>
-                    </div>
-                  </div>
-                </div>
+      <section data-animate="fade" className="bg-[#f5fbfc]">
+        <div className="mx-auto max-w-[1300px] px-5 py-16 grid gap-10 lg:grid-cols-[1.05fr_.95fr] items-center">
+          {/* LEFT: heading + copy */}
+          <div className="flex flex-col max-lg:justify-center" >
+            <h2 className="m-0 text-4xl md:text-5xl leading-[1.05] text-[#35c9c3]">
+              <T>Meet the Organizer</T>
+              <br />
+              <span className="text-[#35c9c3]">The Vision Behind It All</span>
+            </h2>
+
+            <p className="mt-4 max-w-[560px] ml-0 md:ml-3 text-[15px] leading-[1.09] text-[#1c2b2d]">
+              <T>Behind every successful event</T> <T> is a passionate team working </T> <br className="md:block hidden" /><T>tirelessly to bring every detail to life.</T> 
+              <T>Dedicated to excellence</T> <br className="md:block hidden" /> <T>and creativity, our organizers ensure each moment runs</T> <br /> <T>smoothly and
+              leaves a lasting impression.</T>
+            </p>
+          </div>
+
+          {/* RIGHT: layered shapes + card */}
+          <div className="relative flex justify-center">
+            {/* layered rounded squares behind the card */}
+            {/* layered rounded squares behind the card (proper rotate) */}
+            <div aria-hidden className="absolute -z-[1] top-6 right-10 w-[220px] md:w-[500px] h-[140px] md:h-[180px] rounded-[32px] bg-[#0b2930]/10 rotate-[-25deg] shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+            <div aria-hidden className="absolute -z-[1] top-2 right-4  w-[240px] md:w-[500px] h-[130px] md:h-[200px] rounded-[32px] bg-[#0b2930]/20 rotate-[20deg]   shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+            <div aria-hidden className="absolute -z-[1] top-0 right-12 w-[210px] md:w-[500px] h-[120px] md:h-[180px] rounded-[32px] bg-[#0b2930]/30 rotate-[14deg]  shadow-[0_18px_40px_rgba(0,0,0,.10)]" />
+
+            {/* foreground card */}
+            <div className="w-[300px] md:w-[320px] rounded-[22px] bg-white text-[#0b2930] shadow-[0_20px_60px_rgba(0,0,0,.18)]">
+              <div className="p-4 pb-3">
+                <img src={org.src} alt="Organizer" className="w-full h-[220px] md:h-[240px] object-cover rounded-[16px]" />
               </div>
-            </section>
+              <div className="px-5 pb-6 text-center">
+                <div className="font-semibold tracking-wide text-[18px]">ADIL &amp; GROUP</div>
+                <p className="mt-1 text-[13.5px] leading-relaxed text-[#3b4c4f]">
+                  Welcome to Mauritius Travel &amp; Tour, your trusted partner of more than 10 years in transportation
+                  services
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <Footer />
       {/* responsive + animation tweaks */}
       <style>{`
