@@ -509,7 +509,83 @@ const GLOSSARY: Record<string, Partial<Record<Lang, string>>> = Object.assign(
   { "dreamy mauritius": { ur: "ڈریمی ماریشس" } },
   { "as from rs 3000 per trip": { fr: "À partir de Rs 3000 par trajet" } },
   { "place | place | place": { fr: "lieu | lieu | lieu" } },
-  { "drop-off at hotel/residence": { fr: "Dépose à l'hôtel/résidence" } }
+  { "drop-off at hotel/residence": { fr: "Dépose à l'hôtel/résidence" } },
+  { "as from rs 1,500 to rs 2,500 - for up to 4 persons": {
+      "en": "As from Rs 1,500 to Rs 2,500 - for up to 4 persons",
+      "fr": "Rs 1 500 to Rs 2 500 / 4 pers",
+      "ar": "1500-2500 ر.س / 4 أشخاص",
+      "ur": "Rs 1500-2500 / 4 افراد"
+  } },
+  {
+  "night": {
+    "en": "Night",
+    "fr": "Nuit",
+    "ar": "ليل",
+    "ur": "رات"
+  }
+}
+,
+{
+  "day": {
+    "en": "Day",
+    "fr": "Jour",
+    "ar": "نهار",
+    "ur": "دن"
+  }
+},
+{
+  "hotel accommodation": {
+    "en": "Hotel Accommodation",
+    "fr": "Hébergement à l'Hôtel",
+    "ar": "الإقامة الفندقية",
+    "ur": "ہوٹل میں قیام"
+  }
+}
+,
+{
+  "airport (mauritius)": {
+    "en": "Airport (Mauritius)",
+    "fr": "Aéroport (Maurice)",
+    "ar": "المطار (موريشيوس)",
+    "ur": "ہوائی اڈا (ماریشس)"
+  }
+}
+,
+{
+  "book your airport": {
+    "en": "Book Your Airport",
+    "fr": "Réservez votre aéroport",
+    "ar": "احجز مطارك",
+    "ur": "اپنا ہوائی اڈا بک کریں"
+  }
+}
+,
+{
+  "transfer with us": {
+    "en": "Transfer With Us",
+    "fr": "Transfert avec nous",
+    "ar": "انتقال معنا",
+    "ur": "ہمارے ساتھ منتقلی"
+  }
+}
+,
+{
+  "at mauritius travel & tour, we ensure every arrival and departure is arrival departure seamless": {
+    "en": "at mauritius travel & tour, we ensure every arrival and departure is seamless",
+    "fr": "chez mauritius travel & tour, nous veillons à ce que chaque arrivée et départ se passe sans souci",
+    "ar": "في mauritius travel & tour، نضمن أن يكون كل وصول ومغادرة سلسًا",
+    "ur": "mauritius travel & tour میں، ہم یقینی بناتے ہیں کہ ہر آمد اور روانگی بغیر کسی رکاوٹ کے ہو"
+  }
+}
+
+
+
+
+
+
+
+
+
 );
 
 /* ----------------------------- Provider ---------------------------------- */

@@ -2,7 +2,7 @@
 import React from "react";
 
 // If you keep assets in /src/Assests and import them:
-import join from "../../Assests/join.png";
+import join from "../../Assests/j.jpg";
 import fast from "../../Assests/Fast.png";
 import servive from "../../Assests/service.png"; // <-- if your file is actually "service.png"
 import flexible from "../../Assests/Flexible.png";

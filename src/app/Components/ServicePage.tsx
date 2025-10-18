@@ -4,12 +4,12 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import bg from "../../Assests/bg.png";
-import about from "../../Assests/about.png";
+import about from "../../Assests/a.jpg";
 import first from "../../Assests/first.jpg";
 import second from "../../Assests/second.png";
 import third from "../../Assests/third.jpg";
 import fourth from "../../Assests/fourth.jpg";
-import airport from "../../Assests/airport.png";
+import airport from "../../Assests/r.jpg";
 import cab from "../../Assests/cab.png";
 import community from "../../Assests/community.png";
 import location from "../../Assests/location.png";
@@ -325,16 +325,17 @@ export default function HomePage() {
           {/* left heading */}
         <div style={{ textShadow: "0 2px 10px rgba(0,0,0,.45)" }}>
   <h2 className="ml-0 md:ml-20 text-4xl md:text-5xl leading-[1.08] text-[#3fd0ca]">
-  <T>choose a tour that</T>
+  <T>Book Your Airport</T>
   <br className="hidden md:block" />
-  <T>satisfies your soul</T>
+  <T>Transfer With Us</T>
 </h2>
 
 
   <p className="mt-3 ml-0 md:ml-20 max-w-[520px] text-[15px] text-[#e6ffff]">
-    <T>
-      At Mauritius Travel & Tour, we take great pride in maintaining a fleet of vehicles that not only meet but exceed the highest standards of safety, cleanliness, and reliability.
-    </T>
+   
+  <T>At Mauritius Travel & Tour, we ensure every arrival and departure is arrival departure seamless</T>, offering reliable, comfortable, and timely airport transfers with vehicles that meet the highest standards and comfort.
+
+
   </p>
 </div>
 
@@ -355,7 +356,7 @@ export default function HomePage() {
                   <div className="flex items-center gap-3">
                     <Image src={location} alt="" width={60} height={26} />
                     <div className="text-[20px] md:text-[22px] leading-none">
-                      <span className="opacity-95"><T>Select Location</T></span>
+                      <span className="opacity-95"><T>Airport (Mauritius)</T></span>
                     </div>
                   </div>
                 </div>
@@ -373,26 +374,31 @@ export default function HomePage() {
                   <div className="flex items-center gap-3">
                     <Image src={location} alt="" width={60} height={26} />
                     <div className="text-[20px] md:text-[22px] leading-none">
-                      <span className="opacity-95"><T>Select Location</T></span>
+                      <span className="opacity-95"><T>Hotel Accommodation</T></span>
                     </div>
                   </div>
                 </div>
 
                 {/* divider + day/night */}
                 <div className="hidden md:flex items-center gap-4">
-                  <div className="h-12 w-px bg-white/80" />
+  <div className="h-12 w-px bg-white/80" />
 
-                  {/* Day: teal bg */}
-                  <div className="grid place-items-center w-12 h-12 rounded-full bg-[#3fd0ca]">
-                    <Image src={day} alt="Day" width={26} height={26} />
-                  </div>
+  {/* Day */}
+  <div className="flex flex-col items-center">
+    <span className="text-md font-medium text-white "><T>Day</T></span>
+    <div className="grid mb-5 place-items-center w-12 h-12 rounded-full bg-[#3fd0ca]">
+      <Image src={day} alt="Day" width={26} height={26} />
+    </div>
+  </div>
 
-                  {/* Night: white bg, black icon */}
-                  <div className="grid place-items-center w-12 h-12 rounded-full bg-white">
-                    <Image src={night} alt="Night" width={26} height={26} className="invert" />
-                    {/* if 'invert' doesn't exist in your Tailwind build, use: className="brightness-0" */}
-                  </div>
-                </div>
+  {/* Night */}
+  <div className="flex flex-col items-center">
+    <span className="text-md font-medium text-white "><T>Night</T></span>
+    <div className="grid mb-5 place-items-center w-12 h-12 rounded-full bg-white">
+      <Image src={night} alt="Night" width={26} height={26} className="invert" />
+    </div>
+  </div>
+</div>
               </div>
             </div>
           </div>
@@ -400,7 +406,7 @@ export default function HomePage() {
           {/* price chip */}
           <div className="mt-6 flex justify-center">
             <div className="rounded-full border border-white/35 bg-black/55 px-6 md:px-8 py-3 text-[16px] shadow-[0_6px_30px_rgba(0,0,0,.35)]">
-              <T>Estimated Price – for upto 4 Persons</T>
+              <T>As from Rs 1,500 to Rs 2,500 - for up to 4 persons</T>
             </div>
           </div>
         </div>

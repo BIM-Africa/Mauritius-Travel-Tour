@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import bg from "../../Assests/bg.png";
-import about from "../../Assests/about.png";
+import about from "../../Assests/a.jpg";
 import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar";
 import org from "../../Assests/org.jpeg";
