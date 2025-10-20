@@ -17,6 +17,7 @@ import { Instagram, Facebook, Music2 } from "lucide-react";
 import Navbar from "../Components/Navbar";
 import Join from "../Components/Join";
 import Footer from "../Components/Footer";
+import { T } from "@/lib/i18n-global";
 
 export default function HomePage() {
 
@@ -128,12 +129,14 @@ export default function HomePage() {
       desc: "Dolphin watching in the west of Mauritius offers a mesmerizing experience. Cruise through azure waters, encountering playful dolphins in their natural habitat, creating unforgettable moments amid the scenic coastal beauty",
       img: hero1.src,
       link: "/WestTourPkg1",
+      Places: ["Dolphin Watching"],
     },
     {
       title: "Package 2: West Tour 2",
       desc: "Grand Baie Bazar in Mauritius is a vibrant market offering a fusion of local crafts, textiles, and souvenirs. Visitors explore stalls filled with colorful items, spices, and unique finds in a lively atmosphere.",
       img: hero1.src,
       link: "/WestTourPkg2",
+      Places: ["CASELA NATURE AND LEISURE PARK"],
     },
   ].map((card, idx) => (
     <article
@@ -203,9 +206,13 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="mt-3 text-[12px] text-center text-white/85">
-          place | place | place
-        </div>
+       
+             <div className="mt-3 text-[10px] text-center text-white/85">
+         {Array.isArray(card.Places) && card.Places.length
+           ? card.Places.join(" | ")
+           : <T>place | place | place</T>}
+       </div>
+       
       </div>
     </article>
   ))}

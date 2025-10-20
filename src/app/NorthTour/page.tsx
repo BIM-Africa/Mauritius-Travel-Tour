@@ -132,12 +132,14 @@ export default function HomePage() {
       desc: "Pamplemousses Botanical Garden in Mauritius, established in the 18th century, spans 60 acres with diverse flora. Highlights include giant water lilies, rare palms.",
       img: hero1.src,
       link: "/Pricing&Detail",
+      places: ["Pamplemousses Garden of Mauritius", "AVENTURE DU SUCRE", "CHATEAU DE LABOURDONNAIS"],
     },
     {
       title: "Package 2: North Tour 2",
       desc: "Grand Baie Bazar in Mauritius is a vibrant market offering a fusion of local crafts, textiles, and souvenirs. Visitors explore stalls filled with colorful items, spices, and unique finds in a lively atmosphere.",
       img: hero1.src,
       link: "/Package2",
+      places: ["CAUDAN WATERFRONT", "BAZAR PORT LOUIS", "FORT ADELAIDE AT CITADELLE"],
     },
   ].map((card, idx) => (
     <article
@@ -207,10 +209,11 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="mt-3 text-[12px] text-center text-white/85">
-          <T>place | place | place</T>
-        </div>
+       <div className="mt-3 text-[10px] text-center text-white/85">
+  {card.places?.length ? card.places.join(" | ") : <T>place | place | place</T>}
+</div>
       </div>
+      
     </article>
   ))}
 </div>

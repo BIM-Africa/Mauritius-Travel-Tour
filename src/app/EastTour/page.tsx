@@ -123,19 +123,28 @@ export default function HomePage() {
           </div>
 
           {/* cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 sm:px-8 lg:px-16 xl:px-24 py-12 bg-white max-w-[1400px] mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 px-4 sm:px-8 lg:px-16 xl:px-24 py-12 bg-white max-w-[1400px] mx-auto">
   {[
     {
       title: "Package 1: East Tour 1",
       desc: "Embark on an exhilarating journey to Ile aux Cerfs by speed boat in Mauritius. Experience the thrill of fast-paced travel, arriving at this pristine island paradise with turquoise waters and pristine beaches.",
       img: hero1.src,
       link: "/EastTourPkg1",
+      Places: ["ILE AUX CERFS TRIP BY SPEED BOAT"],
     },
     {
       title: "Package 2: East Tour 2",
       desc: "Sail to Ile aux Cerfs by catamaran in Mauritius for a leisurely and scenic adventure. Enjoy the gentle sway of the boat, turquoise waters, and the beauty of this island haven.",
       img: hero1.src,
       link: "/EastTourPkg2",
+      Places: ["ILE AUX CERFS TRIP BY CATAMARAN"],
+    },
+    {
+      title: "Package 3: East Tour 3",
+      desc: "Splash n Fun Water Park is Mauritius’ ultimate family adventure destination, blending tropical relaxation with thrilling aquatic rides. Located on the east coast, the park features giant water slides, wave pools, lazy rivers, and kids’ splash zones.",
+      img: hero1.src,
+      link: "/EastTourPkg3",
+      Places: ["TSPLASH N FUN WATER PARK", "FLACQ CENTRAL MARKET", "COEUR DE VILLE"],
     },
   ].map((card, idx) => (
     <article
@@ -205,9 +214,12 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="mt-3 text-[12px] text-center text-white/85">
-          place | place | place
-        </div>
+      <div className="mt-3 text-[10px] text-center text-white/85">
+  {Array.isArray(card.Places) && card.Places.length
+    ? card.Places.join(" | ")
+    : <T>place | place | place</T>}
+</div>
+
       </div>
     </article>
   ))}

@@ -17,7 +17,7 @@ import { Instagram, Facebook, Music2 } from "lucide-react";
 import Navbar from "../Components/Navbar";
 import Join from "../Components/Join";
 import Footer from "../Components/Footer";
-
+import { T } from "@/lib/i18n-global";
 export default function HomePage() {
 
   const router = useRouter();
@@ -118,19 +118,28 @@ export default function HomePage() {
           </div>
 
           {/* cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 sm:px-8 lg:px-16 xl:px-24 py-12 bg-white max-w-[1400px] mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 px-4 sm:px-8 lg:px-16 xl:px-24 py-12 bg-white max-w-[1400px] mx-auto">
   {[
     {
       title: "Package 1: South Tour 1",
       desc: "Trou aux Cerfs Volcano is a dormant crater in Mauritius, surrounded by lush greenery. Offering panoramic views, it is a geological marvel and popular tourist destination, providing a unique natural experience.",
       img: hero1.src,
       link: "/SouthTourPkg1",
+      places: ["Trou aux Cerfs Volcano", "Ship Model Factory", "HORSE RIDING ON THE BEACH"],
     },
     {
       title: "Package 2: South Tour 2",
       desc: "The Ship Model Factory at Floreal is an exceptional workshop where skilled artisans meticulously craft detailed ship models. This unique destination combines craftsmanship and history, showcasing maritime artistry with precision.",
       img: hero1.src,
       link: "/SouthTourPkg2",
+      places: ["BOIS CHERI TEA FACTORY", "GRAND BASSIN GANGA TALAO", "BLACK RIVER GORGES VIEWPOINT"],
+    },
+     {
+      title: "Package 3: South Tour 3",
+      desc: "Gris Gris, on Mauritius’ wild south coast, is famed for its “angry sea.” With no protective coral reef, the Indian Ocean slams into dark basalt cliffs, sending spray skyward—a dramatic, wind-swept lookout that showcases the island’s raw, untamed beauty.",
+      img: hero1.src,
+      link: "/SouthTourPkg3",
+      places: ["GRIS GRIS ANGRY SEA", "CROCODILE PARK", "MARINE PARK"],
     },
   ].map((card, idx) => (
     <article
@@ -200,9 +209,9 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="mt-3 text-[12px] text-center text-white/85">
-          place | place | place
-        </div>
+        <div className="mt-3 text-[10px] text-center text-white/85">
+         {card.places?.length ? card.places.join(" | ") : <T>place | place | place</T>}
+       </div>
       </div>
     </article>
   ))}

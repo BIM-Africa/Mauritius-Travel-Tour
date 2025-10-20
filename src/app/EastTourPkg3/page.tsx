@@ -141,17 +141,22 @@ export default function HomePage() {
  </section>
 
 {/* === Existing Attractions Section (your current code) === */}
-<div className="flex max-w-[1300px] w-[60%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
+<div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/trou-aux-cerfs_HERO-1.jpg",
-      title: "TROU AUX CERFS VOLCANO",
-      desc: "Trou aux Cerfs Volcano is a dormant crater in Mauritius, surrounded by lush greenery. Offering panoramic views, it is a geological marvel and popular tourist destination, providing a unique natural experience.",
+      img: "https://deals.mu/wp-content/uploads/2022/04/Splash-n-Fun-Leisure-Park-1-1.jpg",
+      title: "TSPLASH N FUN WATER PARK",
+      desc: "Splash n Fun Water Park is Mauritius’ ultimate family adventure destination, blending tropical relaxation with thrilling aquatic rides. Located on the east coast, the park features giant water slides, wave pools, lazy rivers, and kids’ splash zones.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/IMG_4743-1.jpg",
-      title: "SHIP MODEL FACTORY",
-      desc: "The Ship Model Factory at Floreal is an exceptional workshop where skilled artisans meticulously craft detailed ship models. This unique destination combines craftsmanship and history, showcasing maritime artistry with precision.",
+      img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/fe/e6/c6/marche-de-flacq.jpg?w=1200&h=-1&s=1",
+      title: "FLACQ CENTRAL MARKET",
+      desc: "Flacq Central Market is one of Mauritius’ largest and most vibrant open-air markets, offering a lively blend of colors, aromas, and culture. Locals and visitors alike browse stalls filled with fresh produce, tropical fruits, handmade crafts.",
+    },
+    {
+      img: "https://coeurdeville.mu/sites/default/files/inline-images/cdv-home-img_2.png",
+      title: "COEUR DE VILLE",
+      desc: "Cœur de Ville is a modern lifestyle and shopping hub in Mauritius, blending retail, dining, and leisure in a vibrant community setting. With its mix of local and international brands, cafés, and entertainment spaces.",
     },
     
   ].map((item, idx) => (
@@ -181,46 +186,6 @@ export default function HomePage() {
 </div>
 
 
-{/* === New 4-Image Section (same style/size as above) === */}
-<div className="flex flex-wrap justify-center items-center gap-6 max-w-[1300px] w-[60%] mx-auto pb-10 bg-white">
-  {[
-    {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/horse-riding-bahamas-excursions-1.jpg",
-      title: "HORSE RIDING ON THE BEACH",
-      desc: "Horse riding on the beaches of Mauritius is a magical experience, combining the rhythmic sound of hooves on sandy shores with the turquoise sea backdrop. It’s a serene and exhilarating adventure.",
-    },
-    {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/IMG_4743-1.jpg",
-      title: "LA VALLEE DES COULEURS NATURE PARK",
-      desc: "La Vallée des Couleurs Nature Park in Mauritius is a breathtaking natural reserve featuring vibrant landscapes, colored earth, waterfalls, and indigenous flora. It offers thrilling activities, including ziplining, safari and quad biking.",
-    },
-    
-    
-  ].map((item, idx) => (
-    <article
-      key={idx}
-      className="relative w-full sm:w-[390px] h-[420px] sm:h-[520px] md:h-[620px] rounded-[22px] overflow-hidden ring-4 ring-gray-400 shadow-lg transition-transform duration-500 ease-out hover:scale-[1.03] hover:shadow-2xl flex-shrink-0 z-10 mx-auto"
-      style={{
-        backgroundImage: `url(${item.img})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      {/* dark gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent" />
-
-      {/* content area */}
-      <div className="relative z-[1] px-6 pb-6 flex flex-col text-center justify-end h-full text-white">
-        <h3 className="m-0 text-[18px] font-semibold text-white/95">
-          {item.title}
-        </h3>
-        <p className="mt-2 text-[15px] leading-5 text-white/90 max-w-[60ch] mx-auto">
-          {item.desc}
-        </p>
-      </div>
-    </article>
-  ))}
-</div>
 
 </div>
 <Join/>
