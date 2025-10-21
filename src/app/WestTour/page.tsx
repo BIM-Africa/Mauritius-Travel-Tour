@@ -136,7 +136,7 @@ export default function HomePage() {
       desc: "Grand Baie Bazar in Mauritius is a vibrant market offering a fusion of local crafts, textiles, and souvenirs. Visitors explore stalls filled with colorful items, spices, and unique finds in a lively atmosphere.",
       img: hero1.src,
       link: "/WestTourPkg2",
-      Places: ["CASELA NATURE AND LEISURE PARK"],
+      Places: ["Casela Nature And Leisure Park"],
     },
   ].map((card, idx) => (
     <article

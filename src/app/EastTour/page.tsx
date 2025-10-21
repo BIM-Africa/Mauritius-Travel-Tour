@@ -130,21 +130,21 @@ export default function HomePage() {
       desc: "Embark on an exhilarating journey to Ile aux Cerfs by speed boat in Mauritius. Experience the thrill of fast-paced travel, arriving at this pristine island paradise with turquoise waters and pristine beaches.",
       img: hero1.src,
       link: "/EastTourPkg1",
-      Places: ["ILE AUX CERFS TRIP BY SPEED BOAT"],
+      Places: ["Ile Aux Cerfs trip by Speed Boat"],
     },
     {
       title: "Package 2: East Tour 2",
       desc: "Sail to Ile aux Cerfs by catamaran in Mauritius for a leisurely and scenic adventure. Enjoy the gentle sway of the boat, turquoise waters, and the beauty of this island haven.",
       img: hero1.src,
       link: "/EastTourPkg2",
-      Places: ["ILE AUX CERFS TRIP BY CATAMARAN"],
+      Places: ["Ile Aux Cerfs Trip by Catamaran"],
     },
     {
       title: "Package 3: East Tour 3",
       desc: "Splash n Fun Water Park is Mauritius’ ultimate family adventure destination, blending tropical relaxation with thrilling aquatic rides. Located on the east coast, the park features giant water slides, wave pools, lazy rivers, and kids’ splash zones.",
       img: hero1.src,
       link: "/EastTourPkg3",
-      Places: ["TSPLASH N FUN WATER PARK", "FLACQ CENTRAL MARKET", "COEUR DE VILLE"],
+      Places: ["Tsplash n Fun Water Park", "Flacq Centeral Market", "Coeur De Ville"],
     },
   ].map((card, idx) => (
     <article

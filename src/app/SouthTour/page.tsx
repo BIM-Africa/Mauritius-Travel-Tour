@@ -132,14 +132,14 @@ export default function HomePage() {
       desc: "The Ship Model Factory at Floreal is an exceptional workshop where skilled artisans meticulously craft detailed ship models. This unique destination combines craftsmanship and history, showcasing maritime artistry with precision.",
       img: hero1.src,
       link: "/SouthTourPkg2",
-      places: ["Bois Cheri Tea Factory", "GRAND BASSIN GANGA TALAO", "BLACK RIVER GORGES VIEWPOINT"],
+      places: ["Bois Cheri Tea Factory", "Grand Bassin Ganga Talao", " Black River Gorges Viewpoint"],
     },
      {
       title: "Package 3: South Tour 3",
       desc: "Gris Gris, on Mauritius’ wild south coast, is famed for its “angry sea.” With no protective coral reef, the Indian Ocean slams into dark basalt cliffs, sending spray skyward—a dramatic, wind-swept lookout that showcases the island’s raw, untamed beauty.",
       img: hero1.src,
       link: "/SouthTourPkg3",
-      places: ["GRIS GRIS ANGRY SEA", "CROCODILE PARK", "MARINE PARK"],
+      places: ["Gris Gris Angry Aea", "Crocodile Park", "Marine Park"],
     },
   ].map((card, idx) => (
     <article
