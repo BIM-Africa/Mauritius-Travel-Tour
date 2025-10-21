@@ -125,14 +125,14 @@ export default function HomePage() {
       desc: "Trou aux Cerfs Volcano is a dormant crater in Mauritius, surrounded by lush greenery. Offering panoramic views, it is a geological marvel and popular tourist destination, providing a unique natural experience.",
       img: hero1.src,
       link: "/SouthTourPkg1",
-      places: ["Trou aux Cerfs Volcano", "Ship Model Factory", "HORSE RIDING ON THE BEACH"],
+      places: ["Trou aux Cerfs Volcano", "Ship Model Factory", "Horse Riding on the Beach"],
     },
     {
       title: "Package 2: South Tour 2",
       desc: "The Ship Model Factory at Floreal is an exceptional workshop where skilled artisans meticulously craft detailed ship models. This unique destination combines craftsmanship and history, showcasing maritime artistry with precision.",
       img: hero1.src,
       link: "/SouthTourPkg2",
-      places: ["BOIS CHERI TEA FACTORY", "GRAND BASSIN GANGA TALAO", "BLACK RIVER GORGES VIEWPOINT"],
+      places: ["Bois Cheri Tea Factory", "GRAND BASSIN GANGA TALAO", "BLACK RIVER GORGES VIEWPOINT"],
     },
      {
       title: "Package 3: South Tour 3",

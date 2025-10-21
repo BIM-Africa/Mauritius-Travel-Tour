@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Facebook, Music2 } from "lucide-react";
+import google from "./GoogleReviews";
 
 // ✅ adjust paths if your folder structure is different
 import logo from "../../Assests/logo.jpeg";
@@ -11,6 +12,8 @@ import e from "../../Assests/e.png";
 import { T } from "@/lib/i18n-global";
 
 export default function Footer() {
+  
+  
   return (
     <footer id="contact" data-animate="fade" className="bg-[#071f24] text-[#cfe]">
       <div
@@ -51,12 +54,10 @@ export default function Footer() {
               <a href="#" className="hover:text-[#3ec6c3] transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="hover:text-[#3ec6c3] transition-colors" aria-label="Facebook">
+              <a href="https://www.facebook.com/share/17JwrehYP6/" target="_blank" rel="noopener noreferrer" className="hover:text-[#3ec6c3] transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="hover:text-[#3ec6c3] transition-colors" aria-label="TikTok">
-                <Music2 size={20} />
-              </a>
+              
             </div>
           </div>
         </div>
@@ -75,7 +76,9 @@ export default function Footer() {
               <a href="#about" className="hover:underline"><T>About</T></a>
             </li>
           </ul>
+          
         </div>
+        
 
         {/* Support */}
         <div className="md:pt-3">

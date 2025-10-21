@@ -182,7 +182,7 @@ export default function HomePage() {
                 <img src={org.src} alt="Organizer" className="w-full h-[220px] md:h-[240px] object-cover rounded-[16px]" />
               </div>
               <div className="px-5 pb-6 text-center">
-                <div className="font-semibold tracking-wide text-[18px]">ADIL &amp; GROUP</div>
+                <div className="font-semibold tracking-wide text-[18px]">ADIL &amp; HAPPY CLIENTS</div>
                 <p className="mt-1 text-[13.5px] leading-relaxed text-[#3b4c4f]">
                   Welcome to Mauritius Travel &amp; Tour, your trusted partner of more than 10 years in transportation
                   services

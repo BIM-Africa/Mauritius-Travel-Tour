@@ -80,7 +80,7 @@ export default function HomePage() {
               {/* aligned like first page: center on small, preserve your layout on larger */}
               <p className="mt-3  text-[15.5px] text-black max-w-[66ch] md:w-[75%] max-sm:mx-auto break-words">
                 <T>
-                            at mauritius travel & tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+                            At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
                           </T>
                  
               </p>
@@ -132,14 +132,14 @@ export default function HomePage() {
       desc: "Pamplemousses Botanical Garden in Mauritius, established in the 18th century, spans 60 acres with diverse flora. Highlights include giant water lilies, rare palms.",
       img: hero1.src,
       link: "/Pricing&Detail",
-      places: ["Pamplemousses Garden of Mauritius", "AVENTURE DU SUCRE", "CHATEAU DE LABOURDONNAIS"],
+      places: ["Pamplemousses Garden of Mauritius", "Aventure Du Sucre", "Chateau De Labourdonnais"],
     },
     {
       title: "Package 2: North Tour 2",
       desc: "Grand Baie Bazar in Mauritius is a vibrant market offering a fusion of local crafts, textiles, and souvenirs. Visitors explore stalls filled with colorful items, spices, and unique finds in a lively atmosphere.",
       img: hero1.src,
       link: "/Package2",
-      places: ["CAUDAN WATERFRONT", "BAZAR PORT LOUIS", "FORT ADELAIDE AT CITADELLE"],
+      places: ["Caudan Waterfront", "Bazar Port Louis", "Fort Adelaide At Citadelle"],
     },
   ].map((card, idx) => (
     <article

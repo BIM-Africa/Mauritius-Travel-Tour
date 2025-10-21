@@ -23,6 +23,7 @@ import Footer from "./Footer"
 import Navbar from "./Navbar";
 import { T } from "@/lib/i18n-global";
 
+
 export default function HomePage() {
 
 
@@ -179,7 +180,7 @@ export default function HomePage() {
 
         <p className="mt-3 text-[15.5px] text-black max-w-[66ch] md:w-[75%] max-sm:mx-auto break-words">
           <T>
-            at mauritius travel & tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+            At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
           </T>
         </p>
       </div>
@@ -374,7 +375,7 @@ export default function HomePage() {
                   <div className="flex items-center gap-3">
                     <Image src={location} alt="" width={60} height={26} />
                     <div className="text-[20px] md:text-[22px] leading-none">
-                      <span className="opacity-95"><T>Hotel Accommodation</T></span>
+                      <span className="opacity-95"><T>Hotel/Accommodation</T></span>
                     </div>
                   </div>
                 </div>
@@ -444,7 +445,7 @@ export default function HomePage() {
                 <img src={org.src} alt="Organizer" className="w-full h-[220px] md:h-[240px] object-cover rounded-[16px]" />
               </div>
               <div className="px-5 pb-6 text-center">
-                <div className="font-semibold tracking-wide text-[18px]">ADIL &amp; GROUP</div>
+                <div className="font-semibold tracking-wide text-[18px]">ADIL &amp; HAPPY CLIENTS</div>
                 <p className="mt-1 text-[13.5px] leading-relaxed text-[#3b4c4f]">
                   Welcome to Mauritius Travel &amp; Tour, your trusted partner of more than 10 years in transportation
                   services
