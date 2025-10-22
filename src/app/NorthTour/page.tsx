@@ -73,8 +73,8 @@ export default function HomePage() {
           {/* header row */}
           <div className="grid gap-6 md:gap-4 md:grid-cols-2 xl:max-w-[1100px] max-w-[900px] mx-auto items-start mb-12">
             <div>
-              <h2 className="text-[clamp(28px,3.2vw,52px)]   leading-[1.12] text-[#11c6c1] m-0">
-                <T>Choose a Tour that</T><br className="hidden md:block" /> satisfies your Soul
+              <h2 className="text-[clamp(28px,3.2vw,52px)]  leading-[1.12] text-[#11c6c1] m-0">
+                <T>Choose a tour that</T><br className="hidden md:block" /> satisfies your Soul
               </h2>
 
               {/* aligned like first page: center on small, preserve your layout on larger */}
@@ -183,7 +183,7 @@ export default function HomePage() {
               icon: timing,
               text: (
                 <>
-                  <T>Timing</T> - <br /><T>2.5 hrs</T>
+                  <T>Timing</T> - <br /><T>8 hrs</T>
                 </>
               ),
             },

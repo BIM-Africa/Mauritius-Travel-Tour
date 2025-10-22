@@ -29,6 +29,7 @@ export default function Footer() {
     "
         >
           <div>
+            
             <h3 className="text-white text-2xl font-semibold mb-3"><T>Keep in Touch</T></h3>
             <h2 className="text-[#3ec6c3] text-3xl font-bold mb-4"><T>Travel With Us</T></h2>
 
@@ -41,6 +42,7 @@ export default function Footer() {
                 className="w-16 h-16 rounded-full mr-3 object-cover"
               />
             </div>
+            
 
             <p className="text-sm leading-5 text-white max-w-md mx-auto md:mx-0">
               <T>Welcome to Mauritius Travel & Tour, your trusted partner of</T> <br /> <T>more than 10 years in transportation services</T>{" "}
@@ -104,7 +106,7 @@ export default function Footer() {
 
             {/* Reviews (spans all 3 nested columns) */}
             <div className="md:col-span-3 mt-6 md:mt-8 overflow-x-auto">
-              <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold">Exception 5 Stars Google Reviews</h4>
+              <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold">Exceptional <span style={{ color: "#FFCC33" }}>5 Stars</span> Google Reviews</h4>
 
               <div className="flex space-x-3 text-sm text-white w-max pb-2">
                 <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[250px] flex-shrink-0">
@@ -145,6 +147,41 @@ export default function Footer() {
         >
           {/* Left Section */}
           <div>
+            <div className="w-full flex justify-center">
+  <div className="overflow-x-auto max-w-[420px] sm:max-w-[600px]">
+    <div className="mt-6 md:mt-8 overflow-x-auto">
+      <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold text-center">
+        Exceptional <span style={{ color: "#FFCC33" }}>5 Stars</span> Google Reviews
+      </h4>
+
+      <div
+        className="flex flex-col items-center gap-3 text-sm text-white w-full sm:w-max pb-2 mx-auto"
+      >
+        {/* Review 1 */}
+        <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(50%-0.375rem)] sm:w-[250px] flex-shrink-0">
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+          <p>“Excellent service! The driver was on time and very friendly.”</p>
+          <p className="text-xs text-[#9cc] mt-1">– Sarah M.</p>
+        </div>
+
+        {/* Review 2 */}
+        <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(50%-0.375rem)] sm:w-[250px] flex-shrink-0">
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+          <p>“Clean cars and smooth ride, highly recommended!”</p>
+          <p className="text-xs text-[#9cc] mt-1">– David L.</p>
+        </div>
+
+        {/* Review 3 */}
+        <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(50%-0.375rem)] sm:w-[250px] flex-shrink-0">
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+          <p>“Mauritius Travel & Tour made our trip unforgettable!”</p>
+          <p className="text-xs text-[#9cc] mt-1">– Priya K.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
             <h3 className="text-white text-2xl font-semibold mb-3"><T>Keep in Touch</T></h3>
             <h2 className="text-[#3ec6c3] text-3xl font-bold mb-4"><T>Travel With Us</T></h2>
 
@@ -240,37 +277,7 @@ export default function Footer() {
               </li>
             </ul>
 
-      <div className="overflow-x-auto max-w-[420px] sm:max-w-[600px]">
-  <div className="mt-6 md:mt-8 overflow-x-auto">
-    <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold">
-      Exceptional 5 Stars Google Reviews
-    </h4>
-
-    <div className="flex flex-wrap sm:flex-nowrap gap-3 text-sm text-white w-full sm:w-max pb-2">
-      {/* Review 1 */}
-      <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(50%-0.375rem)] sm:w-[250px] flex-shrink-0">
-        <p>⭐️⭐️⭐️⭐️⭐️</p>
-        <p>“Excellent service! The driver was on time and very friendly.”</p>
-        <p className="text-xs text-[#9cc] mt-1">– Sarah M.</p>
-      </div>
-
-      {/* Review 2 */}
-      <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(50%-0.375rem)] sm:w-[250px] flex-shrink-0">
-        <p>⭐️⭐️⭐️⭐️⭐️</p>
-        <p>“Clean cars and smooth ride, highly recommended!”</p>
-        <p className="text-xs text-[#9cc] mt-1">– David L.</p>
-      </div>
-
-      {/* Review 3 */}
-      <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(50%-0.375rem)] sm:w-[250px] flex-shrink-0">
-        <p>⭐️⭐️⭐️⭐️⭐️</p>
-        <p>“Mauritius Travel & Tour made our trip unforgettable!”</p>
-        <p className="text-xs text-[#9cc] mt-1">– Priya K.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
+      
           </div>
         </div>
       </footer>

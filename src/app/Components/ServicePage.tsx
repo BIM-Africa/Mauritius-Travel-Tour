@@ -174,7 +174,7 @@ export default function HomePage() {
     <div className="grid gap-6 md:gap-4 md:grid-cols-2 xl:max-w-[1100px] max-w-[900px] mx-auto items-start mb-12">
       <div>
         <h2 className="text-[clamp(28px,3.2vw,52px)] leading-[1.12] text-[#11c6c1] m-0">
-          <T>Choose a Tour that satisfies your Soul</T>
+          <T>Choose a tour that satisfies your Soul</T>
           <br className="hidden md:block" />
         </h2>
 
@@ -307,7 +307,7 @@ export default function HomePage() {
                     ring-1 ring-white/40 shadow-[0_8px_28px_rgba(0,0,0,.25)]"
             >
               <Image src={cab} alt="Cab" width={42} height={42} />
-              <p className="m-0 px-5 text-center text-[14px] leading-snug text-white">
+              <p className="m-0 px-5 text-center text-[14px] font-bold leading-snug text-white">
                 <T>Customised transfer options available as per your needs</T>
               </p>
             </div>

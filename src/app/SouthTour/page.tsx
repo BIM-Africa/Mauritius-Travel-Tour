@@ -72,7 +72,7 @@ export default function HomePage() {
           <div className="grid gap-6 md:gap-4 md:grid-cols-2 xl:max-w-[1100px] max-w-[900px] mx-auto items-start mb-12">
             <div>
               <h2 className="text-[clamp(28px,3.2vw,52px)]   leading-[1.12] text-[#11c6c1] m-0">
-                Choose a Tour that<br className="hidden md:block" /> satisfies your Soul
+                Choose a tour that<br className="hidden md:block" /> satisfies your Soul
               </h2>
 
               {/* aligned like first page: center on small, preserve your layout on larger */}
@@ -168,7 +168,7 @@ export default function HomePage() {
           {[
             { icon: money, text: <>Pricing - <br />as from Rs 3000</> },
             { icon: group, text: <>Travel Members <br />1–4 persons</> },
-            { icon: timing, text: <>Timing - <br />2.5 hrs</> },
+            { icon: timing, text: <>Timing - <br />8 hrs</> },
           ].map((item, i) => (
             <div
               key={i}
