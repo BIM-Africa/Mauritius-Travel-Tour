@@ -155,24 +155,24 @@ export default function Footer() {
       </h4>
 
       <div
-        className="flex flex-col items-center gap-3 text-sm text-white w-full sm:w-max pb-2 mx-auto"
+        className="flex flex-col items-center gap-3 text-sm text-white w-full sm:w-max pb-14 mx-auto"
       >
         {/* Review 1 */}
-        <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(50%-0.375rem)] sm:w-[250px] flex-shrink-0">
+        <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(80%-0.375rem)] sm:w-[280px] flex-shrink-0">
           <p>⭐️⭐️⭐️⭐️⭐️</p>
           <p>“Excellent service! The driver was on time and very friendly.”</p>
           <p className="text-xs text-[#9cc] mt-1">– Sarah M.</p>
         </div>
 
         {/* Review 2 */}
-        <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(50%-0.375rem)] sm:w-[250px] flex-shrink-0">
+        <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(80%-0.375rem)] sm:w-[280px] flex-shrink-0">
           <p>⭐️⭐️⭐️⭐️⭐️</p>
           <p>“Clean cars and smooth ride, highly recommended!”</p>
           <p className="text-xs text-[#9cc] mt-1">– David L.</p>
         </div>
 
         {/* Review 3 */}
-        <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(50%-0.375rem)] sm:w-[250px] flex-shrink-0">
+        <div className="border border-[#3ec6c3]/40 p-4 rounded-xl bg-[#0b2b31] w-[calc(80%-0.375rem)] sm:w-[280px] flex-shrink-0">
           <p>⭐️⭐️⭐️⭐️⭐️</p>
           <p>“Mauritius Travel & Tour made our trip unforgettable!”</p>
           <p className="text-xs text-[#9cc] mt-1">– Priya K.</p>
