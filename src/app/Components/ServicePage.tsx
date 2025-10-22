@@ -375,7 +375,7 @@ export default function HomePage() {
                   <div className="flex items-center gap-3">
                     <Image src={location} alt="" width={60} height={26} />
                     <div className="text-[20px] md:text-[22px] leading-none">
-                      <span className="opacity-95"><T>Hotel/Accommodation</T></span>
+                      <span className="opacity-95">Hotel/<br className="sm:hidden block" />Accommodation</span>
                     </div>
                   </div>
                 </div>
