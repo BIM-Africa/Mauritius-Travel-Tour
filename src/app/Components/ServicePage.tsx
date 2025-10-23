@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import bg from "../../Assests/bg.jpg";
+import bg from "../../Assests/bg.jpg"
 import about from "../../Assests/a.jpg";
 import first from "../../Assests/first.jpeg";
 import second from "../../Assests/second.jpg";
