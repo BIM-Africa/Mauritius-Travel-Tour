@@ -3,10 +3,10 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import bg from "../../Assests/bg.png";
+import bg from "../../Assests/bg.jpg";
 import about from "../../Assests/a.jpg";
-import first from "../../Assests/first.jpg";
-import second from "../../Assests/second.png";
+import first from "../../Assests/first.jpeg";
+import second from "../../Assests/second.jpg";
 import third from "../../Assests/third.jpg";
 import fourth from "../../Assests/fourth.jpg";
 import airport from "../../Assests/r.jpg";
