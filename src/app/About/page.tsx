@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import bg from "../../Assests/bg.png";
+import bg from "../../Assests/bg.jpg";
 import about from "../../Assests/a.jpg";
 import Footer from "../Components/Footer"
 import Navbar from "../Components/Navbar";
