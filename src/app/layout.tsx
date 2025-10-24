@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { GlobalI18n } from "@/lib/i18n-global"; // ✅ correct import
+import { GlobalI18n } from "@/lib/i18n-global";
+import Script from "next/script"; // ✅ import Script
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,13 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <GlobalI18n>{children}</GlobalI18n>
+
+        {/* ✅ Rybbit Analytics Script */}
+        <Script
+          src="https://app.rybbit.io/api/script.js"  // you can use this direct URL
+          data-site-id="3d74e06ee877"                // your real Rybbit site ID ✅
+          strategy="afterInteractive"                // same as defer, runs after hydration
+        />
       </body>
     </html>
   );
