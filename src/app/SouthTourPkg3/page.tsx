@@ -65,15 +65,9 @@ export default function HomePage() {
       <p className="text-4xl md:text-5xl  mb-8 text-teal-300"><T>As from Rs 3000 per trip</T></p>
 
       {/* Intro */}
-      <p className="text-white mb-2">
-   <T>
-              At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
-            </T>
-</p>
-
 <p className="text-white mb-12">
   <T>
-              At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+              At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
             </T>
 </p>
 
@@ -90,13 +84,11 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-         <li><T>Pick-up from any hotel/residence in the morning</T></li>
-  <li><T>Visit Pamplemousses Botanical Garden</T></li>
-  <li><T>Visit Aventure du Sucre Museum</T></li>
-  <li><T>Visit Grand Baie Bazar</T></li>
-  <li><T>Sea Turtle sighting at Trou aux Biches Beach</T></li>
-  <li><T>Visit the Red Church at Cap Malheureux</T></li>
-  <li><T>Drop-off at hotel/residence</T></li>
+    <li><T>Pick-up from your hotel or residence in the morning.</T></li>
+    <li><T>Discover the breathtaking cliffs and roaring waves of Gris Gris (The Angry Sea).</T></li>
+    <li><T>Explore the lush landscapes and fascinating wildlife at La Vanille Crocodile Park.</T></li>
+    <li><T>Experience the beauty of Blue Bay Marine Park and its vibrant coral reefs.</T></li>
+    <li><T>Drop-off at your hotel or residence at the end of the tour.</T></li>
     </ul>
   </div>
 
@@ -109,10 +101,10 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• <T>Tour Availability: Daily</T></li>
-      <li>• <T>Tour Duration: 8 Hours (Day Tour)</T></li>
-      <li>•<T>With our flexible Pick-Up time you can start your adventure anytime between 8:30 Am to 10:00 Am</T></li>
-      <li>•<T>Free Wi-Fi available in Vehicle</T></li>
+      <li>• <T>Tour Availability: Operates Daily.</T></li>
+      <li>• <T>Tour Duration: Approximately 8 Hours (Full-Day Tour).</T></li>
+      <li>• <T>Enjoy flexible pick-up times — start your adventure anytime between 8:30 AM and 10:00 AM.</T></li>
+      <li>• <T>Free Wi-Fi available onboard the vehicle.</T></li>
     </ul>
   </div>
 </div>
@@ -128,14 +120,14 @@ export default function HomePage() {
   </div>
 
   <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-  <li>• <T>Payment can be made in cash to the driver in MUR, USD or EUR</T>.</li>
-  <li>• <T>Pricing is per vehicle, not per person.</T></li>
-  <li>• <T>Full-day transportation to all the places mentioned above.</T></li>
-  <li>• <T>A friendly English/French speaking driver will provide you valuable information during travels.</T></li>
-  <li>• <T>Entry ticket fees not included.</T></li>
-  <li>• <T>When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</T></li>
-  <li>• <T>Arrangements can be made with your driver if you want to combine 2 packages.</T></li>
-  <li>• <T>NOTE: 15 and 30 seaters available.</T></li>
+  <li>• <T>Payment can be made directly to the driver in MUR, USD, or EUR.</T></li>
+  <li>• <T>Prices are charged per vehicle — not per person.</T></li>
+  <li>• <T>Includes full-day private transportation to all the listed attractions.</T></li>
+  <li>• <T>Your friendly English- or French-speaking driver will share local tips and insights throughout the journey.</T></li>
+  <li>• <T>Entrance fees to attractions are not included.</T></li>
+  <li>• <T>For lunch, your driver will gladly suggest the best local restaurants where you can enjoy authentic Mauritian cuisine.</T></li>
+  <li>• <T>Customized arrangements can be made if you wish to combine this tour with another package.</T></li>
+  <li>• <T>NOTE: 15-seater and 30-seater vehicles are available upon request.</T></li>
 </ul>
 
 </div>
@@ -149,17 +141,17 @@ export default function HomePage() {
     {
       img: "https://explora.mu/media/k2/items/cache/ca70f255bd2394191d82d5fae8f6827e_XL.jpg",
       title: "GRIS GRIS ANGRY SEA",
-      desc: "Gris Gris, on Mauritius’ wild south coast, is famed for its “angry sea.” With no protective coral reef, the Indian Ocean slams into dark basalt cliffs, sending spray skyward—a dramatic, wind-swept lookout that showcases the island’s raw, untamed beauty.",
+      desc: "Gris Gris, located on the wild southern coast of Mauritius, is famous for its dramatic waves and untamed beauty. Without a coral reef barrier, the ocean crashes powerfully against dark cliffs, creating a spectacular and unforgettable view.",
     },
     {
       img: "https://toursmauritius.mu/wp-content/uploads/2018/07/7585923632_IMG_4239.jpg",
       title: "CROCODILE PARK",
-      desc: "La Vanille Crocodile Park is a lush nature reserve in the south of Mauritius, home to Nile crocodiles, giant Aldabra tortoises, deer, monkeys, and countless other species. Set amidst dense tropical vegetation, the park combines conservation and education,.",
+      desc: "La Vanille Crocodile Park is a tropical haven filled with wildlife, including Nile crocodiles, giant tortoises, monkeys, and lush greenery. This eco-park blends conservation, education, and adventure for visitors of all ages.",
     },
     {
       img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/d8/4d/2c/the-inner-edge-of-the.jpg?w=1200&h=-1&s=1",
       title: "MARINE PARK",
-      desc: "Blue Bay Marine Park is a shimmering marine sanctuary on Mauritius’ south-east coast, where sunlit lagoons give way to an underwater garden alive with colour. The shallow, crystal-clear waters reveal table-corals.",
+      desc: "Blue Bay Marine Park is one of Mauritius’ most stunning natural lagoons, known for its crystal-clear waters and colorful coral gardens. Perfect for snorkeling, it offers a glimpse into the island’s incredible underwater world.",
     },
   ].map((item, idx) => (
     <article
