@@ -68,11 +68,8 @@ export default function HomePage() {
       <p className="text-4xl md:text-5xl  mb-8 text-teal-300">As from Rs 3000 per trip</p>
 
       {/* Intro */}
-      <p className="text-white mb-2">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
-      </p>
       <p className="text-white mb-12">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+        At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
       </p>
 
       {/* Info Boxes */}
@@ -87,9 +84,9 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Pick-up from any hotel/residence in the morning</li>
-      <li>• Dolphin Watching</li>
-      <li>• Drop off from at hotel/residence </li>
+    <li>• Pick-up from your hotel or residence in the morning.</li>
+    <li>• Enjoy an unforgettable Dolphin Watching experience along Mauritius’ west coast.</li>
+    <li>• Drop-off at your hotel or residence after the excursion.</li>
     
     
     </ul>
@@ -104,11 +101,11 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Tour Availability: Daily</li>
-      <li>• Tour Duration: 8 Hours (Day Tour)</li>
-      <li>• With our flexible Pick-Up time you can start your <br /> adventure anytime between 8:30 Am to 10:00 Am</li>
-      <li>• Free Wi-Fi available in Vehicle</li>
-      <li>• Pickup time if opting for <b>group</b> outing may be very early in the morning because we need to reach before 9am</li>
+    <li>• Tour Availability: Operates Daily.</li>
+    <li>• Tour Duration: Approximately 8 Hours (Full-Day Tour).</li>
+    <li>• Flexible Pick-Up Time — begin your adventure anytime between 8:30 AM and 10:00 AM.</li>
+    <li>• Free Wi-Fi available onboard the vehicle.</li>
+    <li>• If joining a <b>group</b> outing, note that pick-up may be earlier to ensure arrival before 9:00 AM.</li>
     </ul>
   </div>
 </div>
@@ -124,14 +121,14 @@ export default function HomePage() {
   </div>
 
   <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-    <li>• Payment can be made in cash to the driver in MUR, USD or EUR.</li>
-    <li>• Pricing is per vehicle, not per person.</li>
-    <li>• Full-day transportation to all the places mentioned above.</li>
-    <li>• A friendly English/French speaking driver will provide you valuable information during travels.</li>
-    <li>• Entry ticket fees not included.</li>
-    <li>• When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</li>
-    <li>• <b>Arrangements can be made with your driver if you want to combine 2 packages</b>.</li>
-    <li>• <b>NOTE: 15 and 30 seaters available</b>.</li>
+  <li>• Payment can be made directly to the driver in MUR, USD, or EUR.</li>
+  <li>• Pricing is per vehicle, not per person.</li>
+  <li>• Includes full-day private transportation to all mentioned destinations.</li>
+  <li>• A friendly English- or French-speaking driver will share helpful insights during your journey.</li>
+  <li>• Entry fees to attractions are not included.</li>
+  <li>• For lunch, your driver will suggest top-rated local restaurants so you can enjoy authentic Mauritian cuisine.</li>
+  <li>• <b>Custom combinations are available — speak with your driver if you’d like to merge two tour packages.</b></li>
+  <li>• <b>NOTE: 15-seater and 30-seater vehicles available upon request.</b></li>
   </ul>
 </div>
 
@@ -144,7 +141,7 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/caption-2.jpg",
       title: "DOLPHIN WATCHING",
-      desc: "Dolphin watching in the west of Mauritius offers a mesmerizing experience. Cruise through azure waters, encountering playful dolphins in their natural habitat, creating unforgettable moments amid the scenic coastal beauty.",
+      desc: "Dolphin watching on the western coast of Mauritius is a breathtaking marine adventure. Glide across crystal-clear waters and witness playful dolphins in their natural environment — an unforgettable encounter surrounded by the island’s serene coastal beauty.",
     },
   ].map((item, idx) => (
     <article
