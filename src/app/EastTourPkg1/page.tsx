@@ -69,11 +69,9 @@ export default function HomePage() {
 
       {/* Intro */}
       <p className="text-white mb-2">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+        At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
       </p>
-      <p className="text-white mb-12">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
-      </p>
+     
 
       {/* Info Boxes */}
       {/* Info Boxes */}
@@ -87,12 +85,12 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Pick-up from any hotel/residence in the morning</li>
-      <li>• Ile Aux Cerfs trip by speed boat</li>
-      <li>• Visit GRSE Watefalls</li>
-      <li>• Perform watersport activities such as tuberide, parasailing, undersea walk.</li>
-      <li>• Lunch at Ilot Mangenie.</li>
-      <li>• Drop off from at hotel/residence </li>
+      <li>• Morning pick-up from your hotel or residence</li>
+      <li>• Exciting Ile Aux Cerfs journey by speed boat</li>
+      <li>• Stopover at the GRSE Waterfalls</li>
+      <li>• Enjoy water sports like tube ride, parasailing, and undersea walk.</li>
+      <li>• Lunch break at Ilot Mangenie.</li>
+      <li>• Return transfer back to your hotel or residence</li>
     
     </ul>
   </div>
@@ -106,11 +104,12 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Tour Availability: Daily</li>
-      <li>• Tour Duration: 8 Hours (Day Tour)</li>
-      <li>• With our flexible Pick-Up time you can start your <br /> adventure anytime between 8:30 Am to 10:00 Am</li>
-      <li>• Free Wi-Fi available in Vehicle</li>
-      <li>• Pickup time if opting for <b>group</b> outing may be very early in the morning because we need to reach before 9am</li>
+      <li>• Tour Availability: Available every day</li>
+      <li>• Tour Duration: 8 Hours (Full Day)</li>
+      <li>• Our flexible Pick-Up time lets you begin your <br /> adventure anytime from 8:30 AM to 10:00 AM</li>
+      <li>• Complimentary Wi-Fi available in the vehicle</li>
+      <li>• Pickup time for <b>group</b> tours may start earlier as arrival is required before 9 AM</li>
+
     </ul>
   </div>
 </div>
@@ -126,14 +125,14 @@ export default function HomePage() {
   </div>
 
   <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-    <li>• Payment can be made in cash to the driver in MUR, USD or EUR.</li>
-    <li>• Pricing is per vehicle, not per person.</li>
-    <li>• Full-day transportation to all the places mentioned above.</li>
-    <li>• A friendly English/French speaking driver will provide you valuable information during travels.</li>
-    <li>• Entry ticket fees not included.</li>
-    <li>• When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</li>
-    <li>• <b>Arrangements can be made with your driver if you want to combine 2 packages</b>.</li>
-    <li>• <b>NOTE: 15 and 30 seaters available</b>.</li>
+    <li>• Payment can be made directly to the driver in MUR, USD, or EUR.</li>
+    <li>• Rates are charged per vehicle, not per traveler.</li>
+    <li>• Full-day private transport to all mentioned attractions.</li>
+    <li>• Your English/French-speaking driver will share helpful insights along the journey.</li>
+    <li>• Entrance fees are not included in the package.</li>
+    <li>• For lunch, your driver will suggest top-rated local restaurants so you can enjoy authentic Mauritian flavors.</li>
+    <li>• <b>Custom arrangements can be made with your driver if you wish to combine two tours</b>.</li>
+    <li>• <b>NOTE: 15-seater and 30-seater vehicles available</b>.</li>
   </ul>
 </div>
 
