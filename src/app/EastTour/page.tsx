@@ -79,7 +79,7 @@ export default function HomePage() {
               {/* aligned like first page: center on small, preserve your layout on larger */}
               <p className="mt-3  text-[15.5px] text-black max-w-[66ch] md:w-[75%] max-sm:mx-auto break-words">
                <T>
-                                           At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+                                           At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
                                          </T>
               </p>
             </div>
@@ -144,7 +144,7 @@ export default function HomePage() {
       desc: "Splash n Fun Water Park is Mauritius’ ultimate family destination, offering a perfect mix of relaxation and excitement. Located on the east coast, it features thrilling slides, wave pools, lazy rivers, and fun splash zones for all ages.",
       img: hero1.src,
       link: "/EastTourPkg3",
-      Places: ["Tsplash n Fun Water Park", "Flacq Centeral Market", "Coeur De Ville"],
+      Places: ["Splash n Fun Water Park", "Flacq Centeral Market", "Coeur De Ville"],
     },
   ].map((card, idx) => (
     <article
