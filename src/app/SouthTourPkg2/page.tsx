@@ -62,11 +62,8 @@ export default function HomePage() {
       <p className="text-4xl md:text-5xl  mb-8 text-teal-300">As from Rs 3000 per trip</p>
 
       {/* Intro */}
-      <p className="text-white mb-2">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
-      </p>
       <p className="text-white mb-12">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+        At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
       </p>
 
       {/* Info Boxes */}
@@ -81,13 +78,13 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Pick-up from any hotel/residence in the morning</li>
-      <li>• Visit Bois Cheri Tea Factory</li>
-      <li>• Visit Grand Bassin Ganga Talao (Hindu Temple)</li>
-      <li>• Visit Black River Gorges (Viewpoint)</li>
-      <li>• Visit Chamarel (7 coloured earth and waterfall)</li>
-      <li>• Visit Rhumerie de Chameral (Rhum Factory)</li>
-      <li>• Drop off from at hotel/residence </li>
+      <li>• Morning pick-up from your hotel or residence</li>
+      <li>• Explore the Bois Chéri Tea Factory</li>
+      <li>• Visit Grand Bassin Ganga Talao (Sacred Hindu Temple)</li>
+      <li>• Stop at Black River Gorges Viewpoint</li>
+      <li>• Discover Chamarel (Seven Coloured Earth and Waterfall)</li>
+      <li>• Tour the Rhumerie de Chamarel (Rum Distillery)</li>
+      <li>• Return transfer to your hotel or residence</li>
     </ul>
   </div>
 
@@ -100,10 +97,10 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Tour Availability: Daily</li>
-      <li>• Tour Duration: 8 Hours (Day Tour)</li>
-      <li>• With our flexible Pick-Up time you can start your <br /> adventure anytime between 8:30 Am to 10:00 Am</li>
-      <li>• Free Wi-Fi available in Vehicle</li>
+      <li>• Tour Availability: Available Daily</li>
+      <li>• Tour Duration: 8 Hours (Full Day)</li>
+      <li>• With flexible Pick-Up times, you can start your <br /> adventure anytime between 8:30 AM and 10:00 AM</li>
+      <li>• Complimentary Wi-Fi available in the vehicle</li>
     </ul>
   </div>
 </div>
@@ -119,14 +116,14 @@ export default function HomePage() {
   </div>
 
   <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-    <li>• Payment can be made in cash to the driver in MUR, USD, or EUR.</li>
-    <li>• Pricing is per vehicle, not per person.</li>
-    <li>• Full day transportation to all the places mentioned above.</li>
-    <li>• A friendly English/ French speaking driver will provide you valuable information during your travels. </li>
-    <li>• Entry ticket fees not included.</li>
-    <li>• When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</li>
-    <li>• <b>Arrangements can be made with your driver if you want to combine 2 packages.</b></li>
-    <li>• <b> NOTE: 15 and 30 seaters available.</b></li>
+    <li>• Payment can be made directly to the driver in MUR, USD, or EUR.</li>
+    <li>• Rates are per vehicle, not per traveler.</li>
+    <li>• Full-day private transport to all mentioned attractions.</li>
+    <li>• Your English/French-speaking driver will share useful insights during your trip.</li>
+    <li>• Entry fees are not included in the tour price.</li>
+    <li>• For lunch, your driver will suggest top-rated local restaurants so you can enjoy authentic Mauritian cuisine.</li>
+    <li>• <b>Custom arrangements can be made with your driver if you wish to combine two tour packages.</b></li>
+    <li>• <b>NOTE: 15-seater and 30-seater vehicles available.</b></li>
   </ul>
 </div>
 
@@ -138,12 +135,12 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/bois-cheri-tea-route-mauritius-5-1.jpg",
       title: "BOIS CHERI TEA FACTORY",
-      desc: "Bois Chéri Tea Factory in Mauritius is a renowned tea estate and factory. Nestled amid lush plantations, it provides a captivating journey into tea production, offering tastings and scenic surroundings.",
+      desc: "Bois Chéri Tea Factory in Mauritius is a historic tea estate surrounded by lush greenery. Visitors can discover the tea-making process, sample fresh brews, and enjoy breathtaking plantation views.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/1000_F_99273901_WBFMF5bZksYkigGHYgNzrJlLsTaRnjy9-1.jpg",
       title: "GRAND BASSIN GANGA TALAO",
-      desc: "Grand Bassin, also known as Ganga Talao, is a sacred crater lake in Mauritius. Surrounded by temples and lush landscapes, it is a revered pilgrimage site where Hindus celebrate Maha Shivaratri.",
+      desc: "Grand Bassin, or Ganga Talao, is a sacred crater lake nestled in Mauritius’ highlands. Adorned with temples and statues, it’s a key pilgrimage site, especially during the Maha Shivaratri festival.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/istockphoto-596360018-612x612-1.jpg",
@@ -182,12 +179,12 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/15-1.jpg",
       title: "CHAMAREL 7 COLOURED EARTH AND WATERFALL",
-      desc: "Chamarel 7 Coloured Earth and Waterfall in Mauritius present a stunning natural spectacle. The unique dunes exhibit a kaleidoscope of colors, and the nearby waterfall adds to the enchanting landscape.",
+      desc: "Chamarel’s Seven Coloured Earth and Waterfall in Mauritius offer a truly magical scene. The naturally tinted sands and cascading waterfall create one of the island’s most photogenic landscapes.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/rhumerie-de-chamarel-base-1.jpg",
       title: "RHUMERIE DE CHAMAREL",
-      desc: "Rhum Agricole enthusiasts find bliss at Rhumerie de Chamarel in Mauritius. This distillery produces exquisite sugarcane-based rums, providing a delightful tour showcasing the production process and culminating in tastings of their exceptional creations.",
+      desc: "Rhumerie de Chamarel in Mauritius is a boutique rum distillery crafting fine sugarcane spirits. Guests can explore the production process and enjoy tastings of their premium, locally made rums.",
     },
   ].map((item, idx) => (
     <article
