@@ -129,14 +129,14 @@ export default function HomePage() {
   {[
     {
       title: "Package 1: North Tour 1",
-      desc: "Pamplemousses Botanical Garden in Mauritius, established in the 18th century, spans 60 acres with diverse flora. Highlights include giant water lilies, rare palms.",
+      desc: "Pamplemousses Botanical Garden in Mauritius, founded in the 18th century, stretches across 60 acres of lush greenery. Discover rare palms, exotic plants, and the iconic giant water lilies that make this garden a true natural treasure.",
       img: hero1.src,
       link: "/Pricing&Detail",
       places: ["Pamplemousses Garden of Mauritius", "Aventure Du Sucre", "Chateau De Labourdonnais"],
     },
     {
       title: "Package 2: North Tour 2",
-      desc: "Grand Baie Bazar in Mauritius is a vibrant market offering a fusion of local crafts, textiles, and souvenirs. Visitors explore stalls filled with colorful items, spices, and unique finds in a lively atmosphere.",
+      desc: "Grand Baie Bazaar in Mauritius is a lively marketplace filled with color and culture. Explore its many stalls offering handmade crafts, local textiles, fragrant spices, and unique souvenirs in a warm island atmosphere.",
       img: hero1.src,
       link: "/Package2",
       places: ["Caudan Waterfront", "Bazar Port Louis", "Fort Adelaide At Citadelle"],
