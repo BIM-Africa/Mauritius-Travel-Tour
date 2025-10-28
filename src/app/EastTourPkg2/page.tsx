@@ -68,9 +68,6 @@ export default function HomePage() {
       <p className="text-4xl md:text-5xl  mb-8 text-teal-300">As from Rs 3000 per trip</p>
 
       {/* Intro */}
-      <p className="text-white mb-2">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
-      </p>
       <p className="text-white mb-12">
         At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
       </p>
@@ -87,13 +84,13 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Pick-up from any hotel/residence in the morning</li>
-      <li>• Ile Aux Cerfs Trip by Catamaran.</li>
-      <li>• Visit GRSE Watefalls</li>
-      <li>• Lunch on Catamaran</li>
-      <li>• Land at Ile aux Cerfs</li>
-      <li>• Perform watersport activities such as tuberide, parasailing, undersea walk.</li>
-      <li>• Drop off from at hotel/residence </li>
+      <li>• Morning pick-up from your hotel or residence</li>
+      <li>• Relaxing Ile Aux Cerfs cruise by catamaran</li>
+      <li>• Stop and admire the GRSE Waterfalls</li>
+      <li>• Delicious lunch served on board the catamaran</li>
+      <li>• Leisure time on the beaches of Ile aux Cerfs</li>
+      <li>• Enjoy water activities such as tube ride, parasailing, and undersea walk.</li>
+      <li>• Return transfer to your hotel or residence</li>
     
     </ul>
   </div>
@@ -107,11 +104,11 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Tour Availability: Daily</li>
-      <li>• Tour Duration: 8 Hours (Day Tour)</li>
-      <li>• With our flexible Pick-Up time you can start your <br /> adventure anytime between 8:30 Am to 10:00 Am</li>
-      <li>• Free Wi-Fi available in Vehicle</li>
-      <li>• Pickup time if opting for <b>group</b> outing may be very early in the morning because we need to reach before 9am</li>
+      <li>• Tour Availability: Available Daily</li>
+      <li>• Tour Duration: 8 Hours (Full Day)</li>
+      <li>• With flexible Pick-Up times, start your <br /> adventure anytime between 8:30 AM and 10:00 AM</li>
+      <li>• Complimentary Wi-Fi provided in the vehicle</li>
+      <li>• Pick-up time for <b>group</b> tours may start early to ensure arrival before 9 AM</li>
     </ul>
   </div>
 </div>
@@ -127,14 +124,14 @@ export default function HomePage() {
   </div>
 
   <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-    <li>• Payment can be made in cash to the driver in MUR, USD or EUR.</li>
-    <li>• Pricing is per vehicle, not per person.</li>
-    <li>• Full-day transportation to all the places mentioned above.</li>
-    <li>• A friendly English/French speaking driver will provide you valuable information during travels.</li>
-    <li>• Entry ticket fees not included.</li>
-    <li>• When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</li>
-    <li>• <b>Arrangements can be made with your driver if you want to combine 2 packages</b>.</li>
-    <li>• <b>NOTE: 15 and 30 seaters available</b>.</li>
+    <li>• Payment can be made directly to the driver in MUR, USD, or EUR.</li>
+    <li>• Prices are per vehicle, not per person.</li>
+    <li>• Full-day transport covering all the locations listed above.</li>
+    <li>• Your English/French-speaking driver will share insights and guidance throughout the day.</li>
+    <li>• Entrance fees are not included in the tour cost.</li>
+    <li>• For lunch, your driver can suggest top local restaurants so you can enjoy authentic island cuisine.</li>
+    <li>• <b>Special requests can be arranged with your driver if you wish to combine two tours</b>.</li>
+    <li>• <b>NOTE: 15-seater and 30-seater vehicles available</b>.</li>
   </ul>
 </div>
 
@@ -147,7 +144,7 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/catamaran-cruise-ile-aux-cerfs-from-pointe-jerome-lowest-discounted-price-3-1.jpg",
       title: "ILE AUX CERFS TRIP BY CATAMARAN",
-      desc: "Sail to Ile aux Cerfs by catamaran in Mauritius for a leisurely and scenic adventure. Enjoy the gentle sway of the boat, turquoise waters, and the beauty of this island haven.",
+      desc: "Sail to Ile aux Cerfs on a catamaran in Mauritius for a calm and picturesque escape. Soak in the ocean breeze, clear blue lagoons, and the serene charm of this tropical island paradise.",
     },
   ].map((item, idx) => (
     <article
