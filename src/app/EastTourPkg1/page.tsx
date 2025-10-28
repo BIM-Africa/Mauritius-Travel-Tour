@@ -68,7 +68,7 @@ export default function HomePage() {
       <p className="text-4xl md:text-5xl  mb-8 text-teal-300">As from Rs 3000 per trip</p>
 
       {/* Intro */}
-      <p className="text-white mb-2">
+      <p className="text-white mb-12">
         At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
       </p>
      
