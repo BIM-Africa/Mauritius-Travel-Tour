@@ -122,21 +122,21 @@ export default function HomePage() {
   {[
     {
       title: "Package 1: South Tour 1",
-      desc: "Trou aux Cerfs Volcano is a dormant crater in Mauritius, surrounded by lush greenery. Offering panoramic views, it is a geological marvel and popular tourist destination, providing a unique natural experience.",
+      desc: "Trou aux Cerfs Volcano in Mauritius is a dormant crater surrounded by rich vegetation and stunning views. This natural landmark offers panoramic scenery and insight into the island’s volcanic origins — a must-see attraction.",
       img: hero1.src,
       link: "/SouthTourPkg1",
       places: ["Trou aux Cerfs Volcano", "Ship Model Factory", "Horse Riding on the Beach"],
     },
     {
       title: "Package 2: South Tour 2",
-      desc: "The Ship Model Factory at Floreal is an exceptional workshop where skilled artisans meticulously craft detailed ship models. This unique destination combines craftsmanship and history, .",
+      desc: "The Ship Model Factory in Floreal is a fascinating workshop where expert artisans handcraft detailed miniature ships. It’s a place where artistry meets heritage, showcasing precision, patience, and a deep love for maritime history.",
       img: hero1.src,
       link: "/SouthTourPkg2",
       places: ["Bois Cheri Tea Factory", "Grand Bassin Ganga Talao", "Black River Gorges Viewpoint"],
     },
     {
       title: "Package 3: South Tour 3",
-      desc: "Gris Gris, on Mauritius’ wild south coast, is famed for its “angry sea.” With no protective coral reef, the Indian Ocean slams into dark basalt cliffs, sending spray skyward — a dramatic, wind-swept lookout showcasing the island’s raw, untamed beauty.",
+      desc: "Gris Gris, located on Mauritius’ dramatic southern coast, is known for its wild waves and rugged cliffs. With no coral reef to break the surf, it reveals the island’s raw power — a breathtaking spot for nature lovers.",
       img: hero1.src,
       link: "/SouthTourPkg3",
       places: ["Gris Gris Angry Area", "Crocodile Park", "Marine Park"],
