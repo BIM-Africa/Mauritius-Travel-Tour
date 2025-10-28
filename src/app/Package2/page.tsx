@@ -63,14 +63,9 @@ export default function HomePage() {
       <p className="text-4xl md:text-5xl  mb-8 text-teal-300"><T>As from Rs 3000 per trip</T></p>
 
       {/* Intro */}
-      <p className="text-white mb-2">
-        <T>
-                     At mauritius travel & tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
-                   </T>
-      </p>
       <p className="text-white mb-12">
          <T>
-                      At mauritius travel & tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+                      At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
                     </T>
       </p>
 
@@ -86,13 +81,13 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• <T>Pick-up from any hotel/residence in the morning</T></li>
-      <li>• <T>Visit Caudan Waterfront</T></li>
-      <li>• <T>Visit Port Louis Bazar (Local Market)</T></li>
-      <li>• <T>Visit Fort Adelaide at Citadel</T></li>
-      <li>• <T>Visit Kuanfu Tea (Medicinal Tea)</T></li>
-      <li>• <T>Visit Odysseo Oceanarium</T></li>
-      <li>• <T>Drop-off at hotel/residence</T></li>
+    <li>• Pick-up from your hotel or residence in the morning.</li>
+    <li>• Explore the lively Caudan Waterfront, a hub of shopping, dining, and entertainment.</li>
+    <li>• Stroll through the Port Louis Local Market (Bazar) and experience its colorful, cultural atmosphere.</li>
+    <li>• Visit Fort Adelaide at Citadel for panoramic views of Port Louis and its historic charm.</li>
+    <li>• Discover Kuanfu Tea, where you can learn about and sample traditional medicinal teas.</li>
+    <li>• Visit Odysseo Oceanarium, the largest in the Indian Ocean, for an immersive marine adventure.</li>
+    <li>• Drop-off at your hotel or residence after the tour.</li>
     </ul>
   </div>
 
@@ -105,10 +100,10 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• <T>Tour Availability: Daily</T></li>
-            <li>• <T>Tour Duration: 8 Hours (Day Tour)</T></li>
-            <li>•<T>With our flexible Pick-Up time you can start your adventure anytime between 8:30 Am to 10:00 Am</T></li>
-            <li>•<T>Free Wi-Fi available in Vehicle</T></li>
+    <li>• Tour Availability: Operates Daily.</li>
+    <li>• Tour Duration: Approximately 8 Hours (Full-Day Tour).</li>
+    <li>• Flexible Pick-Up Time — start your experience anytime between 8:30 AM and 10:00 AM.</li>
+    <li>• Free Wi-Fi available in the vehicle.</li>
     </ul>
   </div>
 </div>
@@ -124,14 +119,14 @@ export default function HomePage() {
   </div>
 
   <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-     <li>• <T>Payment can be made in cash to the driver in MUR, USD or EUR</T>.</li>
-      <li>• <T>Pricing is per vehicle, not per person.</T></li>
-      <li>• <T>Full-day transportation to all the places mentioned above.</T></li>
-      <li>• <T>A friendly English/French speaking driver will provide you valuable information during travels.</T></li>
-      <li>• <T>Entry ticket fees not included.</T></li>
-      <li>• <T>When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</T></li>
-      <li>• <T>Arrangements can be made with your driver if you want to combine 2 packages.</T></li>
-      <li>• <T>NOTE: 15 and 30 seaters available.</T></li>
+    <li>• Payment can be made directly to the driver in MUR, USD, or EUR.</li>
+    <li>• Pricing is per vehicle, not per person.</li>
+    <li>• Includes full-day private transportation to all mentioned attractions.</li>
+    <li>• A professional English- or French-speaking driver will share insights throughout your journey.</li>
+    <li>• Entry ticket fees are not included.</li>
+    <li>• For lunch, your driver will suggest top-rated local restaurants so you can enjoy authentic Mauritian flavors.</li>
+    <li>• <b>Custom combinations are available — speak with your driver if you wish to merge two packages.</b></li>
+    <li>• <b>NOTE: 15-seater and 30-seater vehicles available upon request.</b></li>
   </ul>
 </div>
 
@@ -143,17 +138,17 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/71305298-Le-Caudan-Waterfront-Shopping-Mile-in-Port-Louis-Mauritius-1-768x597.jpg",
       title: "CAUDAN WATERFRONT",
-      desc: "Caudan Waterfront, located in Port Louis, Mauritius, is a vibrant shopping and entertainment destination. Boasting a scenic harbor, it offers a mix of retail outlets, dining options, cultural experiences, and lively events.",
+      desc: "Caudan Waterfront in Port Louis, Mauritius, is a lively hub for shopping, dining, and leisure. Overlooking the harbor, it blends culture, art, and entertainment in a vibrant seaside setting.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-11-at-10.14.10-1-600x467.jpeg",
       title: "BAZAR PORT LOUIS",
-      desc: "Bazar Port Louis, the local market in the heart of Mauritius, is a bustling haven of colors and flavors. Discover an array of local goods, spices, textiles, and crafts in a lively atmosphere. The market’s energetic vibe, friendly vendors, ",
+      desc: "Port Louis Market, also known as the Central Market, is a sensory delight filled with fresh produce, local spices, handmade crafts, and island specialties. It’s the perfect place to experience Mauritius’ everyday life.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/100g1f000001gr0kzFC70-1-600x467.jpg",
       title: "FORT ADELAIDE AT CITADELLE",
-      desc: "Fort Adelaide at Citadelle is a historic fortress in Mauritius, offering panoramic views of Port Louis. Built in the 19th century, it stands as a cultural landmark with a blend of military architecture and scenic beauty.",
+      desc: "Fort Adelaide (La Citadelle) is a historic hilltop fortress built in the 19th century, offering sweeping views over Port Louis and its harbor. A landmark where history and scenery unite.",
     },
   ].map((item, idx) => (
     <article
@@ -188,12 +183,12 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/b-6-1.jpg",
       title: "KUANFU TEA",
-      desc: "Kuanfu Tea is a renowned tea brand known for its premium quality and diverse selection of traditional and innovative teas. Embracing Chinese tea culture, they offer a unique and delightful tea experience.",
+      desc: "Kuanfu Tea offers a fascinating insight into the world of medicinal and traditional teas. Visitors can learn about the health benefits of various blends and enjoy a soothing tasting experience.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/1c-1.jpg",
       title: "ODYSSEO OCEANARIUM",
-      desc: "Odysseo Oceanarium is a captivating underwater sanctuary, showcasing diverse marine life through immersive exhibits. With state-of-the-art facilities, it educates and entertains, emphasizing conservation and fostering a deep appreciation for oceans.",
+      desc: "Odysseo Oceanarium, the largest in the Indian Ocean region, showcases breathtaking marine ecosystems through modern, interactive exhibits — a captivating experience for both adults and children.",
     },
     
   ].map((item, idx) => (
