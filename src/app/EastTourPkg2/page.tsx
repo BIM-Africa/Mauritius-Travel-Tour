@@ -69,7 +69,7 @@ export default function HomePage() {
 
       {/* Intro */}
       <p className="text-white mb-12">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+        At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
       </p>
 
       {/* Info Boxes */}
