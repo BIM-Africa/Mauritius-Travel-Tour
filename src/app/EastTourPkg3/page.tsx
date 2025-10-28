@@ -86,9 +86,9 @@ export default function HomePage() {
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
       <li>• Morning pick-up from your hotel or residence</li>
-      <li>• Explore the scenic Trou Aux Cerfs Volcano</li>
-      <li>• Visit the Ship Model Factory and shop for handcrafted souvenirs.</li>
-      <li>• Discover La Vallée des Couleurs Nature Park and enjoy thrilling activities like ziplining, quad biking, luge karting, trekking, and crossing the Nepalese bridge.</li>
+      <li>• Explore splash n fun water park.</li>
+      <li>• Visit the Flacq central market.</li>
+      <li>• Visit Flacq coeur de ville mall.</li>
       <li>• Experience horse riding along the Riambel Beach</li>
       <li>• Return transfer to your hotel or residence</li>
       
