@@ -127,21 +127,21 @@ export default function HomePage() {
   {[
     {
       title: "Package 1: East Tour 1",
-      desc: "Set off on a thrilling speed boat ride to Ile aux Cerfs in Mauritius. Feel the excitement as you glide across crystal-clear waters and arrive at this stunning island escape known for its soft sands and turquoise lagoons.",
+      desc: "Embark on a thrilling speed boat trip to Ile aux Cerfs in Mauritius. Feel the rush as you glide across crystal-clear waters and arrive at this tropical paradise filled with white sand beaches and turquoise lagoons.",
       img: hero1.src,
       link: "/EastTourPkg1",
       Places: ["Ile Aux Cerfs trip by Speed Boat"],
     },
     {
       title: "Package 2: East Tour 2",
-      desc: "Cruise to Ile aux Cerfs on a catamaran in Mauritius for a calm and scenic getaway. Relax as the boat drifts gently over the waves, surrounded by clear blue seas and breathtaking island views.",
+      desc: "Sail to Ile aux Cerfs on a catamaran in Mauritius for a relaxed and scenic journey. Enjoy the calm rhythm of the waves, breathtaking ocean views, and the island’s unspoiled beauty waiting to be explored.",
       img: hero1.src,
       link: "/EastTourPkg2",
       Places: ["Ile Aux Cerfs Trip by Catamaran"],
     },
     {
       title: "Package 3: East Tour 3",
-      desc: "Splash n Fun Water Park is Mauritius’ top spot for families seeking both excitement and relaxation. Situated on the island’s east coast, it offers massive slides, wave pools, lazy rivers, and fun water zones for kids.",
+      desc: "Splash n Fun Water Park is Mauritius’ ultimate family destination, offering a perfect mix of relaxation and excitement. Located on the east coast, it features thrilling slides, wave pools, lazy rivers, and fun splash zones for all ages.",
       img: hero1.src,
       link: "/EastTourPkg3",
       Places: ["Tsplash n Fun Water Park", "Flacq Centeral Market", "Coeur De Ville"],
