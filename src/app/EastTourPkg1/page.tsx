@@ -145,7 +145,7 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/081_Ile_Aux_Cerfs_J_Sjoman_V2_16bits-copy-720x480-be7a3cb1-3e03-4484-97ce-87379f1dbde8-1.jpg",
       title: "ILE AUX CERFS TRIP BY SPEED BOAT",
-      desc: "Embark on an exhilarating journey to Ile aux Cerfs by speed boat in Mauritius. Experience the thrill of fast-paced travel, arriving at this pristine island paradise with turquoise waters and pristine beaches.",
+      desc: "Set off on an exciting speed boat adventure to Ile aux Cerfs in Mauritius. Feel the rush of the ride as you reach this stunning island haven, surrounded by crystal-clear lagoons and powdery white beaches.",
     },
   ].map((item, idx) => (
     <article
