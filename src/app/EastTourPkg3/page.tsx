@@ -69,11 +69,8 @@ export default function HomePage() {
       <p className="text-4xl md:text-5xl  mb-8 text-teal-300">As from Rs 3000 per trip</p>
 
       {/* Intro */}
-      <p className="text-white mb-2">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
-      </p>
       <p className="text-white mb-12">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+        At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
       </p>
 
       {/* Info Boxes */}
@@ -88,12 +85,12 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Pick-up from any hotel/residence in the morning</li>
-      <li>• Visit Trou Aux Cerfs Volcano</li>
-      <li>• Visit Ship Model Factory where you can even make a purchase.</li>
-      <li>• Visit La Valee Des Couleur s Nature Park where you will be able to engage in activities such as zipline, quadbike, Luge kart, Nepalese bridge, Trekking.</li>
-      <li>• Horse Riding on the Beach at Riambel</li>
-      <li>• Drop off from at hotel/residence </li>
+      <li>• Morning pick-up from your hotel or residence</li>
+      <li>• Explore the scenic Trou Aux Cerfs Volcano</li>
+      <li>• Visit the Ship Model Factory and shop for handcrafted souvenirs.</li>
+      <li>• Discover La Vallée des Couleurs Nature Park and enjoy thrilling activities like ziplining, quad biking, luge karting, trekking, and crossing the Nepalese bridge.</li>
+      <li>• Experience horse riding along the Riambel Beach</li>
+      <li>• Return transfer to your hotel or residence</li>
       
     </ul>
   </div>
@@ -107,10 +104,10 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Tour Availability: Daily</li>
-      <li>• Tour Duration: 8 Hours (Day Tour)</li>
-      <li>• With our flexible Pick-Up Time, you can start your adventure anytime between 8:30 am to 10:00 am.</li>
-      <li>• Free WI-FI available in Vehicle</li>
+      <li>• Tour Availability: Available Daily</li>
+      <li>• Tour Duration: 8 Hours (Full Day)</li>
+      <li>• With flexible Pick-Up times, you can begin your adventure anytime between 8:30 AM and 10:00 AM.</li>
+      <li>• Complimentary Wi-Fi provided in the vehicle</li>
     </ul>
   </div>
 </div>
@@ -126,14 +123,14 @@ export default function HomePage() {
   </div>
 
   <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-    <li>• Payment can be made in cash to the driver in MUR, USD, or EUR.</li>
-    <li>• Pricing is per vehicle, not per person.</li>
-    <li>• Full day transportation to all the places mentioned above.</li>
-    <li>• A friendly English/ French speaking driver will provide you valuable information during your travels. </li>
-    <li>•  Entry ticket fees not included.</li>
-    <li>• When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</li>
-    <li>• <b>Arrangements can be made with your driver if you want to combine 2 packages.</b></li>
-    <li>• <b>NOTE: 15 and 30 seaters available.</b></li>
+    <li>• Payment can be made directly to the driver in MUR, USD, or EUR.</li>
+    <li>• Prices are charged per vehicle, not per person.</li>
+    <li>• Full-day transportation to all the listed attractions.</li>
+    <li>• Your English/French-speaking driver will share insights and helpful information throughout the trip.</li>
+    <li>• Entry tickets are not included in the package.</li>
+    <li>• For lunch, your driver will recommend the best local restaurants so you can enjoy authentic Mauritian dishes.</li>
+    <li>• <b>Special arrangements can be made with your driver if you wish to combine two tour packages.</b></li>
+    <li>• <b>NOTE: 15-seater and 30-seater vehicles available.</b></li>
   </ul>
 </div>
 
@@ -146,17 +143,17 @@ export default function HomePage() {
     {
       img: "https://deals.mu/wp-content/uploads/2022/04/Splash-n-Fun-Leisure-Park-1-1.jpg",
       title: "TSPLASH N FUN WATER PARK",
-      desc: "Splash n Fun Water Park is Mauritius’ ultimate family adventure destination, blending tropical relaxation with thrilling aquatic rides. Located on the east coast, the park features giant water slides, wave pools, lazy rivers, and kids’ splash zones.",
+      desc: "Splash n Fun Water Park is Mauritius’ leading destination for family fun, perfectly blending tropical leisure with exciting water attractions. Located on the east coast, it offers massive slides, wave pools, lazy rivers, and splash areas for all ages.",
     },
     {
       img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/fe/e6/c6/marche-de-flacq.jpg?w=1200&h=-1&s=1",
       title: "FLACQ CENTRAL MARKET",
-      desc: "Flacq Central Market is one of Mauritius’ largest and most vibrant open-air markets, offering a lively blend of colors, aromas, and culture. Locals and visitors alike browse stalls filled with fresh produce, tropical fruits, handmade crafts.",
+      desc: "Flacq Central Market is among Mauritius’ biggest and most colorful markets, bursting with energy, aromas, and local charm. Browse vibrant stalls filled with tropical fruits, fresh produce, handmade crafts, and authentic Mauritian goods.",
     },
     {
       img: "https://coeurdeville.mu/sites/default/files/inline-images/cdv-home-img_2.png",
       title: "COEUR DE VILLE",
-      desc: "Cœur de Ville is a modern lifestyle and shopping hub in Mauritius, blending retail, dining, and leisure in a vibrant community setting. With its mix of local and international brands, cafés, and entertainment spaces.",
+      desc: "Cœur de Ville is a stylish shopping and lifestyle destination in Mauritius, offering a mix of retail, dining, and entertainment in one dynamic space. Enjoy a blend of local boutiques, international brands, cafés, and social hangouts.",
     },
     
   ].map((item, idx) => (
