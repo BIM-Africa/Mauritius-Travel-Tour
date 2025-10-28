@@ -122,21 +122,21 @@ export default function HomePage() {
   {[
     {
       title: "Package 1: South Tour 1",
-      desc: "Trou aux Cerfs Volcano in Mauritius is a dormant crater surrounded by rich vegetation and stunning views. This natural landmark offers panoramic scenery and insight into the island’s volcanic origins — a must-see attraction.",
+      desc: "Trou aux Cerfs Volcano in Mauritius is a dormant crater blanketed by lush greenery and panoramic scenery. This remarkable site offers sweeping island views and a glimpse into Mauritius’ volcanic past, making it a highlight for visitors.",
       img: hero1.src,
       link: "/SouthTourPkg1",
       places: ["Trou aux Cerfs Volcano", "Ship Model Factory", "Horse Riding on the Beach"],
     },
     {
       title: "Package 2: South Tour 2",
-      desc: "The Ship Model Factory in Floreal is a fascinating workshop where expert artisans handcraft detailed miniature ships. It’s a place where artistry meets heritage, showcasing precision, patience, and a deep love for maritime history.",
+      desc: "The Ship Model Factory in Floreal is an inspiring workshop where skilled craftsmen create intricate miniature vessels. Combining artistry and history, it showcases detailed craftsmanship and the island’s strong maritime tradition.",
       img: hero1.src,
       link: "/SouthTourPkg2",
       places: ["Bois Cheri Tea Factory", "Grand Bassin Ganga Talao", "Black River Gorges Viewpoint"],
     },
     {
       title: "Package 3: South Tour 3",
-      desc: "Gris Gris, located on Mauritius’ dramatic southern coast, is known for its wild waves and rugged cliffs. With no coral reef to break the surf, it reveals the island’s raw power — a breathtaking spot for nature lovers.",
+      desc: "Gris Gris, found on Mauritius’ untamed southern coast, captivates with its roaring waves and towering cliffs. With no coral reef to soften the surf, it displays the raw beauty and wild spirit of the Indian Ocean.",
       img: hero1.src,
       link: "/SouthTourPkg3",
       places: ["Gris Gris Angry Area", "Crocodile Park", "Marine Park"],
