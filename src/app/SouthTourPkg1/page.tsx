@@ -69,11 +69,8 @@ export default function HomePage() {
       <p className="text-4xl md:text-5xl  mb-8 text-teal-300">As from Rs 3000 per trip</p>
 
       {/* Intro */}
-      <p className="text-white mb-2">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
-      </p>
       <p className="text-white mb-12">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+        At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
       </p>
 
       {/* Info Boxes */}
@@ -88,12 +85,12 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Pick-up from any hotel/residence in the morning</li>
-      <li>• Visit Trou Aux Cerfs Volcano</li>
-      <li>• Visit Ship Model Factory where you can even make a purchase.</li>
-      <li>• Visit La Valee Des Couleur s Nature Park where you will be able to engage in activities such as zipline, quadbike, Luge kart, Nepalese bridge, Trekking.</li>
-      <li>• Horse Riding on the Beach at Riambel</li>
-      <li>• Drop off from at hotel/residence </li>
+      <li>• Morning pick-up from your hotel or residence</li>
+      <li>• Explore the majestic Trou Aux Cerfs Volcano</li>
+      <li>• Stop by the Ship Model Factory and shop for handcrafted pieces.</li>
+      <li>• Discover La Vallée des Couleurs Nature Park and take part in fun activities like ziplining, quad biking, luge karting, trekking, and the Nepalese bridge walk.</li>
+      <li>• Enjoy a peaceful horse ride along Riambel Beach</li>
+      <li>• Return transfer to your hotel or residence</li>
       
     </ul>
   </div>
@@ -107,10 +104,10 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Tour Availability: Daily</li>
-      <li>• Tour Duration: 8 Hours (Day Tour)</li>
-      <li>• With our flexible Pick-Up Time, you can start your adventure anytime between 8:30 am to 10:00 am.</li>
-      <li>• Free WI-FI available in Vehicle</li>
+      <li>• Tour Availability: Available Daily</li>
+      <li>• Tour Duration: 8 Hours (Full Day)</li>
+      <li>• With flexible Pick-Up times, you can begin your adventure anytime between 8:30 AM and 10:00 AM.</li>
+      <li>• Complimentary Wi-Fi provided in the vehicle</li>
     </ul>
   </div>
 </div>
@@ -126,14 +123,14 @@ export default function HomePage() {
   </div>
 
   <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-    <li>• Payment can be made in cash to the driver in MUR, USD, or EUR.</li>
-    <li>• Pricing is per vehicle, not per person.</li>
-    <li>• Full day transportation to all the places mentioned above.</li>
-    <li>• A friendly English/ French speaking driver will provide you valuable information during your travels. </li>
-    <li>•  Entry ticket fees not included.</li>
-    <li>• When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</li>
-    <li>• <b>Arrangements can be made with your driver if you want to combine 2 packages.</b></li>
-    <li>• <b>NOTE: 15 and 30 seaters available.</b></li>
+    <li>• Payment can be made directly to the driver in MUR, USD, or EUR.</li>
+    <li>• Prices are based per vehicle, not per person.</li>
+    <li>• Full-day private transport covering all the sites listed above.</li>
+    <li>• Your English/French-speaking driver will share helpful insights throughout your journey.</li>
+    <li>• Entry fees are not included in the package.</li>
+    <li>• For lunch, your driver will suggest great local restaurants where you can enjoy authentic Mauritian food.</li>
+    <li>• <b>Custom arrangements can be made with your driver if you wish to combine two tour options.</b></li>
+    <li>• <b>NOTE: 15-seater and 30-seater vehicles available.</b></li>
   </ul>
 </div>
 
@@ -146,12 +143,12 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/trou-aux-cerfs_HERO-1.jpg",
       title: "TROU AUX CERFS VOLCANO",
-      desc: "Trou aux Cerfs Volcano is a dormant crater in Mauritius, surrounded by lush greenery. Offering panoramic views, it is a geological marvel and popular tourist destination, providing a unique natural experience.",
+      desc: "Trou aux Cerfs Volcano in Mauritius is a dormant crater surrounded by rich greenery and scenic landscapes. This natural attraction offers panoramic island views and a glimpse into Mauritius’ volcanic history — a true geological wonder.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/IMG_4743-1.jpg",
       title: "SHIP MODEL FACTORY",
-      desc: "The Ship Model Factory at Floreal is an exceptional workshop where skilled artisans meticulously craft detailed ship models. This unique destination combines craftsmanship and history, showcasing maritime artistry with precision.",
+      desc: "The Ship Model Factory in Floreal is a captivating workshop where talented artisans handcraft intricate miniature ships. It’s a place where heritage and artistry come together, highlighting Mauritius’ long-standing maritime craftsmanship.",
     },
     
   ].map((item, idx) => (
@@ -187,12 +184,12 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/horse-riding-bahamas-excursions-1.jpg",
       title: "HORSE RIDING ON THE BEACH",
-      desc: "Horse riding on the beaches of Mauritius is a magical experience, combining the rhythmic sound of hooves on sandy shores with the turquoise sea backdrop. It’s a serene and exhilarating adventure.",
+      desc: "Horseback riding on the beaches of Mauritius offers a magical experience, blending the rhythmic sound of hooves on sandy shores with a backdrop of turquoise sea. It’s both a serene and exhilarating adventure.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/IMG_4743-1.jpg",
       title: "LA VALLEE DES COULEURS NATURE PARK",
-      desc: "La Vallée des Couleurs Nature Park in Mauritius is a breathtaking natural reserve featuring vibrant landscapes, colored earth, waterfalls, and indigenous flora. It offers thrilling activities, including ziplining, safari and quad biking.",
+      desc: "La Vallée des Couleurs Nature Park in Mauritius is a stunning reserve, boasting vibrant landscapes, colored earth, waterfalls, and native flora. It provides thrilling activities such as ziplining, safari, and quad biking.",
     },
     
     
