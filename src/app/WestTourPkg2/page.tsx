@@ -68,11 +68,8 @@ export default function HomePage() {
       <p className="text-4xl md:text-5xl  mb-8 text-teal-300">As from Rs 3000 per trip</p>
 
       {/* Intro */}
-      <p className="text-white mb-2">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
-      </p>
       <p className="text-white mb-12">
-        At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, <br /> comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+        At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
       </p>
 
       {/* Info Boxes */}
@@ -87,12 +84,12 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Pick-up from any hotel/residence in the morning</li>
-      <li>• Visit Casela Zoo</li>
-      <li>• You will have the opportunity to engage in activities such as quad biking, zipline, nepalese bridge, canyon swing, toboggan, tulawaka and racer doub doub</li>
-      <li>• Walk with lions, animal feeding, fish feeding, 4D cinema and paddock camel ride.</li>
-      <li>• Predator kingdom guided tour.</li>
-      <li>• Drop off from at hotel/residence </li>
+    <li>• Pick-up from your hotel or residence in the morning.</li>
+    <li>• Visit the world-famous Casela Nature & Leisure Park.</li>
+    <li>• Take part in thrilling activities such as quad biking, ziplining, the Nepalese bridge, canyon swing, toboggan rides, and the Tulawaka and Racer Doub Doub adventures.</li>
+    <li>• Experience close encounters through walking with lions, animal feeding, fish feeding, 4D cinema, and camel rides.</li>
+    <li>• Enjoy the guided Predator Kingdom tour for an unforgettable wildlife experience.</li>
+    <li>• Drop-off at your hotel or residence after the tour.</li>
     
     </ul>
   </div>
@@ -106,11 +103,11 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• Tour Availability: Daily</li>
-      <li>• Tour Duration: 8 Hours (Day Tour)</li>
-      <li>• With our flexible Pick-Up time you can start your <br /> adventure anytime between 8:30 Am to 10:00 Am</li>
-      <li>• Free Wi-Fi available in Vehicle</li>
-      <li>• Pickup time if opting for <b>group</b> outing may be very early in the morning because we need to reach before 9am</li>
+    <li>• Tour Availability: Operates Daily.</li>
+    <li>• Tour Duration: Approximately 8 Hours (Full-Day Tour).</li>
+    <li>• Flexible Pick-Up Time — begin your adventure anytime between 8:30 AM and 10:00 AM.</li>
+    <li>• Free Wi-Fi available onboard the vehicle.</li>
+    <li>• If opting for a <b>group</b> excursion, pick-up may be scheduled earlier to ensure arrival before 9:00 AM.</li>
     </ul>
   </div>
 </div>
@@ -126,14 +123,14 @@ export default function HomePage() {
   </div>
 
   <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-    <li>• Payment can be made in cash to the driver in MUR, USD or EUR.</li>
+    <li>• Payment can be made directly to the driver in MUR, USD, or EUR.</li>
     <li>• Pricing is per vehicle, not per person.</li>
-    <li>• Full-day transportation to all the places mentioned above.</li>
-    <li>• A friendly English/French speaking driver will provide you valuable information during travels.</li>
-    <li>• Entry ticket fees not included.</li>
-    <li>• When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</li>
-    <li>• <b>Arrangements can be made with your driver if you want to combine 2 packages</b>.</li>
-    <li>• <b>NOTE: 15 and 30 seaters available</b>.</li>
+    <li>• Includes full-day private transportation to all mentioned destinations.</li>
+    <li>• A friendly English- or French-speaking driver will share helpful insights during your journey.</li>
+    <li>• Entry ticket fees are not included.</li>
+    <li>• For lunch, your driver will suggest top-rated local restaurants so you can enjoy authentic Mauritian cuisine.</li>
+    <li>• <b>Custom combinations are available — speak with your driver if you’d like to merge two tour packages.</b></li>
+    <li>• <b>NOTE: 15-seater and 30-seater vehicles available upon request.</b></li>
   </ul>
 </div>
 
@@ -146,7 +143,7 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/entrance-to-the-park-1.jpg",
       title: "CASELA NATURE AND LEISURE PARK",
-      desc: "Casela Nature and Leisure Park in Mauritius is an exhilarating blend of wildlife encounters, adventure activities, and natural beauty. Visitors enjoy safari tours, ziplining, and interactions with diverse animals.",
+      desc: "Casela Nature & Leisure Park in Mauritius offers a thrilling blend of adventure and wildlife. From safaris and ziplining to encounters with big cats and exotic animals, it’s the ultimate outdoor experience surrounded by lush natural scenery.",
     },
   ].map((item, idx) => (
     <article
