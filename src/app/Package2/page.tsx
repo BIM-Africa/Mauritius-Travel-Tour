@@ -136,17 +136,17 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/71305298-Le-Caudan-Waterfront-Shopping-Mile-in-Port-Louis-Mauritius-1-768x597.jpg",
+      img: "/caudan-waterfront-mauritius-travel-tour-min.jpg",
       title: "CAUDAN WATERFRONT",
       desc: "Caudan Waterfront in Port Louis, Mauritius, is a lively hub for shopping, dining, and leisure. Overlooking the harbor, it blends culture, art, and entertainment in a vibrant seaside setting.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-11-at-10.14.10-1-600x467.jpeg",
+      img: "/bazarre-port-louis-mauritius-travel-tour-min.jpg",
       title: "BAZAR PORT LOUIS",
       desc: "Port Louis Market, also known as the Central Market, is a sensory delight filled with fresh produce, local spices, handmade crafts, and island specialties. It’s the perfect place to experience Mauritius’ everyday life.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/100g1f000001gr0kzFC70-1-600x467.jpg",
+      img: "/forte-adelaide-mauritius-travel-tour-min.jpg",
       title: "FORT ADELAIDE AT CITADELLE",
       desc: "Fort Adelaide (La Citadelle) is a historic hilltop fortress built in the 19th century, offering sweeping views over Port Louis and its harbor. A landmark where history and scenery unite.",
     },
@@ -181,12 +181,12 @@ export default function HomePage() {
   {[
     
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/b-6-1.jpg",
+      img: "/kuanfu-tea-mauritius-travel-tour-min.jpg",
       title: "KUANFU TEA",
       desc: "Kuanfu Tea offers a fascinating insight into the world of medicinal and traditional teas. Visitors can learn about the health benefits of various blends and enjoy a soothing tasting experience.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/1c-1.jpg",
+      img: "/odysseo-mauritius-travel-tour-min.jpg",
       title: "ODYSSEO OCEANARIUM",
       desc: "Odysseo Oceanarium, the largest in the Indian Ocean region, showcases breathtaking marine ecosystems through modern, interactive exhibits — a captivating experience for both adults and children.",
     },
