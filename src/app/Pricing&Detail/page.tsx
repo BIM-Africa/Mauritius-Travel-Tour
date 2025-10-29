@@ -146,12 +146,12 @@ export default function HomePage() {
       desc: "Pamplemousses Botanical Garden in Mauritius, founded in the 18th century, covers 60 acres of exotic flora. Highlights feature giant water lilies and several rare palm species.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/LAventure-du-Sucre-in-Mauritius-2.jpg",
+      img: "/adventure-du-sucre-mauritius-travel-tour-min.jpg",
       title: "AVENTURE DU SUCRE",
       desc: "Aventure du Sucre is a museum set in a restored sugar factory. It explores Mauritius’ sugar heritage, displaying artifacts, machinery, and culture in a beautifully curated environment.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/Chateau-de-Labourdonnais-ezgif.com-webp-to-png-converter-1.png",
+      img: "/chateau-de-labordonnais-mauritius-travel-tour.jpg",
       title: "CHATEAU DE LABOURDONNAIS",
       desc: "Château de Labourdonnais is a grand estate reflecting colonial heritage. The 19th-century mansion is surrounded by lush gardens, fruit orchards, and a distillery offering exquisite local products.",
     },
@@ -186,17 +186,17 @@ export default function HomePage() {
 <div className="flex flex-wrap justify-center items-center gap-6 max-w-[1300px] w-[90%] mx-auto pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/pic-flora-bay-residence-touristique-grand-baie-3-1-768x597.jpg",
+      img: "/bazzare-grande-baie-mauritius-travel-tour.jpg",
       title: "GRAND BAIE BAZAR",
       desc: "Grand Baie Bazar in Mauritius is a lively marketplace filled with local crafts, clothing, and souvenirs. Visitors browse colorful stalls of spices, art, and handmade goods in a vibrant setting.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/greenseaturtle-1-768x597.webp",
+      img: "/sea-turtle-signtseeing-mauritius-travel-tour.jpg",
       title: "SEA TURTLE SIGHTING",
       desc: "Trou aux Biches Beach is a breathtaking location for sea turtle encounters. Its clear turquoise waters offer a serene setting where snorkelers often swim beside these gentle marine creatures.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/1000_F_130330369_5GnslMvsC6o96x0DKXHTY2FjyXff68z1-1-600x467.jpg",
+      img: "/red-church-mauritius-travel-tour.jpg",
       title: "RED CHURCH",
       desc: "The Red Church at Cap Malheureux stands as a famous landmark with beautiful ocean views and vivid architecture — ideal for photos. Its bold red roof contrasts perfectly with the bright lagoon.",
     },
