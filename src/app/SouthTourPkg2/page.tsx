@@ -133,17 +133,17 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/bois-cheri-tea-route-mauritius-5-1.jpg",
+      img: "/tea.jpg",
       title: "BOIS CHERI TEA FACTORY",
       desc: "Bois Chéri Tea Factory in Mauritius is a historic tea estate surrounded by lush greenery. Visitors can discover the tea-making process, sample fresh brews, and enjoy breathtaking plantation views.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/1000_F_99273901_WBFMF5bZksYkigGHYgNzrJlLsTaRnjy9-1.jpg",
+      img: "/grandbassin.jpg",
       title: "GRAND BASSIN GANGA TALAO",
       desc: "Grand Bassin, or Ganga Talao, is a sacred crater lake nestled in Mauritius’ highlands. Adorned with temples and statues, it’s a key pilgrimage site, especially during the Maha Shivaratri festival.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/istockphoto-596360018-612x612-1.jpg",
+      img: "/blackriver.jpg",
       title: "BLACK RIVER GORGES VIEWPOINT",
       desc: "Black River Gorges Viewpoint in Mauritius offers a breathtaking panorama of the lush, untouched wilderness of the Black River Gorges National Park. It’s a scenic spot showcasing the island’s natural beauty.",
     },
@@ -177,12 +177,12 @@ export default function HomePage() {
 <div className="flex flex-wrap justify-center items-center gap-6 max-w-[1300px] w-[95%] sm:w-[85%] md:w-[75%] lg:w-[60%] mx-auto pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/15-1.jpg",
+      img: "/waterfall.jpg",
       title: "CHAMAREL 7 COLOURED EARTH AND WATERFALL",
       desc: "Chamarel’s Seven Coloured Earth and Waterfall in Mauritius offer a truly magical scene. The naturally tinted sands and cascading waterfall create one of the island’s most photogenic landscapes.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/rhumerie-de-chamarel-base-1.jpg",
+      img: "/rum.jpg",
       title: "RHUMERIE DE CHAMAREL",
       desc: "Rhumerie de Chamarel in Mauritius is a boutique rum distillery crafting fine sugarcane spirits. Guests can explore the production process and enjoy tastings of their premium, locally made rums.",
     },
