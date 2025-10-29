@@ -141,12 +141,12 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[60%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/trou-aux-cerfs_HERO-1.jpg",
+      img: "/trou-au-cerfs-mauritius-travel-tour-min.jpg",
       title: "TROU AUX CERFS VOLCANO",
       desc: "Trou aux Cerfs Volcano in Mauritius is a dormant crater surrounded by rich greenery and scenic landscapes. This natural attraction offers panoramic island views and a glimpse into Mauritius’ volcanic history — a true geological wonder.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/IMG_4743-1.jpg",
+      img: "/boat-meseau-mauritius-travel-tour-min.jpg",
       title: "SHIP MODEL FACTORY",
       desc: "The Ship Model Factory in Floreal is a captivating workshop where talented artisans handcraft intricate miniature ships. It’s a place where heritage and artistry come together, highlighting Mauritius’ long-standing maritime craftsmanship.",
     },
@@ -182,12 +182,12 @@ export default function HomePage() {
 <div className="flex flex-wrap justify-center items-center gap-6 max-w-[1300px] w-[60%] mx-auto pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/horse-riding-bahamas-excursions-1.jpg",
+      img: "/horse-riding-mauritius-travel-tour-min.jpg",
       title: "HORSE RIDING ON THE BEACH",
       desc: "Horseback riding on the beaches of Mauritius offers a magical experience, blending the rhythmic sound of hooves on sandy shores with a backdrop of turquoise sea. It’s both a serene and exhilarating adventure.",
     },
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/IMG_4743-1.jpg",
+      img: "/valle-de-couleur-mauritius-travel-tour-min.jpg",
       title: "LA VALLEE DES COULEURS NATURE PARK",
       desc: "La Vallée des Couleurs Nature Park in Mauritius is a stunning reserve, boasting vibrant landscapes, colored earth, waterfalls, and native flora. It provides thrilling activities such as ziplining, safari, and quad biking.",
     },
