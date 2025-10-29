@@ -111,8 +111,6 @@ export default function HomePage() {
 
             <p className="text-white leading-5">
               <T>Welcome to Mauritius Travel & Tour, your trusted travel companion with over a decade of dedicated service. We take pride in providing dependable, comfortable, and tailored transportation experiences across the stunning island of Mauritius.</T>
-              <br /> <br/>
-              <T>At Mauritius Travel & Tour, every trip is more than just a transfer — it’s a journey built on care, comfort, and convenience. </T>
               <br />
             </p>
             <br />
@@ -120,7 +118,7 @@ export default function HomePage() {
             {/* NEW: Expandable continuation without moving content elsewhere */}
             <p className="text-white leading-5">
               <T>
-                Whether you’re exploring Mauritius for the first time or traveling as a local, our modern vehicles and professional chauffeurs ensure every ride is safe, smooth, and enjoyable. From airport pickups to full-day tours and private excursions, we’re committed to turning every journey into a memorable experience.
+                At Mauritius Travel & Tour, every trip is more than just a transfer — it’s a journey built on care, comfort, and convenience. Whether you’re exploring Mauritius for the first time or traveling as a local, our modern vehicles and professional chauffeurs ensure every ride is safe, smooth, and enjoyable. From airport pickups to full-day tours and private excursions, we’re committed to turning every journey into a memorable experience.
               </T>
               <br />
               <br />
@@ -168,7 +166,7 @@ Our mission goes beyond transportation — we connect people with the true beaut
 
         <p className="mt-3 text-[15.5px] text-black max-w-[66ch] md:w-[75%] max-sm:mx-auto break-words">
           <T>
-            At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+            At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
           </T>
         </p>
       </div>
@@ -182,20 +180,20 @@ Our mission goes beyond transportation — we connect people with the true beaut
         {/* first row */}
         <div className="flex flex-wrap justify-center gap-8">
           <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] shadow-sm ring-1 ring-[#0e4f53]/10">
-            <T>Airport Transfer</T>
+            <T>Airport Transfers</T>
           </button>
           <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] ring-1 ring-[#0e4f53]/10">
-            <T>Hotel Transfer</T>
+            <T>Hotel Transfers</T>
           </button>
         </div>
 
         {/* second row */}
         <div className="mt-3 flex flex-wrap justify-center gap-8">
           <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] ring-1 ring-[#0e4f53]/10">
-            <T>Excursion</T>
+            <T>Excursions</T>
           </button>
           <button className="sm:w-44 w-36 rounded-full py-3 text-[14px] bg-[#0f2f33] text-[#e8ffff] ring-1 ring-[#0e4f53]/10">
-            <T>Door Step Service</T>
+            <T>Door Step Services</T>
           </button>
         </div>
       </div>
@@ -260,12 +258,12 @@ Our mission goes beyond transportation — we connect people with the true beaut
               <T>{c.title}</T>
             </h3>
             <p className="m-0 text-[13.5px] leading-relaxed text-white/95 max-w-[36ch] drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
-              <T>Welcome to Mauritius Travel &amp; Tours, your trusted partner for more than 10 years.</T>
+              <T>Welcome to Mauritius Travel & Tours, your gateway to unforgettable island adventures — explore the South’s nature, the North’s charm, the East’s serenity, and the West’s sunsets.</T>
             </p>
 
             {/* Read More */}
             <span className="mt-4 inline-block rounded-full px-4 py-2 text-[13px] text-white bg-gray-500/90 ring-1 ring-white/15 transition duration-[2500ms] ease-in-out group-hover:bg-gray-500 group-hover:shadow-[0_6px_20px_rgba(0,0,0,.35)]">
-              <T>Read More</T> &#8250;
+              <T>View Tours</T> &#8250;
             </span>
           </div>
 
@@ -295,7 +293,7 @@ Our mission goes beyond transportation — we connect people with the true beaut
                     ring-1 ring-white/40 shadow-[0_8px_28px_rgba(0,0,0,.25)]"
             >
               <Image src={cab} alt="Cab" width={42} height={42} />
-              <p className="m-0 px-5 text-center text-[14px] font-bold leading-snug text-white">
+              <p className="m-0 px-5 text-center text-[14px] leading-snug text-white">
                 <T>Customised transfer options available as per your needs</T>
               </p>
             </div>
@@ -322,7 +320,7 @@ Our mission goes beyond transportation — we connect people with the true beaut
 
   <p className="mt-3 ml-0 md:ml-20 max-w-[520px] text-[15px] text-[#e6ffff]">
    
-  <T>At Mauritius Travel & Tour, we ensure every arrival and departure is arrival departure seamless</T>, offering reliable, comfortable, and timely airport transfers with vehicles that meet the highest standards and comfort.
+  <T>At Mauritius Travel & Tour, we make every arrival and departure effortless, offering punctual, comfortable, and stress-free airport transfers with vehicles maintained to the highest standards of quality and comfort.</T>
 
 
   </p>
@@ -363,7 +361,7 @@ Our mission goes beyond transportation — we connect people with the true beaut
                   <div className="flex items-center gap-3">
                     <Image src={location} alt="" width={60} height={26} />
                     <div className="text-[20px] md:text-[22px] leading-none">
-                      <span className="opacity-95">Hotel/<br className="sm:hidden block" />Accommodation</span>
+                      <span className="opacity-95">Hotel / <br className="sm:hidden block" />Accommodation</span>
                     </div>
                   </div>
                 </div>
@@ -435,8 +433,7 @@ Our mission goes beyond transportation — we connect people with the true beaut
               <div className="px-5 pb-6 text-center">
                 <div className="font-semibold tracking-wide text-[18px]">ADIL &amp; HAPPY CLIENTS</div>
                 <p className="mt-1 text-[13.5px] leading-relaxed text-[#3b4c4f]">
-                  Welcome to Mauritius Travel &amp; Tour, your trusted partner of more than 10 years in transportation
-                  services
+                  At Mauritius Travel & Tour, our journey with happy clients has spanned over 10 years — built on trust, comfort, and excellent service.
                 </p>
               </div>
             </div>
