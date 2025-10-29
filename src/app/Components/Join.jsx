@@ -139,7 +139,7 @@ export default function Join() {
               height={38}
             />
             <p className="m-0 text-[13.5px] leading-snug">
-              <span className="font-medium"><T>Flexible options</T></span> – 
+              <span className="font-medium"><T>Flexible options</T></span> – Adjust your pickup time and route as you wish.
             </p>
           </div>
         </div>
