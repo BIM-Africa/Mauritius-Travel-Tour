@@ -141,7 +141,7 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/entrance-to-the-park-1.jpg",
+      img: "/casela.jpg",
       title: "CASELA NATURE AND LEISURE PARK",
       desc: "Casela Nature & Leisure Park in Mauritius offers a thrilling blend of adventure and wildlife. From safaris and ziplining to encounters with big cats and exotic animals, it’s the ultimate outdoor experience surrounded by lush natural scenery.",
     },
