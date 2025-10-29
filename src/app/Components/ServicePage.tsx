@@ -111,7 +111,7 @@ export default function HomePage() {
 
             <p className="text-white leading-5">
               <T>Welcome to Mauritius Travel & Tour, your trusted travel companion with over a decade of dedicated service. We take pride in providing dependable, comfortable, and tailored transportation experiences across the stunning island of Mauritius.</T>
-              <br />
+              <br /> <br/>
               <T>At Mauritius Travel & Tour, every trip is more than just a transfer — it’s a journey built on care, comfort, and convenience. </T>
               <br />
             </p>
