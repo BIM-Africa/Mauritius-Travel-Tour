@@ -79,7 +79,7 @@ export default function HomePage() {
               {/* aligned like first page: center on small, preserve your layout on larger */}
               <p className="mt-3  text-[15.5px] text-black max-w-[66ch] md:w-[75%] max-sm:mx-auto break-words">
                <T>
-                                           At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
+                                           Explore the tranquil charm of the East with Mauritius Travel & Tours, your trusted partner for more than a decade.
                                          </T>
               </p>
             </div>
