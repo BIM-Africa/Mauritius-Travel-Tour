@@ -65,15 +65,9 @@ export default function HomePage() {
       <p className="text-4xl md:text-5xl  mb-8 text-teal-300"><T>As from Rs 3000 per trip</T></p>
 
       {/* Intro */}
-      <p className="text-white mb-2">
-   <T>
-              At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
-            </T>
-</p>
-
 <p className="text-white mb-12">
   <T>
-              At Mauritius Travel & Tour, we take pride in offering a fleet of vehicles that go beyond expectations — combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+              At Mauritius Travel & Tour, we’re dedicated to providing service that exceeds expectations — blending safety, comfort, and spotless cleanliness to make every journey both dependable and delightful.
             </T>
 </p>
 
@@ -90,13 +84,13 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-         <li><T>Pick-up from any hotel/residence in the morning</T></li>
-  <li><T>Visit Pamplemousses Botanical Garden</T></li>
-  <li><T>Visit Aventure du Sucre Museum</T></li>
-  <li><T>Visit Grand Baie Bazar</T></li>
-  <li><T>Sea Turtle sighting at Trou aux Biches Beach</T></li>
-  <li><T>Visit the Red Church at Cap Malheureux</T></li>
-  <li><T>Drop-off at hotel/residence</T></li>
+<li><T>Pick-up from any resort or residence in the morning</T></li>
+<li><T>Explore the famous Pamplemousses Botanical Garden</T></li>
+<li><T>Discover the fascinating Aventure du Sucre Museum</T></li>
+<li><T>Shop and wander around Grand Baie Bazar</T></li>
+<li><T>Enjoy Sea Turtle spotting at Trou aux Biches Beach</T></li>
+<li><T>Admire the Red Church located at Cap Malheureux</T></li>
+<li><T>Return and drop-off at your hotel or residence</T></li>
     </ul>
   </div>
 
@@ -109,10 +103,10 @@ export default function HomePage() {
     </div>
 
     <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-      <li>• <T>Tour Availability: Daily</T></li>
-      <li>• <T>Tour Duration: 8 Hours (Day Tour)</T></li>
-      <li>•<T>With our flexible Pick-Up time you can start your adventure anytime between 8:30 Am to 10:00 Am</T></li>
-      <li>•<T>Free Wi-Fi available in Vehicle</T></li>
+<li>• <T>Tour Availability: Every single day</T></li>
+<li>• <T>Tour Duration: Around 8 Hours (Full Day)</T></li>
+<li>•<T>With our flexible Pick-Up hours you can start your trip anytime between 8:30 Am and 10:00 Am</T></li>
+<li>•<T>Free Wi-Fi connection available inside Vehicle</T></li>
     </ul>
   </div>
 </div>
@@ -128,14 +122,14 @@ export default function HomePage() {
   </div>
 
   <ul className="space-y-2 text-gray-200 text-lg leading-relaxed">
-  <li>• <T>Payment can be made in cash to the driver in MUR, USD or EUR</T>.</li>
-  <li>• <T>Pricing is per vehicle, not per person.</T></li>
-  <li>• <T>Full-day transportation to all the places mentioned above.</T></li>
-  <li>• <T>A friendly English/French speaking driver will provide you valuable information during travels.</T></li>
-  <li>• <T>Entry ticket fees not included.</T></li>
-  <li>• <T>When it comes to lunch, rest assured that your driver will recommend the best local restaurants along the way, ensuring you get a taste of delicious cuisine.</T></li>
-  <li>• <T>Arrangements can be made with your driver if you want to combine 2 packages.</T></li>
-  <li>• <T>NOTE: 15 and 30 seaters available.</T></li>
+<li>• <T>Payment can be done in cash to the driver using MUR, USD or EUR</T>.</li>
+<li>• <T>Charges are per vehicle, not per traveler.</T></li>
+<li>• <T>Full-day transport to all the sites mentioned above.</T></li>
+<li>• <T>A polite English or French driver will share useful details during your travel.</T></li>
+<li>• <T>Entrance ticket costs are not included.</T></li>
+<li>• <T>For lunch, your driver will suggest top local restaurants ensuring a true culinary experience.</T></li>
+<li>• <T>Arrangements may be made with your driver if you wish to combine 2 packages.</T></li>
+<li>• <T>NOTE: 15-seater and 30-seater vehicles available.</T></li>
 </ul>
 
 </div>
@@ -147,19 +141,19 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-10-at-16.25.40-1-1-768x597.jpeg",
+      img: "/pamplemousse-garden-mauritius-travel-tour.jpg",
       title: "Pamplemousses Garden of Mauritius",
-      desc: "Pamplemousses Botanical Garden in Mauritius, established in the 18th century, spans 60 acres with diverse flora. Highlights include giant water lilies, rare palms.",
+      desc: "Pamplemousses Botanical Garden in Mauritius, founded in the 18th century, covers 60 acres of exotic flora. Highlights feature giant water lilies and several rare palm species.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/LAventure-du-Sucre-in-Mauritius-2.jpg",
       title: "AVENTURE DU SUCRE",
-      desc: "Aventure du Sucre is a museum within a former sugar factory. It explores the island’s sugar industry history, showcasing the process, artifacts, and cultural impact in a captivating setting.",
+      desc: "Aventure du Sucre is a museum set in a restored sugar factory. It explores Mauritius’ sugar heritage, displaying artifacts, machinery, and culture in a beautifully curated environment.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/Chateau-de-Labourdonnais-ezgif.com-webp-to-png-converter-1.png",
       title: "CHATEAU DE LABOURDONNAIS",
-      desc: "Château de Labourdonnais is a historic estate offering a glimpse into colonial life. The 19th-century mansion is surrounded by lush gardens, orchards, and a distillery producing premium products.",
+      desc: "Château de Labourdonnais is a grand estate reflecting colonial heritage. The 19th-century mansion is surrounded by lush gardens, fruit orchards, and a distillery offering exquisite local products.",
     },
   ].map((item, idx) => (
     <article
@@ -194,17 +188,17 @@ export default function HomePage() {
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/pic-flora-bay-residence-touristique-grand-baie-3-1-768x597.jpg",
       title: "GRAND BAIE BAZAR",
-      desc: "Grand Baie Bazar in Mauritius is a vibrant market offering a fusion of local crafts, textiles, and souvenirs. Visitors explore stalls filled with colorful items, spices, and unique finds in a lively atmosphere.",
+      desc: "Grand Baie Bazar in Mauritius is a lively marketplace filled with local crafts, clothing, and souvenirs. Visitors browse colorful stalls of spices, art, and handmade goods in a vibrant setting.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/greenseaturtle-1-768x597.webp",
       title: "SEA TURTLE SIGHTING",
-      desc: "Trou aux Biches Beach is a stunning locale for sea turtle sightings. Crystal-clear waters provide a magical backdrop for this unique experience. Snorkelers often find themselves swimming alongside these gentle creatures.",
+      desc: "Trou aux Biches Beach is a breathtaking location for sea turtle encounters. Its clear turquoise waters offer a serene setting where snorkelers often swim beside these gentle marine creatures.",
     },
     {
       img: "https://islandridemauritius.com/wp-content/uploads/2024/03/1000_F_130330369_5GnslMvsC6o96x0DKXHTY2FjyXff68z1-1-600x467.jpg",
       title: "RED CHURCH",
-      desc: "The Red Church at Cap Malheureux is an iconic landmark with stunning sea views and vibrant architecture — perfect for photos. Its striking red roof contrasts beautifully with the turquoise lagoon.",
+      desc: "The Red Church at Cap Malheureux stands as a famous landmark with beautiful ocean views and vivid architecture — ideal for photos. Its bold red roof contrasts perfectly with the bright lagoon.",
     },
   ].map((item, idx) => (
     <article
