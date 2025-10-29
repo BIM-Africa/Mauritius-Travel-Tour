@@ -142,7 +142,7 @@ export default function HomePage() {
   {[
     {
       img: "https://deals.mu/wp-content/uploads/2022/04/Splash-n-Fun-Leisure-Park-1-1.jpg",
-      title: "TSPLASH N FUN WATER PARK",
+      title: "SPLASH N FUN WATER PARK",
       desc: "Splash n Fun Water Park is Mauritius’ leading destination for family fun, perfectly blending tropical leisure with exciting water attractions. Located on the east coast, it offers massive slides, wave pools, lazy rivers, and splash areas for all ages.",
     },
     {
