@@ -139,17 +139,17 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://explora.mu/media/k2/items/cache/ca70f255bd2394191d82d5fae8f6827e_XL.jpg",
+      img: "/grisgris.jpg",
       title: "GRIS GRIS ANGRY SEA",
       desc: "Gris Gris, located on the wild southern coast of Mauritius, is famous for its dramatic waves and untamed beauty. Without a coral reef barrier, the ocean crashes powerfully against dark cliffs, creating a spectacular and unforgettable view.",
     },
     {
-      img: "https://toursmauritius.mu/wp-content/uploads/2018/07/7585923632_IMG_4239.jpg",
+      img: "/crocodile.jpg",
       title: "CROCODILE PARK",
       desc: "La Vanille Crocodile Park is a tropical haven filled with wildlife, including Nile crocodiles, giant tortoises, monkeys, and lush greenery. This eco-park blends conservation, education, and adventure for visitors of all ages.",
     },
     {
-      img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/d8/4d/2c/the-inner-edge-of-the.jpg?w=1200&h=-1&s=1",
+      img: "marine.jpg",
       title: "MARINE PARK",
       desc: "Blue Bay Marine Park is one of Mauritius’ most stunning natural lagoons, known for its crystal-clear waters and colorful coral gardens. Perfect for snorkeling, it offers a glimpse into the island’s incredible underwater world.",
     },
