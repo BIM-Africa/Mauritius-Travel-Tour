@@ -110,9 +110,9 @@ export default function HomePage() {
             </h2>
 
             <p className="text-white leading-5">
-              <T>Welcome to Mauritius Travel & Tour, your trusted travel partner for over 10 years.</T>
+              <T>Welcome to Mauritius Travel & Tour, your trusted travel companion with over a decade of dedicated service. We take pride in providing dependable, comfortable, and tailored transportation experiences across the stunning island of Mauritius.</T>
               <br />
-              <T>We take pride in offering reliable, comfortable, and personalized transportation services across the breathtaking island of Mauritius.</T>
+              <T>At Mauritius Travel & Tour, every trip is more than just a transfer — it’s a journey built on care, comfort, and convenience. </T>
               <br />
             </p>
             <br />
@@ -120,26 +120,14 @@ export default function HomePage() {
             {/* NEW: Expandable continuation without moving content elsewhere */}
             <p className="text-white leading-5">
               <T>
-                At Mauritius Travel & Tour, every journey is more than just a ride — it&#39;s an
-                experience of care, comfort, and convenience.
+                Whether you’re exploring Mauritius for the first time or traveling as a local, our modern vehicles and professional chauffeurs ensure every ride is safe, smooth, and enjoyable. From airport pickups to full-day tours and private excursions, we’re committed to turning every journey into a memorable experience.
               </T>
               <br />
-              <T>
-                Whether you&#39;re discovering Mauritius for the first time or commuting as a
-                local, our modern fleet and professional chauffeurs ensure you travel safely and
-                in style.
-              </T>
-              <br />
-              <T>
-                From airport transfers to private tours and daily commutes, we&#39;re dedicated to
-                making every mile memorable.
-              </T>
               <br />
               {aboutOpen && (
                 <>
                   <T>
-                    Our team focuses on punctuality, comfort, and transparent pricing — so you can
-                    relax and enjoy the island while we handle the journey.
+Our mission goes beyond transportation — we connect people with the true beauty of Mauritius. With personalized itineraries, local insights, and a passion for excellence, we help you discover hidden gems, cultural landmarks, and scenic wonders at your own pace. Travel with confidence, knowing you’re in the hands of a team that values reliability, hospitality, and your complete satisfaction.
                   </T>
                 </>
               )}
