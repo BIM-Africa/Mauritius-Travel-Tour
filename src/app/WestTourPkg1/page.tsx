@@ -139,7 +139,7 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/caption-2.jpg",
+      img: "/dolphin.jpg",
       title: "DOLPHIN WATCHING",
       desc: "Dolphin watching on the western coast of Mauritius is a breathtaking marine adventure. Glide across crystal-clear waters and witness playful dolphins in their natural environment — an unforgettable encounter surrounded by the island’s serene coastal beauty.",
     },
