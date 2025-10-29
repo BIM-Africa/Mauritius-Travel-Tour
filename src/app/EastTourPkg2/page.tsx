@@ -142,7 +142,7 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://islandridemauritius.com/wp-content/uploads/2024/03/catamaran-cruise-ile-aux-cerfs-from-pointe-jerome-lowest-discounted-price-3-1.jpg",
+      img: "/ileauxcerfs.jpg",
       title: "ILE AUX CERFS TRIP BY CATAMARAN",
       desc: "Sail to Ile aux Cerfs on a catamaran in Mauritius for a calm and picturesque escape. Soak in the ocean breeze, clear blue lagoons, and the serene charm of this tropical island paradise.",
     },
