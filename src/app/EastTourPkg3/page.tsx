@@ -141,17 +141,17 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "https://deals.mu/wp-content/uploads/2022/04/Splash-n-Fun-Leisure-Park-1-1.jpg",
+      img: "/splashnfun.jpg",
       title: "SPLASH N FUN WATER PARK",
       desc: "Splash n Fun Water Park is Mauritius’ leading destination for family fun, perfectly blending tropical leisure with exciting water attractions. Located on the east coast, it offers massive slides, wave pools, lazy rivers, and splash areas for all ages.",
     },
     {
-      img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/fe/e6/c6/marche-de-flacq.jpg?w=1200&h=-1&s=1",
+      img: "/flacq.jpg",
       title: "FLACQ CENTRAL MARKET",
       desc: "Flacq Central Market is among Mauritius’ biggest and most colorful markets, bursting with energy, aromas, and local charm. Browse vibrant stalls filled with tropical fruits, fresh produce, handmade crafts, and authentic Mauritian goods.",
     },
     {
-      img: "https://coeurdeville.mu/sites/default/files/inline-images/cdv-home-img_2.png",
+      img: "/coeurdeville.jpg",
       title: "COEUR DE VILLE",
       desc: "Cœur de Ville is a stylish shopping and lifestyle destination in Mauritius, offering a mix of retail, dining, and entertainment in one dynamic space. Enjoy a blend of local boutiques, international brands, cafés, and social hangouts.",
     },
