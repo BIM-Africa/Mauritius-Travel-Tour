@@ -77,8 +77,7 @@ export default function HomePage() {
 
               {/* aligned like first page: center on small, preserve your layout on larger */}
               <p className="mt-3  text-[15.5px] text-black max-w-[66ch] md:w-[75%] max-sm:mx-auto break-words">
-                At Mauritius Travel &amp; Tour, we take pride in offering a fleet of vehicles that go beyond expectations — 
-                combining safety, comfort, and impeccable cleanliness to ensure every ride is as reliable as it is enjoyable.
+                Discover the wild beauty of the South with Mauritius Travel & Tours, your trusted companion for over 10 years.
               </p>
             </div>
 
