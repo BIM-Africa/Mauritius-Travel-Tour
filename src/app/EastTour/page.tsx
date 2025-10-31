@@ -141,10 +141,10 @@ export default function HomePage() {
     },
     {
       title: "Package 3: East Tour 3",
-      desc: "Splash n Fun Water Park is Mauritius’ ultimate family destination, offering a perfect mix of relaxation and excitement. Located on the east coast, it features thrilling slides, wave pools, lazy rivers, and fun splash zones for all ages.",
+      desc: "Experience the thrill of horse riding along Mauritius’ scenic east coast beaches. Enjoy peaceful rides by the turquoise lagoon or through lush coastal trails — a perfect blend of adventure and tranquility.",
       img: hero1.src,
       link: "/EastTourPkg3",
-      Places: ["Splash n Fun Water Park", "Flacq Centeral Market", "Coeur De Ville"],
+      Places: ["Horse Riding", "Flacq Centeral Market", "Coeur De Ville"],
     },
   ].map((card, idx) => (
     <article
