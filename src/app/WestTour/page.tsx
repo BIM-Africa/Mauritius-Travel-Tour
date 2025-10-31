@@ -179,7 +179,7 @@ export default function HomePage() {
               icon: timing,
               text: (
                 <>
-                  Timing - <br />8 hrs
+                  Approximate Timing - 8 hrs
                 </>
               ),
             },
