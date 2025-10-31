@@ -183,7 +183,7 @@ export default function HomePage() {
               icon: timing,
               text: (
                 <>
-                  <T>Timing</T> - <br /><T>8 hrs</T>
+                  <T>Approximate Timing</T> - <T>8 hrs</T>
                 </>
               ),
             },
