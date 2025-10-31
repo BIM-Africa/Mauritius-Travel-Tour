@@ -141,9 +141,9 @@ export default function HomePage() {
 <div className="flex max-w-[1300px] w-[90%] mx-auto flex-wrap justify-center items-center gap-6  pb-10 bg-white">
   {[
     {
-      img: "/splashnfun.jpg",
-      title: "SPLASH N FUN WATER PARK",
-      desc: "Splash n Fun Water Park is Mauritius’ leading destination for family fun, perfectly blending tropical leisure with exciting water attractions. Located on the east coast, it offers massive slides, wave pools, lazy rivers, and splash areas for all ages.",
+      img: "/horseeast.jpg",
+      title: "HORSE RIDING",
+      desc: "Experience the thrill of horse riding along Mauritius’ scenic east coast beaches. Enjoy peaceful rides by the turquoise lagoon or through lush coastal trails — a perfect blend of adventure and tranquility.",
     },
     {
       img: "/flacq.jpg",
