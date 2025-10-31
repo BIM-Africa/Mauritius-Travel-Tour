@@ -89,7 +89,7 @@ export default function HomePage() {
       <li>• Explore splash n fun water park.</li>
       <li>• Visit the Flacq central market.</li>
       <li>• Visit Flacq coeur de ville mall.</li>
-      <li>• Experience horse riding along the Riambel Beach</li>
+      <li>• Experience horse riding at legasea in Belle Mare</li>
       <li>• Return transfer to your hotel or residence</li>
       
     </ul>
