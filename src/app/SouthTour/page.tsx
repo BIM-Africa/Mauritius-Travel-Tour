@@ -167,7 +167,7 @@ export default function HomePage() {
           {[
             { icon: money, text: <>Pricing - <br />as from Rs 3000</> },
             { icon: group, text: <>Travel Members <br />1–4 persons</> },
-            { icon: timing, text: <>Timing - <br />8 hrs</> },
+            { icon: timing, text: <> Approximate Timing - 8 hrs</> },
           ].map((item, i) => (
             <div
               key={i}
