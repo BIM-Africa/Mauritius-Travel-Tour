@@ -213,7 +213,7 @@ export default function Navbar() {
         >
           <div className="pointer-events-none absolute left-4 right-4 top-[54px] h-px bg-white/70/80 opacity-80" />
 
-          <div className="w-[70px]  h-[70px] absolute left-[-10px]">
+          <Link href="/" aria-label="Go to homepage" className="block w-[70px] h-[70px] absolute left-[-10px]">
             <Image
               src={logo}
               alt="Logo"
@@ -221,7 +221,7 @@ export default function Navbar() {
               height={70}
               className="w-[70px] h-[70px] rounded-full object-cover border-2 border-white/80 bg-white"
             />
-          </div>
+          </Link>
 
           <div className="flex items-center md:gap-18 lg:gap-40">
             {/* Desktop nav */}
@@ -289,13 +289,15 @@ export default function Navbar() {
               </svg>
             </button>
 
-            <Image
+            <Link href="/" aria-label="Go to homepage" onClick={() => setMenuOpen(false)}>
+              <Image
               src={logo}
               alt="Logo"
               width={100}
               height={100}
               className="w-[92px] h-[82px] rounded-full object-cover border-2 border-white/80 bg-white mb-6"
             />
+            </Link>
 
             {/* Language dropdown (MOBILE) */}
             <select
@@ -315,7 +317,7 @@ export default function Navbar() {
               <Link href="/" onClick={() => setMenuOpen(false)} className="hover:underline">
                 {labels.home}
               </Link>
-              <Link href="#about" onClick={() => setMenuOpen(false)} className="hover:underline">
+              <Link href="/about-us" onClick={() => setMenuOpen(false)} className="hover:underline">
                 {labels.about}
               </Link>
               <Link href="/#tours" onClick={() => setMenuOpen(false)} className="hover:underline">
@@ -328,7 +330,9 @@ export default function Navbar() {
                 {labels.contact}
               </Link>
               <Link
-                href="#book"
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMenuOpen(false)}
                 className="mt-2 inline-flex items-center justify-center rounded-full font-semibold
                   px-5 py-2 min-w-[160px]

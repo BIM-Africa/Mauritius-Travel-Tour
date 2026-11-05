@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { GlobalI18n } from "@/lib/i18n-global";
 import Script from "next/script"; // ✅ import Script
+import SectionLinks from "@/components/SectionLinks";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <SectionLinks />
         <GlobalI18n>{children}</GlobalI18n>
 
         {/* ✅ Rybbit Analytics Script */}

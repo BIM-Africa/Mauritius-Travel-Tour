@@ -34,13 +34,13 @@ export default function Footer() {
             <h2 className="text-[#3ec6c3] text-3xl font-bold mb-4"><T>Travel With Us</T></h2>
 
             <div className="flex items-center justify-center md:justify-start mb-4">
-              <Image
+              <Link href="/" aria-label="Go to homepage"><Image
                 src={logo}
                 alt="Mauritius Logo"
                 width={64}
                 height={64}
                 className="w-16 h-16 rounded-full mr-3 object-cover"
-              />
+              /></Link>
             </div>
             
 
@@ -69,9 +69,9 @@ export default function Footer() {
             <div className="md:pt-3">
               <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold"><T>Quick Links</T></h4>
               <ul className="space-y-2">
-                <li><a href="#tours" className="hover:underline"><T>Tour</T></a></li>
-                <li><a href="#transfer" className="hover:underline"><T>Airport Transfer</T></a></li>
-                <li><a href="#about" className="hover:underline"><T>About</T></a></li>
+                <li><a href="/#tours" className="hover:underline"><T>Tour</T></a></li>
+                <li><a href="/#transfer" className="hover:underline"><T>Airport Transfer</T></a></li>
+                <li><a href="/about-us" className="hover:underline"><T>About</T></a></li>
               </ul>
             </div>
 
@@ -79,7 +79,7 @@ export default function Footer() {
             <div className="md:pt-3">
               <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold"><T>Support</T></h4>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:underline"><T>Contact Us</T></a></li>
+                <li><a href="/contact-us" className="hover:underline"><T>Contact Us</T></a></li>
                 <li><a href="#" className="hover:underline"><T>Privacy Policy</T></a></li>
                 <li><a href="#" className="hover:underline"><T>Terms &amp; Conditions</T></a></li>
               </ul>
@@ -186,13 +186,13 @@ export default function Footer() {
             <h2 className="text-[#3ec6c3] text-3xl font-bold mb-4"><T>Travel With Us</T></h2>
 
             <div className="flex items-center justify-center md:justify-start mb-4">
-              <Image
+              <Link href="/" aria-label="Go to homepage"><Image
                 src={logo}
                 alt="Mauritius Logo"
                 width={64}
                 height={64}
                 className="w-16 h-16 rounded-full mr-3 object-cover"
-              />
+              /></Link>
             </div>
 
             <p className="text-sm leading-5 text-white max-w-md mx-auto md:mx-0">
@@ -220,13 +220,13 @@ export default function Footer() {
             <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold"><T>Quick Links</T></h4>
             <ul className="space-y-2">
               <li>
-                <a href="#tours" className="hover:underline"><T>Tour</T></a>
+                <a href="/#tours" className="hover:underline"><T>Tour</T></a>
               </li>
               <li>
-                <a href="#transfer" className="hover:underline"><T>Airport Transfer</T></a>
+                <a href="/#transfer" className="hover:underline"><T>Airport Transfer</T></a>
               </li>
               <li>
-                <a href="#about" className="hover:underline"><T>About</T></a>
+                <a href="/about-us" className="hover:underline"><T>About</T></a>
               </li>
             </ul>
 
@@ -237,7 +237,7 @@ export default function Footer() {
           <div className="md:pt-3">
             <h4 className="text-[#3ec6c3] mb-3 text-lg font-semibold"><T>Support</T></h4>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline"><T>Contact Us</T></a></li>
+              <li><a href="/contact-us" className="hover:underline"><T>Contact Us</T></a></li>
               <li><a href="#" className="hover:underline"><T>Privacy Policy</T></a></li>
               <li><a href="#" className="hover:underline"><T>Terms &amp; Conditions</T></a></li>
             </ul>
