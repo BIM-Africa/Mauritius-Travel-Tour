@@ -1,5 +1,5 @@
 import React from 'react'
-import ServicePage from './Components/ServicePage'
+import ServicePage from '@/components/ServicePage'
 
 export default function page() {
   return (
