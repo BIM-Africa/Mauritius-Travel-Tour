@@ -51,6 +51,14 @@ export default function SectionLinks() {
         return;
       }
 
+      // Logo / "Home" links: Next.js ignores a click on a link to the page you're already on,
+      // so on the homepage scroll back to the top instead.
+      if (href === "/" && window.location.pathname === "/") {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
+
       const section = sectionFromHref(href);
       if (!section) return;
 

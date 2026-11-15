@@ -92,7 +92,7 @@ export default function Footer() {
                 <li>
                   <span className="inline-flex items-center gap-2">
                     <Image src={call} alt="Email" width={20} height={20} className="w-6 h-6 sm:w-5 sm:h-5 invert brightness-0 object-contain" />
-                    <a href="mailto:info@mauritiustraveltour.com" className="hover:underline">info@mauritiustraveltour<br className="block xl:hidden" />.com</a>
+                    <a href="mailto:info@mauritiustraveltour.com" className="hover:underline">info@mauritiustraveltour<br className="block 2xl:hidden" />.com</a>
                   </span>
                 </li>
                 <li>
