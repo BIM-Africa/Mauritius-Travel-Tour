@@ -8,7 +8,6 @@ import { Poppins, Kalam } from "next/font/google";
 import {
   ArrowLeftRight,
   ArrowRight,
-  ArrowUpRight,
   CalendarCheck,
   CalendarDays,
   Car,
@@ -752,13 +751,6 @@ function DreamAndTours() {
     { icon: CalendarDays, label: "Flexible & Private Service" },
   ];
 
-  const tours = [
-    // Order and photos follow the design.
-    { img: resortImg, title: "North Tour", text: "Beaches, capital city and cultural sites.", href: "/north-tour" },
-    { img: boatImg, title: "West Tour", text: "Dolphins, coastal views and sunset spots.", href: "/west-tour" },
-    { img: islandImg, title: "East Tour", text: "Beautiful beaches and island charm.", href: "/east-tour" },
-    { img: leMorneImg, title: "South Tour", text: "Waterfalls, nature parks and scenic landscapes.", href: "/south-tour" },
-  ];
 
   return (
     <section
@@ -846,42 +838,78 @@ function DreamAndTours() {
           </p>
         </Reveal>
 
-        <motion.div variants={stagger(0.12)} {...inView} className="mt-8 grid grid-cols-1 gap-4 min-[480px]:grid-cols-2 lg:grid-cols-4 lg:gap-5">
-          {tours.map((t) => (
-            <motion.div key={t.title} variants={fadeUp} whileHover={{ y: -8 }} transition={{ type: "spring", stiffness: 260, damping: 20 }}>
+        {/* cards — clickable links (expand on hover on large screens) */}
+        <div
+          className="
+            mt-10 grid gap-6 sm:gap-7 grid-cols-1 md:grid-cols-2
+            xl:[grid-template-columns:var(--c1)_var(--c2)_var(--c3)_var(--c4)]
+            xl:[--c1:1.60fr] xl:[--c2:0.90fr] xl:[--c3:0.90fr] xl:[--c4:0.90fr]
+            xl:transition-all xl:duration-700 xl:ease-in-out
+            xl:[&:has(>a:nth-child(2):hover)]:[--c1:0.90fr]
+            xl:[&:has(>a:nth-child(2):hover)]:[--c2:1.60fr]
+            xl:[&:has(>a:nth-child(3):hover)]:[--c1:0.90fr]
+            xl:[&:has(>a:nth-child(3):hover)]:[--c3:1.60fr]
+            xl:[&:has(>a:nth-child(4):hover)]:[--c1:0.90fr]
+            xl:[&:has(>a:nth-child(4):hover)]:[--c4:1.60fr]
+          "
+        >
+          {[
+            { img: resortImg, alt: "North Tour", title: "NORTH TOUR", href: "/north-tour" },
+            { img: boatImg, alt: "South Tour", title: "SOUTH TOUR", href: "/south-tour" },
+            { img: islandImg, alt: "East Tour", title: "EAST TOUR", href: "/east-tour" },
+            { img: leMorneImg, alt: "West Tour", title: "WEST TOUR", href: "/west-tour" },
+          ].map((c, i) => (
             <Link
-              href={t.href}
-              aria-label={`Open ${t.title}`}
-              className="group relative block aspect-[4/3.3] overflow-hidden rounded-[18px] text-white shadow-[0_12px_30px_rgba(11,41,48,.16)] transition-shadow duration-300 hover:shadow-[0_22px_44px_rgba(11,41,48,.3)]"
+              key={i}
+              href={c.href}
+              aria-label={`Open ${c.alt}`}
+              className="group relative block
+                h-[500px] md:h-[550px] xl:h-[640px]
+                max-[480px]:h-[400px] max-[360px]:h-[350px]
+                rounded-[22px] overflow-hidden text-white
+                transition-all duration-[2500ms] ease-in-out
+                hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(0,0,0,.35)] focus:outline-none"
             >
               <Image
-                src={t.img}
-                alt={t.title}
+                src={c.img}
+                alt={c.alt}
                 fill
+                className="object-cover transition-all duration-[2500ms] ease-in-out group-hover:scale-[1.08] group-hover:brightness-[1.08]"
                 placeholder="blur"
-                className="object-cover transition duration-[1200ms] ease-out group-hover:scale-110"
-                sizes="(min-width:1024px) 330px, (min-width:480px) 46vw, 92vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#04414a] via-[#04414a]/75 via-35% to-transparent to-65%" />
-              <span className="absolute top-2.5 right-2.5 grid h-7 w-7 place-items-center rounded-full bg-[#06262c]/85 transition duration-300 group-hover:rotate-45 group-hover:bg-[#3fe0c5] group-hover:text-[#06262c]">
-                <ArrowUpRight className="w-4 h-4" />
-              </span>
-              <div className="absolute inset-x-0 bottom-0 p-4 text-left transition-transform duration-500 group-hover:-translate-y-1">
-                <h3 className="flex items-center gap-1.5 text-[17px] font-bold">
-                  <MapPin className="w-4.5 h-4.5" fill="currentColor" stroke="#04414a" />
-                  <T>{t.title}</T>
+
+              {/* corner icon */}
+              <div className="absolute right-0 w-11 h-11 max-[360px]:w-9 max-[360px]:h-9 rounded-full grid place-items-center bg-[#0f2f33] text-[#e8ffff] ring-2 ring-white/20">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 max-[360px]:w-4 max-[360px]:h-4" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M8 16 L16 8 M10 8h6v6"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+
+              {/* text */}
+              <div className="absolute inset-x-0 bottom-0 p-5 max-[360px]:p-4 text-left">
+                <h3 className="m-0 mb-1 tracking-[.02em] text-[17px] font-semibold drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
+                  <T>{c.title}</T>
                 </h3>
-                <p className="mt-1 max-w-[220px] text-[13px] leading-snug text-white/95">
-                  <T>{t.text}</T>
+                <p className="m-0 text-[13.5px] leading-relaxed text-white/95 max-w-[36ch] drop-shadow-[0_1px_6px_rgba(0,0,0,.35)]">
+                  <T>Welcome to Mauritius Travel & Tours, your gateway to unforgettable island adventures — explore the South’s nature, the North’s charm, the East’s serenity, and the West’s sunsets.</T>
                 </p>
-                <span className="mt-2.5 inline-flex items-center gap-1 rounded-full px-3.5 py-1 text-[12.5px] font-semibold ring-[1.5px] ring-white/90 transition group-hover:bg-white group-hover:text-[#0b2930]">
-                  <T>View Tour</T> <ChevronRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
+
+                {/* Read More */}
+                <span className="mt-4 inline-block rounded-full px-4 py-2 text-[13px] text-white bg-gray-500/90 ring-1 ring-white/15 transition duration-[2500ms] ease-in-out group-hover:bg-gray-500 group-hover:shadow-[0_6px_20px_rgba(0,0,0,.35)]">
+                  <T>View Tours</T> &#8250;
                 </span>
               </div>
+
+              <div className="absolute inset-0 ring-1 ring-white/10 rounded-[22px] pointer-events-none" />
             </Link>
-            </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
